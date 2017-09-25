@@ -1,0 +1,19 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Local development
+*.env
+*.dev
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
