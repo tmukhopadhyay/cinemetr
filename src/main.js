@@ -7,7 +7,9 @@ import VueResource from 'vue-resource'
 
 import App from './App'
 import router from './router'
+
 import './config/app.config'
+import './filters/app.filters'
 
 Vue.use(VueResource)
 Vue.use(VueRx, Rx)
@@ -20,24 +22,4 @@ new Vue({
     components: {
         App
     }
-})
-
-Vue.filter('truncate', (value, maxLength) => {
-    if (!value) {
-        return ''
-    } else if (value.length <= maxLength) {
-        return value
-    }
-    return value.substr(0, maxLength) + '...'
-})
-
-Vue.filter('genreName', (value) => {
-    if (!value) {
-        return ''
-    }
-    let genreObj = window.genres.find(genre => genre.id === value)
-    if (genreObj) {
-        return genreObj.name
-    }
-    return ''
 })

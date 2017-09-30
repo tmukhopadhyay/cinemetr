@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-export default Object.assign(Vue.config, {
+Object.assign(Vue.config, {
     productionTip: process.env.NODE_ENV === 'production',
     API_KEY: process.env.API_KEY,
     BASE_URL: process.env.BASE_URL,
