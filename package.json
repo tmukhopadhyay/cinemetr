@@ -12,6 +12,7 @@
   "scripts": {
     "build": "node build/build.js",
     "dev": "node build/dev-server.js",
+    "dev:offline": "node build/dev-server.js --offline",
     "lint": "eslint --ext .js,.vue src",
     "start": "node server.js",
     "test": "node test.js"

@@ -1,6 +1,6 @@
 <template>
     <figure class="card clearfix">
-        <img :src="'https://image.tmdb.org/t/p/w185' + item.poster_path" class="pull-left poster" />
+        <img :src="imagePath + item.poster_path" class="pull-left poster" />
         <figcaption class="pull-left">
             <header>{{item.title || item.name}}</header>
             <hr class="divider" />
@@ -24,6 +24,7 @@
     export default {
         name: 'appCard',
         props: {
+            imagePath: String,
             item: {
                 type: Object,
                 default: {}
@@ -40,7 +41,7 @@
         background-color: #FFF;
         border: 1px solid #DDD;
         border-radius: 3px;
-        box-shadow: 0 0 2px #AAA;
+        box-shadow: 0 0 1px #AAA;
         transition: box-shadow 0.5s;
 
         .poster {

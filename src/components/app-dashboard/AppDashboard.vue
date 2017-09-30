@@ -1,15 +1,15 @@
 <template>
     <section>
         <app-carousel
-            :is-dynamic="true"
+            :data="upcomingMovies"
             :inverse-scaling="150"
+            :image-path="imagePath"
             :slide-items="9"
             :slide-height="278"
             :slide-width="185"
             :slide-space="190"
             title="Movies"
-            subtitle="Coming Soon"
-            url="https://api.themoviedb.org/3/movie/upcoming?api_key=0312d542ff3bc63a78d6647fe5727160&language=en-US&page=1">
+            subtitle="Coming Soon">
         </app-carousel>
         <br/><br/>
         <h3 class="section-title">Movies</h3>
@@ -17,9 +17,9 @@
             Now Playing
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
-        <ul v-if="movies.length" class="clearfix site-width cards">
-            <li v-for="(movie, index) in movies" v-if="index<9" :key="movie.id" class="pull-left card-wrapper">
-                <app-card :item="movie"></app-card>
+        <ul v-if="nowPlayingMovies.length" class="clearfix site-width cards">
+            <li v-for="(movie, index) in nowPlayingMovies" v-if="index < 6" :key="movie.id" class="pull-left card-wrapper">
+                <app-card :item="movie" :image-path="imagePath"></app-card>
             </li>
         </ul>
 
@@ -29,17 +29,22 @@
             Popular
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
-        <ul v-if="series.length" class="clearfix site-width cards">
-            <li v-for="(show, index) in series" v-if="index<9" :key="show.id" class="pull-left card-wrapper">
-                <app-card :item="show"></app-card>
+        <ul v-if="popularSeries.length" class="clearfix site-width cards">
+            <li v-for="(show, index) in popularSeries" v-if="index < 6" :key="show.id" class="pull-left card-wrapper">
+                <app-card :item="show" :image-path="imagePath"></app-card>
             </li>
         </ul>
     </section>
 </template>
 
 <script>
+    import Vue from 'vue'
+
     import AppCard from '../app-card/AppCard'
     import AppCarousel from '../app-carousel/AppCarousel'
+
+    import MovieService from '../../services/movies.service'
+    import SeriesService from '../../services/series.service'
 
     export default {
         name: 'appDashboard',
@@ -49,25 +54,16 @@
         },
         data () {
             return {
-                a: 1,
-                movies: [],
-                series: []
+                imagePath: Vue.config.IMAGE_PATH,
+                upcomingMovies: [],
+                nowPlayingMovies: [],
+                popularSeries: []
             }
         },
         created () {
-            this.$http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=0312d542ff3bc63a78d6647fe5727160&language=en-US&page=1')
-                .then(data => {
-                    this.movies = data.body.results
-                }, error => {
-                    console.error(error)
-                })
-
-            this.$http.get('https://api.themoviedb.org/3/tv/popular?api_key=0312d542ff3bc63a78d6647fe5727160&language=en-US&page=1')
-                .then(data => {
-                    this.series = data.body.results
-                }, error => {
-                    console.error(error)
-                })
+            MovieService.getUpcomingMovies((movies) => { this.upcomingMovies = movies })
+            MovieService.getNowPlayingMovies((movies) => { this.nowPlayingMovies = movies })
+            SeriesService.getPopularSeries((series) => { this.popularSeries = series })
         }
     }
 </script>
@@ -79,7 +75,7 @@
 
         .card-wrapper {
             padding: 5px;
-            width: 33.33%;
+            width: 50%;
         }
     }
 </style>

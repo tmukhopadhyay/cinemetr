@@ -1,5 +1,5 @@
 <template>
-    <section class="carousel" v-if="items.length">
+    <section class="carousel" v-if="data.length">
         <h3 class="section-title" v-if="title">{{title}}</h3>
         <h3 class="site-width section-subtitle" v-if="subtitle">
             {{subtitle}}
@@ -15,12 +15,11 @@
             :height="slideHeight"
             :width="slideWidth"
             :space="slideSpace">
-                <slide v-for="(item, index) in items" :index="index" :key="item.id">
+                <slide v-for="(item, index) in data" :index="index" :key="item.id">
                     <figure>
-                        <img :src="'https://image.tmdb.org/t/p/w185' + item.poster_path" />
+                        <img :src="imagePath + item.poster_path" />
                         <figcaption>{{item.title}}</figcaption>
                     </figure>
-                    Slide {{index}} Content
                 </slide>
         </carousel-3d>
     </section>
@@ -45,11 +44,15 @@
                 type: Boolean,
                 default: false
             },
-            isDynamic: Boolean,
+            data: {
+                type: Array,
+                default: []
+            },
             inverseScaling: {
                 type: Number,
                 default: 300
             },
+            imagePath: String,
             slideItems: {
                 type: Number,
                 default: 5
@@ -67,20 +70,7 @@
                 default: 240
             },
             title: String,
-            subtitle: String,
-            url: String
-        },
-        created () {
-            if (this.isDynamic) {
-                this.$http.get(this.url)
-                    .then(data => {
-                        this.items = data.body.results
-                    }, error => {
-                        console.error(error)
-                    })
-            } else {
-                this.items = []
-            }
+            subtitle: String
         }
     }
 </script>
