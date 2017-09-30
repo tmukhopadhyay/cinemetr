@@ -38,7 +38,7 @@
 
 <style lang="scss" scoped>
     .segment {
-        padding: 30px 0;
+        padding: 25px 0 30px;
 
         .cards {
             .card-wrapper {
@@ -46,7 +46,7 @@
             }
         }
         &.background {
-            background-color: #F6F6F6;
+            background-color: #F1F1F1;
         }
     }
 </style>
