@@ -1,21 +1,18 @@
 <template>
     <figure class="card clearfix">
-        <img :src="imagePath + item.poster_path" class="pull-left poster" />
-        <figcaption class="pull-left">
+        <img :src="imagePath + item.poster_path" class="poster" />
+        <section class="overlay"></section>
+        <figcaption>
             <header>{{item.title || item.name}}</header>
-            <hr class="divider" />
-            <p>
+            <p class="captions">
                 <span class="bullet" v-for="genre in item.genre_ids" :key="genre.id">
                     {{genre | genreName}}
                 </span>
             </p>
-            <hr class="divider" />
-            <p class="rating">
+            <p class="rating clearfix">
                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                {{item.vote_average}} / 10
+                {{item.vote_average}} / 10 from {{item.vote_count}} users
             </p>
-            <hr class="divider" />
-            <p class="description">{{item.overview | truncate(100)}}</p>
         </figcaption>
     </figure>
 </template>
@@ -33,50 +30,49 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    $poster-width: 50% !default;
-
+<style lang="scss" scoped>    
     .card {
-        padding: 5px;
-        background-color: #FFF;
-        border: 1px solid #DDD;
-        border-radius: 3px;
-        box-shadow: 0 0 1px #AAA;
-        transition: box-shadow 0.5s;
+        position: relative;
 
         .poster {
-            width: $poster-width;
-            border-radius: 3px 0 0 3px;
+            display: block;
+            width: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.2) 50%,
+                rgba(0, 0, 0, 0.6) 70%,
+                rgba(0, 0, 0, 1) 100%)
         }
         figcaption {
-            padding-left: 10px;
-            width: $poster-width;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
 
             header {
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 18px;
-                color: #DE7704;
+                color: #FFF;
                 text-transform: uppercase;
+                margin-bottom: 10px;
             }
-            .divider {
-                border-width: 1px 0 0;
-                border-style: solid;
-                border-color: #E6E6E6;
+            .captions {
+                margin-bottom: 10px;
             }
             .rating {
-                font-size: 13px;
-                color: #616161;
-                font-weight: 700;
+                font-size: 12px;
+                color: #CCC;
+                font-weight: 300;
             }
-            .description {
-                font-size: 13px;
-                line-height: 16px;
-                color: #616161;
-            }
-        }
-        &:hover {
-            box-shadow: 0 0 10px #999;
         }
     }
 </style>

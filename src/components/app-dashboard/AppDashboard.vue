@@ -18,7 +18,7 @@
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
         <ul v-if="nowPlayingMovies.length" class="clearfix site-width cards">
-            <li v-for="(movie, index) in nowPlayingMovies" v-if="index < 6" :key="movie.id" class="pull-left card-wrapper">
+            <li v-for="(movie, index) in nowPlayingMovies" v-if="index < 8" :key="movie.id" class="pull-left card-wrapper">
                 <app-card :item="movie" :image-path="imagePath"></app-card>
             </li>
         </ul>
@@ -30,7 +30,7 @@
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
         <ul v-if="popularSeries.length" class="clearfix site-width cards">
-            <li v-for="(show, index) in popularSeries" v-if="index < 6" :key="show.id" class="pull-left card-wrapper">
+            <li v-for="(show, index) in popularSeries" v-if="index < 8" :key="show.id" class="pull-left card-wrapper">
                 <app-card :item="show" :image-path="imagePath"></app-card>
             </li>
         </ul>
@@ -70,12 +70,8 @@
 
 <style lang="scss" scoped>
     .cards {
-        max-width: 1010px;
-        margin: 0 auto;
-
         .card-wrapper {
-            padding: 5px;
-            width: 50%;
+            width: 25%;
         }
     }
 </style>

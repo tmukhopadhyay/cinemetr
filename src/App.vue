@@ -78,7 +78,7 @@
         padding: 3px;
         border: 1px solid #CCC;
         border-radius: 2px;
-        background-color: #F1F1F1;
+        background-color: #DDD;
         box-shadow: 0 0 1px #999;
         margin: 2px 5px 2px 0;
     }
