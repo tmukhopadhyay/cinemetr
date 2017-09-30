@@ -11,7 +11,7 @@
             </p>
             <p class="rating clearfix">
                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                {{item.vote_average}} / 10 from {{item.vote_count}} users
+                {{item.vote_average}} / 10 from {{item.vote_count | format}} users
             </p>
         </figcaption>
     </figure>
@@ -71,7 +71,7 @@
             .rating {
                 font-size: 12px;
                 color: #CCC;
-                font-weight: 300;
+                font-weight: 700;
             }
         }
     }
