@@ -81,6 +81,7 @@
         background-color: #DDD;
         box-shadow: 0 0 1px #999;
         margin: 2px 5px 2px 0;
+        text-decoration: none;
     }
     .color-yellow {
         color: #C7A605;

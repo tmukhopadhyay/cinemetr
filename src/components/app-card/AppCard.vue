@@ -5,9 +5,9 @@
         <figcaption>
             <header>{{item.title || item.name}}</header>
             <p class="captions">
-                <span class="bullet" v-for="genre in item.genre_ids" :key="genre.id">
+                <a href="#" class="bullet" v-for="genre in item.genre_ids" :key="genre.id">
                     {{genre | genreName}}
-                </span>
+                </a>
             </p>
             <p class="rating clearfix">
                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>

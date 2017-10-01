@@ -46,7 +46,7 @@
             }
         }
         &.background {
-            background-color: #F1F1F1;
+            background-color: #E6E6E6;
         }
     }
 </style>
