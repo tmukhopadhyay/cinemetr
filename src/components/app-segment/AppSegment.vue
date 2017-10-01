@@ -6,7 +6,7 @@
         </h3>
         <ul v-if="data.length" class="clearfix site-width cards">
             <li v-for="(item, index) in data" v-if="index < 8" :key="item.id" class="pull-left card-wrapper">
-                <app-card :item="item" :image-path="imagePath"></app-card>
+                <app-card :item="item" :image-path="imagePath" :type="type"></app-card>
             </li>
         </ul>
     </section>
@@ -31,7 +31,8 @@
             },
             imagePath: String,
             title: String,
-            subtitle: String
+            subtitle: String,
+            type: String
         }
     }
 </script>

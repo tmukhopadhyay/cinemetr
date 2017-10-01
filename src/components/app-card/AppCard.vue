@@ -1,5 +1,5 @@
 <template>
-    <figure class="card clearfix">
+    <figure class="card clearfix" @click="goToDetails(item)">
         <img :src="imagePath + item.poster_path" class="poster" />
         <section class="overlay"></section>
         <figcaption>
@@ -30,6 +30,18 @@
             item: {
                 type: Object,
                 default: {}
+            },
+            type: String
+        },
+        methods: {
+            goToDetails (item) {
+                this.$router.push({
+                    name: 'AppDetails',
+                    params: {
+                        id: item.id,
+                        type: this.type
+                    }
+                })
             }
         }
     }
@@ -37,6 +49,7 @@
 
 <style lang="scss" scoped>    
     .card {
+        cursor: pointer;
         position: relative;
 
         .poster {

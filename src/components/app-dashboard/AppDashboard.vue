@@ -16,14 +16,16 @@
             :data="nowPlayingMovies"
             :image-path="imagePath"
             title="Movies"
-            subtitle="Now Playing">
+            subtitle="Now Playing"
+            type="movie">
         </app-segment>
         <app-segment
             :background="true"
             :data="popularSeries"
             :image-path="imagePath"
             title="Tv shows"
-            subtitle="Popular">
+            subtitle="Popular"
+            type="tv">
         </app-segment>
     </section>
 </template>
