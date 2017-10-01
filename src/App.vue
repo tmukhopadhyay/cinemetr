@@ -22,6 +22,7 @@
 <style lang="scss">
     @import "./assets/scss/normalize";
     @import "./assets/scss/font-awesome";
+    @import "./assets/scss/tooltip";
 
     body {
         font-family: 'Lato', sans-serif;

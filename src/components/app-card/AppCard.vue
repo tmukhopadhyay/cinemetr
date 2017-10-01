@@ -3,7 +3,12 @@
         <img :src="imagePath + item.poster_path" class="poster" />
         <section class="overlay"></section>
         <figcaption>
-            <header>{{item.title || item.name}}</header>
+            <header>
+                {{item.title || item.name}}
+                <i class="fa fa-fw fa-info-circle color-yellow"
+                    aria-hidden="true"
+                    v-tooltip.right="item.overview"></i>
+            </header>
             <p class="captions">
                 <a href="#" class="bullet" v-for="genre in item.genre_ids" :key="genre.id">
                     {{genre | genreName}}
