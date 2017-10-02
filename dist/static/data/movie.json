@@ -1,14 +1,14 @@
 {  
     "adult":false,
-    "backdrop_path":"\/default-backdrop.jpg",
+    "backdrop_path":"/default-backdrop.jpg",
     "belongs_to_collection":{  
         "id":86311,
         "name":"The Avengers Collection",
-        "poster_path":"\/default-poster.jpg",
-        "backdrop_path":"\/default-backdrop.jpg"
+        "poster_path":"/default-poster.jpg",
+        "backdrop_path":"/default-backdrop.jpg"
     },
     "budget":220000000,
-    "genres":[
+    "genres":[  
         {  
             "id":878,
             "name":"Science Fiction"
@@ -29,7 +29,7 @@
     "original_title":"The Avengers",
     "overview":"When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
     "popularity":552.125796,
-    "poster_path":"\/default-poster.jpg",
+    "poster_path":"/default-poster.jpg",
     "production_companies":[  
         {  
             "name":"Paramount Pictures",
@@ -60,7 +60,3686 @@
     "title":"The Avengers",
     "video":false,
     "vote_average":7.4,
-    "vote_count":11867,
+    "vote_count":11878,
+    "alternative_titles":{  
+        "titles":[  
+            {  
+                "iso_3166_1":"GB",
+                "title":"Avengers Assemble"
+            },
+            {  
+                "iso_3166_1":"SE",
+                "title":"Avengers 3D"
+            },
+            {  
+                "iso_3166_1":"US",
+                "title":"The Avengers 3D"
+            },
+            {  
+                "iso_3166_1":"TW",
+                "title":"復仇者聯盟"
+            },
+            {  
+                "iso_3166_1":"VE",
+                "title":"Los Vengadores"
+            },
+            {  
+                "iso_3166_1":"RU",
+                "title":"Mstiteli"
+            },
+            {  
+                "iso_3166_1":"EE",
+                "title":"Tasujad"
+            },
+            {  
+                "iso_3166_1":"NL",
+                "title":"De Wrekers"
+            },
+            {  
+                "iso_3166_1":"US",
+                "title":"The Avengers 1"
+            },
+            {  
+                "iso_3166_1":"CA",
+                "title":"Les Avengers: le film"
+            },
+            {  
+                "iso_3166_1":"US",
+                "title":"Marvel's The Avengers"
+            },
+            {  
+                "iso_3166_1":"US",
+                "title":"The Avengers: An IMAX 3D Experience"
+            },
+            {  
+                "iso_3166_1":"GB",
+                "title":"Marvel Avengers Assemble"
+            },
+            {  
+                "iso_3166_1":"BR",
+                "title":"Marvel's The Avengers: Os Vingadores"
+            },
+            {  
+                "iso_3166_1":"BR",
+                "title":"Os Vingadores (2012)"
+            },
+            {  
+                "iso_3166_1":"PL",
+                "title":"1.6 Avengers"
+            },
+            {  
+                "iso_3166_1":"MX",
+                "title":"The Avengers: Los Vengadores"
+            },
+            {  
+                "iso_3166_1":"GB",
+                "title":"The Avengers Movie (2012)"
+            }
+        ]
+    },
+    "changes":{  
+        "changes":[  
+
+        ]
+    },
+    "credits":{  
+        "cast":[  
+            {  
+                "cast_id":46,
+                "character":"Tony Stark / Iron Man",
+                "credit_id":"52fe4495c3a368484e02b251",
+                "gender":2,
+                "id":3223,
+                "name":"Robert Downey Jr.",
+                "order":0,
+                "profile_path":"/1YjdSym1jTG7xjHSI0yGGWEsw5i.jpg"
+            },
+            {  
+                "cast_id":2,
+                "character":"Steve Rogers / Captain America",
+                "credit_id":"52fe4495c3a368484e02b19b",
+                "gender":2,
+                "id":16828,
+                "name":"Chris Evans",
+                "order":1,
+                "profile_path":"/8CgFKCZJVwZxa1F88n8drEux0vT.jpg"
+            },
+            {  
+                "cast_id":32,
+                "character":"Bruce Banner / The Hulk",
+                "credit_id":"52fe4495c3a368484e02b221",
+                "gender":2,
+                "id":103,
+                "name":"Mark Ruffalo",
+                "order":2,
+                "profile_path":"/zdM6RgCR5LpZwnL8UA3m7CfVpiq.jpg"
+            },
+            {  
+                "cast_id":4,
+                "character":"Thor Odinson",
+                "credit_id":"52fe4495c3a368484e02b1a5",
+                "gender":2,
+                "id":74568,
+                "name":"Chris Hemsworth",
+                "order":3,
+                "profile_path":"/egwqkXEcAGQtobaCexavE03F7ON.jpg"
+            },
+            {  
+                "cast_id":34,
+                "character":"Natasha Romanoff / Black Widow",
+                "credit_id":"52fe4495c3a368484e02b229",
+                "gender":1,
+                "id":1245,
+                "name":"Scarlett Johansson",
+                "order":4,
+                "profile_path":"/eYFHUWxTCNg6lPypJCaUQXhoUop.jpg"
+            },
+            {  
+                "cast_id":33,
+                "character":"Clint Barton / Hawkeye",
+                "credit_id":"52fe4495c3a368484e02b225",
+                "gender":2,
+                "id":17604,
+                "name":"Jeremy Renner",
+                "order":5,
+                "profile_path":"/g8gheNEdPSXWH5SnjfjTYWj5ziU.jpg"
+            },
+            {  
+                "cast_id":35,
+                "character":"Loki",
+                "credit_id":"52fe4495c3a368484e02b22d",
+                "gender":2,
+                "id":91606,
+                "name":"Tom Hiddleston",
+                "order":6,
+                "profile_path":"/ohi1hLiCnrA34Wv3TMNBPYHSWd4.jpg"
+            },
+            {  
+                "cast_id":38,
+                "character":"Agent Phil Coulson",
+                "credit_id":"52fe4495c3a368484e02b239",
+                "gender":2,
+                "id":9048,
+                "name":"Clark Gregg",
+                "order":7,
+                "profile_path":"/t8CLS2Zcy7IjcZkE1vtxl40h9rh.jpg"
+            },
+            {  
+                "cast_id":37,
+                "character":"Agent Maria Hill",
+                "credit_id":"52fe4495c3a368484e02b235",
+                "gender":1,
+                "id":71189,
+                "name":"Cobie Smulders",
+                "order":8,
+                "profile_path":"/7TIENKNwDdKSuYqyTENKtCznkCG.jpg"
+            },
+            {  
+                "cast_id":41,
+                "character":"Erik Selvig",
+                "credit_id":"52fe4495c3a368484e02b241",
+                "gender":2,
+                "id":1640,
+                "name":"Stellan Skarsgård",
+                "order":9,
+                "profile_path":"/hjWdhX7zEI0DkF7gA4hcEVcYCZl.jpg"
+            },
+            {  
+                "cast_id":36,
+                "character":"Director Nick Fury",
+                "credit_id":"52fe4495c3a368484e02b231",
+                "gender":2,
+                "id":2231,
+                "name":"Samuel L. Jackson",
+                "order":10,
+                "profile_path":"/AvCReLikjzYEf9XjTQxbv3JWgKT.jpg"
+            },
+            {  
+                "cast_id":40,
+                "character":"Virginia \"Pepper\" Potts",
+                "credit_id":"52fe4495c3a368484e02b23d",
+                "gender":1,
+                "id":12052,
+                "name":"Gwyneth Paltrow",
+                "order":11,
+                "profile_path":"/uSidH77gLyon3Zpg6y1GxpKJMdZ.jpg"
+            },
+            {  
+                "cast_id":42,
+                "character":"J.A.R.V.I.S. (voice)",
+                "credit_id":"52fe4495c3a368484e02b245",
+                "gender":2,
+                "id":6162,
+                "name":"Paul Bettany",
+                "order":12,
+                "profile_path":"/xN2pJ3DIPacYviSSwDovxizPS2w.jpg"
+            },
+            {  
+                "cast_id":44,
+                "character":"World Security Council",
+                "credit_id":"52fe4495c3a368484e02b249",
+                "gender":1,
+                "id":14464,
+                "name":"Jenny Agutter",
+                "order":13,
+                "profile_path":"/2AwYEHV0cXXo3vtjiuwHMEkqh6R.jpg"
+            },
+            {  
+                "cast_id":45,
+                "character":"Shield Pilot",
+                "credit_id":"52fe4495c3a368484e02b24d",
+                "gender":2,
+                "id":101522,
+                "name":"Walter Perez",
+                "order":14,
+                "profile_path":"/9huEhMUi4x5I2RSaIjvoP5mbP67.jpg"
+            },
+            {  
+                "cast_id":47,
+                "character":"World Security Council",
+                "credit_id":"52fe4495c3a368484e02b255",
+                "gender":2,
+                "id":6280,
+                "name":"Powers Boothe",
+                "order":15,
+                "profile_path":"/3nNL6AvMAYq0BmHKM79RnRZVq3i.jpg"
+            },
+            {  
+                "cast_id":48,
+                "character":"Old Man in TV Report",
+                "credit_id":"52fe4495c3a368484e02b259",
+                "gender":2,
+                "id":7624,
+                "name":"Stan Lee",
+                "order":16,
+                "profile_path":"/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+            },
+            {  
+                "cast_id":50,
+                "character":"World Security Council",
+                "credit_id":"52fe4495c3a368484e02b25d",
+                "gender":2,
+                "id":188758,
+                "name":"Arthur Darbinyan",
+                "order":17,
+                "profile_path":"/efj5VJqc2tlZ15aesmMXit3oner.jpg"
+            },
+            {  
+                "cast_id":51,
+                "character":"World Security Council",
+                "credit_id":"52fe4495c3a368484e02b261",
+                "gender":2,
+                "id":168246,
+                "name":"Donald Li",
+                "order":18,
+                "profile_path":"/7TeLJzqIoSUMAZJRkSLMp53wujn.jpg"
+            },
+            {  
+                "cast_id":52,
+                "character":"Waitress",
+                "credit_id":"52fe4495c3a368484e02b265",
+                "gender":1,
+                "id":34486,
+                "name":"Ashley Johnson",
+                "order":19,
+                "profile_path":"/2zIDMXy9680S7ioPo9jpZUq5qG1.jpg"
+            },
+            {  
+                "cast_id":53,
+                "character":"Security Guard",
+                "credit_id":"52fe4495c3a368484e02b269",
+                "gender":2,
+                "id":5048,
+                "name":"Harry Dean Stanton",
+                "order":20,
+                "profile_path":"/fkl5iJYpKxSFGixyvAsBpLdDmqN.jpg"
+            },
+            {  
+                "cast_id":54,
+                "character":"Carrier Bridge Techs",
+                "credit_id":"52fe4495c3a368484e02b26d",
+                "gender":1,
+                "id":81959,
+                "name":"Alicia Sixtos",
+                "order":21,
+                "profile_path":"/d26uuvEXN4xIrGaLNOwbwNrX6Z8.jpg"
+            },
+            {  
+                "cast_id":57,
+                "character":"Gala Scientist",
+                "credit_id":"52fe4495c3a368484e02b275",
+                "gender":0,
+                "id":1033652,
+                "name":"Dieter Riesle",
+                "order":22,
+                "profile_path":"/yN8sg3spmSs651w0HZVdCdA9HSh.jpg"
+            },
+            {  
+                "cast_id":61,
+                "character":"Celebration Montage Interviewee",
+                "credit_id":"52fe4495c3a368484e02b279",
+                "gender":2,
+                "id":79079,
+                "name":"Jamie McShane",
+                "order":23,
+                "profile_path":"/clBmHn1I4WzawHYm5jGPfX44ysp.jpg"
+            },
+            {  
+                "cast_id":62,
+                "character":"Tall Thug",
+                "credit_id":"52fe4495c3a368484e02b27d",
+                "gender":2,
+                "id":51303,
+                "name":"Jeff Wolfe",
+                "order":24,
+                "profile_path":"/iUALrUyPe6uq9kZQNHNf8cW5yKA.jpg"
+            },
+            {  
+                "cast_id":63,
+                "character":"Georgi Luchkov",
+                "credit_id":"52fe4495c3a368484e02b281",
+                "gender":2,
+                "id":43553,
+                "name":"Jerzy Skolimowski",
+                "order":25,
+                "profile_path":"/sBzhVnGFIjpA9gL4okmLhafS4CJ.jpg"
+            },
+            {  
+                "cast_id":64,
+                "character":"Agent Jasper Sitwell",
+                "credit_id":"52fe4495c3a368484e02b285",
+                "gender":2,
+                "id":1018947,
+                "name":"Maximiliano Hernández",
+                "order":26,
+                "profile_path":"/4oakQGpzryNgjA2gGnAgxGzbH9m.jpg"
+            },
+            {  
+                "cast_id":66,
+                "character":"The Other",
+                "credit_id":"52fe4495c3a368484e02b28d",
+                "gender":2,
+                "id":1214673,
+                "name":"Alexis Denisof",
+                "order":27,
+                "profile_path":"/hAcTJxSbSPHLfa59D8mnJOzxpmE.jpg"
+            },
+            {  
+                "cast_id":67,
+                "character":"Senator Boynton",
+                "credit_id":"52fe4495c3a368484e02b291",
+                "gender":2,
+                "id":19151,
+                "name":"James Eckhouse",
+                "order":28,
+                "profile_path":"/4CUK6M7fGVK5Z1Qg65rMLDI6BdO.jpg"
+            },
+            {  
+                "cast_id":68,
+                "character":"Young Cop",
+                "credit_id":"52fe4495c3a368484e02b295",
+                "gender":0,
+                "id":1224022,
+                "name":"Enver Gjokaj",
+                "order":29,
+                "profile_path":"/xatmqOREk6e051ZgaO4VSv4HCnr.jpg"
+            },
+            {  
+                "cast_id":188,
+                "character":"Thanos / The Mad Titan (Uncredited)",
+                "credit_id":"552a8df6c3a36858d60038d8",
+                "gender":2,
+                "id":150194,
+                "name":"Damion Poitier",
+                "order":30,
+                "profile_path":"/zBoq4SAauhVmbHSyWZXYXvA36Ky.jpg"
+            },
+            {  
+                "cast_id":197,
+                "character":"NASA Scientist",
+                "credit_id":"55872353c3a36827460064e8",
+                "gender":1,
+                "id":60120,
+                "name":"Tina Benko",
+                "order":31,
+                "profile_path":"/oG8RmZ2vzuIgl6t5lHEa1CW7DKf.jpg"
+            },
+            {  
+                "cast_id":198,
+                "character":"Weaselly Thug",
+                "credit_id":"558723de9251416818000460",
+                "gender":2,
+                "id":1479945,
+                "name":"Kirill Nikiforov",
+                "order":32,
+                "profile_path":"/kdIxrna0QFYq3uuAKc1wxyE54A1.jpg"
+            },
+            {  
+                "cast_id":199,
+                "character":"Young Girl",
+                "credit_id":"5587241dc3a36837e9004ed2",
+                "gender":1,
+                "id":1479946,
+                "name":"M'laah Kaur Singh",
+                "order":33,
+                "profile_path":"/7CitC5nS31K7VBfN14iLO9KelNr.jpg"
+            },
+            {  
+                "cast_id":200,
+                "character":"Calcutta Woman",
+                "credit_id":"558724a5c3a36836ea004b35",
+                "gender":1,
+                "id":86157,
+                "name":"Rashmi Rustagi",
+                "order":34,
+                "profile_path":"/r5eG6WOSD8XklBjvB3fEg1kAdUI.jpg"
+            },
+            {  
+                "cast_id":201,
+                "character":"Carrier BridgeTechs",
+                "credit_id":"5587254bc3a3682746006501",
+                "gender":2,
+                "id":60878,
+                "name":"Warren Kole",
+                "order":35,
+                "profile_path":"/eRtZcPd1zA6jHEBEUWgP4LpekVQ.jpg"
+            },
+            {  
+                "cast_id":202,
+                "character":"Carrier BridgeTechs",
+                "credit_id":"55872600c3a3682746006509",
+                "gender":2,
+                "id":66525,
+                "name":"Jesse Garcia",
+                "order":36,
+                "profile_path":"/jsEZz7z1wI95277m7S9YM1dbVYb.jpg"
+            },
+            {  
+                "cast_id":203,
+                "character":"German Old Man",
+                "credit_id":"558726ab9251416b00000f16",
+                "gender":2,
+                "id":87128,
+                "name":"Kenneth Tigar",
+                "order":37,
+                "profile_path":"/sSdACkgPQYBJVQnd8B6uWpQPjMY.jpg"
+            },
+            {  
+                "cast_id":204,
+                "character":"Maintenance Guy",
+                "credit_id":"558727449251411dec0057c1",
+                "gender":2,
+                "id":1479957,
+                "name":"Josh Cowdery",
+                "order":38,
+                "profile_path":"/mV5d7ZshhMMhiFcq5i02quGNxA4.jpg"
+            },
+            {  
+                "cast_id":205,
+                "character":"Japanese Family",
+                "credit_id":"5587277e9251411dec0057c9",
+                "gender":2,
+                "id":1479959,
+                "name":"Katsumi Komatsu",
+                "order":39,
+                "profile_path":"/vG6lpBiWONtCKVTNIurorXZB5CS.jpg"
+            },
+            {  
+                "cast_id":206,
+                "character":"Japanese Family",
+                "credit_id":"558727b1c3a3682746006516",
+                "gender":0,
+                "id":1479961,
+                "name":"Yumiko Komatsu",
+                "order":40,
+                "profile_path":null
+            },
+            {  
+                "cast_id":207,
+                "character":"Japanese Family",
+                "credit_id":"558727d892514137bc006946",
+                "gender":0,
+                "id":1479962,
+                "name":"Momoko Komatsu",
+                "order":41,
+                "profile_path":null
+            },
+            {  
+                "cast_id":208,
+                "character":"Police Sergeant",
+                "credit_id":"5587280e9251416b00000f31",
+                "gender":2,
+                "id":2256,
+                "name":"Robert Clohessy",
+                "order":42,
+                "profile_path":"/mtXOGkDYBZhcbKaNbcSYfZJsUY7.jpg"
+            },
+            {  
+                "cast_id":209,
+                "character":"Office Woman",
+                "credit_id":"558728b9c3a368273500612e",
+                "gender":0,
+                "id":1479967,
+                "name":"Fernanda Toker",
+                "order":43,
+                "profile_path":null
+            },
+            {  
+                "cast_id":210,
+                "character":"News Reporter",
+                "credit_id":"5587b9629251416b00001b20",
+                "gender":1,
+                "id":1480042,
+                "name":"Andrea Vecchio",
+                "order":44,
+                "profile_path":"/6V6AdojcJetB5K6lqLxshVmaXr0.jpg"
+            },
+            {  
+                "cast_id":211,
+                "character":"News Reporter",
+                "credit_id":"5587b9a792514168180010f7",
+                "gender":1,
+                "id":1480043,
+                "name":"Robin Swoboda",
+                "order":45,
+                "profile_path":"/3dhqgeTLsBMMlZRgdOd4PMGoKdF.jpg"
+            },
+            {  
+                "cast_id":212,
+                "character":"Faceless Pilot",
+                "credit_id":"5587b9e692514179f600356e",
+                "gender":2,
+                "id":1480044,
+                "name":"Brent McGee",
+                "order":46,
+                "profile_path":"/jwObq47Z45cr3cMTlZLD1DRM8Bj.jpg"
+            },
+            {  
+                "cast_id":213,
+                "character":"Celebration Montage Interviewee",
+                "credit_id":"5587ba32c3a3683853005d35",
+                "gender":2,
+                "id":1203089,
+                "name":"Michael Zhang",
+                "order":47,
+                "profile_path":"/tEk1mW7V4weBnXWwkpSTy3RR5MM.jpg"
+            },
+            {  
+                "cast_id":214,
+                "character":"Celebration Montage Interviewee",
+                "credit_id":"5587ba9c9251411efc0004f5",
+                "gender":2,
+                "id":98626,
+                "name":"William-Christopher Stephens",
+                "order":48,
+                "profile_path":"/wNFPBwd9pL7y8x0hcOIhoWQ0Ax2.jpg"
+            },
+            {  
+                "cast_id":215,
+                "character":"Celebration Montage Interviewee",
+                "credit_id":"5587bb45c3a368273b006dc0",
+                "gender":1,
+                "id":1480045,
+                "name":"Kelley Robins",
+                "order":49,
+                "profile_path":"/mnQcQXy2I8cstEPu1fXl7eycC7n.jpg"
+            },
+            {  
+                "cast_id":216,
+                "character":"Shawna Lynde",
+                "credit_id":"5587bbd39251411e8d006114",
+                "gender":1,
+                "id":156342,
+                "name":"Romy Rosemont",
+                "order":50,
+                "profile_path":"/b0ag6CU4vgJUxWMSXB1ZVc1f1K8.jpg"
+            },
+            {  
+                "cast_id":217,
+                "character":"Himself",
+                "credit_id":"5587c028c3a3683853005dae",
+                "gender":2,
+                "id":1480047,
+                "name":"Pat Kiernan",
+                "order":51,
+                "profile_path":"/vgUYqODOvMlsM7lgyeNDCGboH4v.jpg"
+            },
+            {  
+                "cast_id":218,
+                "character":"Himself",
+                "credit_id":"5587c0a2c3a36827460072f9",
+                "gender":2,
+                "id":1234512,
+                "name":"Thomas Roberts",
+                "order":52,
+                "profile_path":"/7QgyGz2YHPVtR6zIyJB52KieZ4C.jpg"
+            },
+            {  
+                "cast_id":65,
+                "character":"Woman in Restaurant (uncredited)",
+                "credit_id":"52fe4495c3a368484e02b289",
+                "gender":0,
+                "id":1263294,
+                "name":"Jillian Morgese",
+                "order":53,
+                "profile_path":"/lxnn0PCMaDhBABueZYoV0JBlzMg.jpg"
+            },
+            {  
+                "cast_id":219,
+                "character":"German Pedestrian (uncredited)",
+                "credit_id":"5587c1489251417f6f006e84",
+                "gender":1,
+                "id":1480048,
+                "name":"Catherine Anderson",
+                "order":54,
+                "profile_path":"/5T3Kiad1dRPr8lhaZia7oZuFOff.jpg"
+            },
+            {  
+                "cast_id":220,
+                "character":"Lentil Merchant (uncredited)",
+                "credit_id":"5587c18fc3a3683853005dcd",
+                "gender":2,
+                "id":1153698,
+                "name":"Ricardo Andres",
+                "order":55,
+                "profile_path":"/v1pAvp8kLNImLKrDCOORo0WQ8Qu.jpg"
+            },
+            {  
+                "cast_id":221,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587c3acc3a3682735006e27",
+                "gender":2,
+                "id":1480049,
+                "name":"Logan Bennett",
+                "order":56,
+                "profile_path":"/dxSYLhA3ftWk4TDxkocdol4k5iY.jpg"
+            },
+            {  
+                "cast_id":222,
+                "character":"Celebration Montage Man Shaving Beard (uncredited)",
+                "credit_id":"5587c406c3a3683853005e07",
+                "gender":2,
+                "id":1191953,
+                "name":"Mayank Bhatter",
+                "order":57,
+                "profile_path":"/kt3lvMcBQzYPVM7hSSo4bPkgDbp.jpg"
+            },
+            {  
+                "cast_id":223,
+                "character":"Gala Guest (uncredited)",
+                "credit_id":"5587c4c9c3a368273b006e86",
+                "gender":1,
+                "id":1480051,
+                "name":"Sharita Bone",
+                "order":58,
+                "profile_path":"/2hBhG9hKH9ERYfZtjGE2mPoqR7K.jpg"
+            },
+            {  
+                "cast_id":224,
+                "character":"Museum Gala Patron (uncredited)",
+                "credit_id":"5587c4fa9251411dec006508",
+                "gender":2,
+                "id":1480053,
+                "name":"Jason Botsford",
+                "order":59,
+                "profile_path":"/jHs3kU44uPcqVEQz7ely2jsKf0X.jpg"
+            },
+            {  
+                "cast_id":225,
+                "character":"Stuttgart Biergarten patron (uncredited)",
+                "credit_id":"5587c541c3a36836ea00585e",
+                "gender":0,
+                "id":1480055,
+                "name":"Mary Kate Campbell",
+                "order":60,
+                "profile_path":null
+            },
+            {  
+                "cast_id":226,
+                "character":"S.H.I.E.L.D. Guard (uncredited)",
+                "credit_id":"5587c577925141681800121b",
+                "gender":0,
+                "id":1403346,
+                "name":"Gene N. Chavez",
+                "order":61,
+                "profile_path":"/7GAGzDZGnf1PPJCLfeISI0y1jx3.jpg"
+            },
+            {  
+                "cast_id":227,
+                "character":"Gala Guest (uncredited)",
+                "credit_id":"5587c608c3a368274600738d",
+                "gender":1,
+                "id":1480056,
+                "name":"Layla Cushman",
+                "order":62,
+                "profile_path":"/2IsPTL5RPkWNWaRIk1i4so1QdWH.jpg"
+            },
+            {  
+                "cast_id":228,
+                "character":"Soldier (uncredited)",
+                "credit_id":"5587c65bc3a36827460073a1",
+                "gender":2,
+                "id":1466605,
+                "name":"Robert Dean",
+                "order":63,
+                "profile_path":"/ssjFH4Zv1PlcNegdKi5FqdJRLFx.jpg"
+            },
+            {  
+                "cast_id":229,
+                "character":"Museum Gala Guest (uncredited)",
+                "credit_id":"5587c70d9251411e8d006275",
+                "gender":0,
+                "id":1480057,
+                "name":"Rick Dremann",
+                "order":64,
+                "profile_path":null
+            },
+            {  
+                "cast_id":230,
+                "character":"Captain Putz (uncredited)",
+                "credit_id":"5587c73e925141681800124c",
+                "gender":2,
+                "id":1480058,
+                "name":"Jeffrey Feingold",
+                "order":65,
+                "profile_path":"/wmB9ACcKoL0pZd2usmphYeB4PUL.jpg"
+            },
+            {  
+                "cast_id":231,
+                "character":"The Hulk (voice) (uncredited)",
+                "credit_id":"5587c776c3a368273b006ead",
+                "gender":0,
+                "id":19137,
+                "name":"Lou Ferrigno",
+                "order":66,
+                "profile_path":"/vDBZd0xCIl8l1tDLDxPqAHSViFS.jpg"
+            },
+            {  
+                "cast_id":232,
+                "character":"Pedestrian (uncredited)",
+                "credit_id":"5587c8319251411dec00654b",
+                "gender":2,
+                "id":1354406,
+                "name":"Rod Fielder",
+                "order":67,
+                "profile_path":"/mZkudGiL7abjSosmJnPTEvWmOZw.jpg"
+            },
+            {  
+                "cast_id":233,
+                "character":"Stuttgart Citizen (uncredited)",
+                "credit_id":"5587c8bbc3a36827460073e1",
+                "gender":0,
+                "id":1480060,
+                "name":"Eric Frank",
+                "order":68,
+                "profile_path":null
+            },
+            {  
+                "cast_id":234,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587c972c3a368274c006a1c",
+                "gender":2,
+                "id":1480065,
+                "name":"Israel Hall",
+                "order":69,
+                "profile_path":"/uVEsA9tjCeJ8uC4QdfXiwJpG7Y9.jpg"
+            },
+            {  
+                "cast_id":235,
+                "character":"Museum Gala Patron (uncredited)",
+                "credit_id":"5587c9ee925141681800126e",
+                "gender":0,
+                "id":1480066,
+                "name":"Carmen Dee Harris",
+                "order":70,
+                "profile_path":null
+            },
+            {  
+                "cast_id":236,
+                "character":"Mercenary (uncredited)",
+                "credit_id":"5587ca319251411efc000648",
+                "gender":2,
+                "id":1480067,
+                "name":"Alexander Christopher Jones",
+                "order":71,
+                "profile_path":"/vEMQgLVlWqehkLvHdR0iVtJDvTD.jpg"
+            },
+            {  
+                "cast_id":237,
+                "character":"Pedestrian (uncredited)",
+                "credit_id":"5587d164c3a368273b006f8e",
+                "gender":2,
+                "id":1480085,
+                "name":"Mike Karban",
+                "order":72,
+                "profile_path":"/3uIuKvTqJ98qjTILMNCsGihHC3G.jpg"
+            },
+            {  
+                "cast_id":238,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587d1a6c3a36827460074cc",
+                "gender":2,
+                "id":1480087,
+                "name":"Demoine Kinney",
+                "order":73,
+                "profile_path":"/jkSyyUqqC7nGJiNsMJTTmDlhlci.jpg"
+            },
+            {  
+                "cast_id":239,
+                "character":"Stuttgart Citizen (uncredited)",
+                "credit_id":"5587d25dc3a36827460074e2",
+                "gender":2,
+                "id":1480091,
+                "name":"Andrew Knode",
+                "order":74,
+                "profile_path":"/wdgA9J6iVIbfWx7MKqyOyGwmQKV.jpg"
+            },
+            {  
+                "cast_id":240,
+                "character":"Hostage (uncredited)",
+                "credit_id":"5587d2bb9251416b00001d78",
+                "gender":1,
+                "id":1480096,
+                "name":"Annette Lawless",
+                "order":75,
+                "profile_path":"/ihT349vQl4DcibfCgnSdLQIsY7A.jpg"
+            },
+            {  
+                "cast_id":241,
+                "character":"Limo Driver (uncredited)",
+                "credit_id":"5587d2f29251411e8d006363",
+                "gender":1,
+                "id":1480097,
+                "name":"Kimberly J. Mahoney",
+                "order":76,
+                "profile_path":"/3w46G0ICDdU2UKQbohO9MbJhHpi.jpg"
+            },
+            {  
+                "cast_id":242,
+                "character":"Helicarrier Medical Team Leader (uncredited)",
+                "credit_id":"5587e1949251415aa90005ed",
+                "gender":2,
+                "id":1480124,
+                "name":"Todd Manes",
+                "order":77,
+                "profile_path":"/jvZhB6HSFLxNTpskEVvqzTxYf9P.jpg"
+            },
+            {  
+                "cast_id":243,
+                "character":"Stuttgart Driver (uncredited)",
+                "credit_id":"5587e25a9251411dec006758",
+                "gender":0,
+                "id":1480128,
+                "name":"Jorge Mardel",
+                "order":78,
+                "profile_path":"/kYh48kZ4wGGysoexHTMXPhaZv1N.jpg"
+            },
+            {  
+                "cast_id":244,
+                "character":"Civilian (uncredited)",
+                "credit_id":"5587e2e4c3a3683365005f73",
+                "gender":1,
+                "id":1480130,
+                "name":"Tiffany Sander McKenzie",
+                "order":79,
+                "profile_path":"/2Gvt77UAINub19VwqF1dxpCEqaR.jpg"
+            },
+            {  
+                "cast_id":245,
+                "character":"Cafe Patron (uncredited)",
+                "credit_id":"5587e31b9251411e8d0064c0",
+                "gender":2,
+                "id":1480132,
+                "name":"Michael McMillan",
+                "order":80,
+                "profile_path":"/l2N2j9MZztSdEUN4MiEADCELArB.jpg"
+            },
+            {  
+                "cast_id":246,
+                "character":"Guard (uncredited)",
+                "credit_id":"5587e3f19251416b00001f01",
+                "gender":2,
+                "id":1001496,
+                "name":"Sean Meehan",
+                "order":81,
+                "profile_path":"/lHtDjo9qxqbYJJkqw691yNUCzSV.jpg"
+            },
+            {  
+                "cast_id":247,
+                "character":"Waitress (uncredited)",
+                "credit_id":"5587e5fe9251411e8d0064fa",
+                "gender":1,
+                "id":1480144,
+                "name":"Joti Nagra",
+                "order":82,
+                "profile_path":"/rAuG4k7HXzDyQx4g0XoOlEMHZC9.jpg"
+            },
+            {  
+                "cast_id":248,
+                "character":"Gala Museum Patron (uncredited)",
+                "credit_id":"5587e637c3a36827460076bf",
+                "gender":1,
+                "id":1480146,
+                "name":"Holly Neelie",
+                "order":83,
+                "profile_path":"/7FBv7asTCZ2fCKL33KPfZxHSj9B.jpg"
+            },
+            {  
+                "cast_id":249,
+                "character":"Extra (uncredited)",
+                "credit_id":"5587e6779251416b00001f29",
+                "gender":2,
+                "id":1480148,
+                "name":"Caleb Daniel Noal",
+                "order":84,
+                "profile_path":"/q3sirYG0Zbfp9JuRVGfrCv19gtW.jpg"
+            },
+            {  
+                "cast_id":250,
+                "character":"New York City Pedestrian (uncredited)",
+                "credit_id":"5587e77cc3a368273b00716c",
+                "gender":0,
+                "id":1480150,
+                "name":"Joseph O'Brien",
+                "order":85,
+                "profile_path":null
+            },
+            {  
+                "cast_id":251,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587e8cfc3a368273b00718b",
+                "gender":2,
+                "id":1480152,
+                "name":"Jeremy Orr",
+                "order":86,
+                "profile_path":"/4fwIUcP1lkC2CSewdefglieIDPL.jpg"
+            },
+            {  
+                "cast_id":252,
+                "character":"New York Pedestrian (uncredited)",
+                "credit_id":"5587e90292514179f600394d",
+                "gender":0,
+                "id":1480153,
+                "name":"Nate Paige",
+                "order":87,
+                "profile_path":null
+            },
+            {  
+                "cast_id":253,
+                "character":"Shiel Employee (uncredited)",
+                "credit_id":"5587e93a9251415aa9000687",
+                "gender":2,
+                "id":1365516,
+                "name":"Martin Palmer",
+                "order":88,
+                "profile_path":"/nHNZ9uJ02o1ID1Yr5IyRwwcVD73.jpg"
+            },
+            {  
+                "cast_id":254,
+                "character":"Museum Gala Guest (uncredited)",
+                "credit_id":"5587f00fc3a36833650060b7",
+                "gender":1,
+                "id":1480198,
+                "name":"Maria Perossa",
+                "order":89,
+                "profile_path":"/gf4Hl7iCPEPsfNL7CATKIaLBiOL.jpg"
+            },
+            {  
+                "cast_id":255,
+                "character":"Extra (uncredited)",
+                "credit_id":"5587f04492514168180015ac",
+                "gender":2,
+                "id":1480199,
+                "name":"Caleb Pieplow",
+                "order":90,
+                "profile_path":"/4IOic0eRnIZZFBu5LNui9LFsFub.jpg"
+            },
+            {  
+                "cast_id":256,
+                "character":"Helicarrier Shield Agent (uncredited)",
+                "credit_id":"5587f07fc3a3683853006220",
+                "gender":2,
+                "id":1480200,
+                "name":"Alexander Daniel Pimentel",
+                "order":91,
+                "profile_path":"/61mmYDFXhzoLGWp51dKdzMlahhR.jpg"
+            },
+            {  
+                "cast_id":257,
+                "character":"S.H.I.EL.D Agent - Loki Escort (uncredited)",
+                "credit_id":"5587f1ef92514168180015cd",
+                "gender":2,
+                "id":1480202,
+                "name":"Frank Powers",
+                "order":92,
+                "profile_path":"/gisDi6upDyITIEFAenbncAVV912.jpg"
+            },
+            {  
+                "cast_id":258,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587f2b6c3a36836ea005c11",
+                "gender":2,
+                "id":1371850,
+                "name":"Jaime Powers",
+                "order":93,
+                "profile_path":"/tFvFpbi1EnBZWLf1MWPuUVmUlFk.jpg"
+            },
+            {  
+                "cast_id":259,
+                "character":"Stuttgart Gala Patron (uncredited)",
+                "credit_id":"5587f33792514168180015e6",
+                "gender":2,
+                "id":1480204,
+                "name":"Brent Reichert",
+                "order":94,
+                "profile_path":"/ltoJixbHwY7OXuRkv8iintyVNCL.jpg"
+            },
+            {  
+                "cast_id":260,
+                "character":"S.H.E.I.L.D. Agent (uncredited)",
+                "credit_id":"5587f3ca9251416b00002052",
+                "gender":2,
+                "id":1480208,
+                "name":"Kelly Ruble",
+                "order":95,
+                "profile_path":"/1lATMNLTQKCUTrNNrMWwISe0ahb.jpg"
+            },
+            {  
+                "cast_id":261,
+                "character":"Restaurant Patron (uncredited)",
+                "credit_id":"5587f4009251411efc0009f0",
+                "gender":1,
+                "id":1454362,
+                "name":"Gina Sarno",
+                "order":96,
+                "profile_path":"/r0dXsObuAds3UainknypJcJj5Ds.jpg"
+            },
+            {  
+                "cast_id":262,
+                "character":"New York City Police Officer (uncredited)",
+                "credit_id":"5587f4a09251417f6f0072ec",
+                "gender":2,
+                "id":1480209,
+                "name":"Robert B. Schneider IV",
+                "order":97,
+                "profile_path":"/iRAYJfnTJ4ba3KRCdKELbbtucNa.jpg"
+            },
+            {  
+                "cast_id":263,
+                "character":"New York Police Officer in Firefight (uncredited)",
+                "credit_id":"5587f4d292514179f6003a45",
+                "gender":2,
+                "id":1480210,
+                "name":"Jeff Seich",
+                "order":98,
+                "profile_path":"/vtlhRg7O2shyaOofOY07GP8kqan.jpg"
+            },
+            {  
+                "cast_id":264,
+                "character":"Stuttgart Beer Garden Patron (uncredited)",
+                "credit_id":"5587f506c3a368274600784b",
+                "gender":0,
+                "id":1480211,
+                "name":"Christina Shaffer",
+                "order":99,
+                "profile_path":null
+            },
+            {  
+                "cast_id":265,
+                "character":"Lab Tech (uncredited)",
+                "credit_id":"5587f53cc3a3683853006264",
+                "gender":1,
+                "id":1480212,
+                "name":"Alonda Shevette",
+                "order":100,
+                "profile_path":"/gA6Dqc7q0v78vRwNIIxPvo15Uff.jpg"
+            },
+            {  
+                "cast_id":266,
+                "character":"Museum Gala Patron (uncredited)",
+                "credit_id":"5587f579c3a368274600785a",
+                "gender":2,
+                "id":1480213,
+                "name":"Douglas Slygh",
+                "order":101,
+                "profile_path":"/q1JdKgf1tYBbwIrkVDFchBdruCy.jpg"
+            },
+            {  
+                "cast_id":267,
+                "character":"S.H.I.E.L.D. Agent #4 (uncredited)",
+                "credit_id":"5587f5f5c3a36836ea005c50",
+                "gender":2,
+                "id":6037,
+                "name":"Colin Strause",
+                "order":102,
+                "profile_path":"/r5JVeKjHtc394izdBJs9T0hCH7L.jpg"
+            },
+            {  
+                "cast_id":268,
+                "character":"Gala Patron (uncredited)",
+                "credit_id":"5587f6689251417f6f007314",
+                "gender":2,
+                "id":1480218,
+                "name":"Robert P. Thitoff",
+                "order":103,
+                "profile_path":"/9Tsny7MEaquHUbZ6URBqllFYVDr.jpg"
+            },
+            {  
+                "cast_id":269,
+                "character":"S.H.I.E.L.D. Agent (uncredited)",
+                "credit_id":"5587f6fe9251416b00002096",
+                "gender":0,
+                "id":1480219,
+                "name":"George Thomas",
+                "order":104,
+                "profile_path":null
+            },
+            {  
+                "cast_id":270,
+                "character":"Pedestrian (uncredited)",
+                "credit_id":"5587f7d0c3a36836ea005c6e",
+                "gender":0,
+                "id":1480220,
+                "name":"Shane Thompson",
+                "order":105,
+                "profile_path":"/tqD5Ez4LgFQOV3SxUnOrlibGQe0.jpg"
+            },
+            {  
+                "cast_id":271,
+                "character":"Mercenary (uncredited)",
+                "credit_id":"5587f8049251411efc000a4e",
+                "gender":2,
+                "id":1480221,
+                "name":"Jerry Lee Tucker",
+                "order":106,
+                "profile_path":"/tiRv43n0hIwtUVqDORT4c4qxouM.jpg"
+            },
+            {  
+                "cast_id":272,
+                "character":"Child on News #1 (uncredited)",
+                "credit_id":"5587f844c3a36836ea005c7d",
+                "gender":2,
+                "id":1480222,
+                "name":"Tai Urban",
+                "order":107,
+                "profile_path":"/9JEPaQ4xJQ4x4srkAmHiVHTZ966.jpg"
+            },
+            {  
+                "cast_id":273,
+                "character":"Running Pedestrian (uncredited)",
+                "credit_id":"5587f87d9251417f6f007338",
+                "gender":2,
+                "id":1480223,
+                "name":"Chris Vaina",
+                "order":108,
+                "profile_path":"/r1uVfT7Lee9dCwJznVkLB85RfN5.jpg"
+            },
+            {  
+                "cast_id":274,
+                "character":"Sweeper (uncredited)",
+                "credit_id":"5587f8b39251416b000020b4",
+                "gender":1,
+                "id":1480224,
+                "name":"Sandra Weston",
+                "order":109,
+                "profile_path":"/fzsPJto04VSMgD05RJ5tGo3qGol.jpg"
+            },
+            {  
+                "cast_id":275,
+                "character":"Barbershop (uncredited)",
+                "credit_id":"5587f8f59251411efc000a5d",
+                "gender":2,
+                "id":1480226,
+                "name":"Seth Zielicke",
+                "order":110,
+                "profile_path":"/8Rf4aa0xLxJaiCF7mcxxehxODxi.jpg"
+            },
+            {  
+                "cast_id":281,
+                "character":"Tourist (uncredited)",
+                "credit_id":"57c9ee6d9251413de3001823",
+                "gender":2,
+                "id":1673576,
+                "name":"Alex DeCourville",
+                "order":111,
+                "profile_path":"/76lK48skKPLE0uvPQ4wqa2OtQ8F.jpg"
+            },
+            {  
+                "cast_id":282,
+                "character":"Gala Guest (uncredited)",
+                "credit_id":"57c9f91492514155b80014d0",
+                "gender":1,
+                "id":1636801,
+                "name":"Debbie Scaletta",
+                "order":112,
+                "profile_path":"/tQKHaaZLK9z6wJ3L8eEEF3dnuGs.jpg"
+            },
+            {  
+                "cast_id":283,
+                "character":"S.H.I.E.L.D agent (uncredited)",
+                "credit_id":"57ca1eef92514127950011e3",
+                "gender":1,
+                "id":1343164,
+                "name":"Andrea-Nichole Olivas",
+                "order":113,
+                "profile_path":"/agjZ63qFde1CdNd6vcGKabZIf7p.jpg"
+            },
+            {  
+                "cast_id":284,
+                "character":"NYC Pedestrian (uncredited)",
+                "credit_id":"57ca2108925141278d0012b6",
+                "gender":1,
+                "id":1376001,
+                "name":"Tina Grimm",
+                "order":114,
+                "profile_path":"/gVLoE5WlDTgqjneoEN9Ueum0QQM.jpg"
+            }
+        ],
+        "crew":[  
+            {  
+                "credit_id":"52fe4495c3a368484e02b1cf",
+                "department":"Sound",
+                "gender":2,
+                "id":37,
+                "job":"Original Music Composer",
+                "name":"Alan Silvestri",
+                "profile_path":"/chEsfnDEtRmv1bfOaNAoVEzhCc6.jpg"
+            },
+            {  
+                "credit_id":"5496018d9251416e1e0047c3",
+                "department":"Sound",
+                "gender":0,
+                "id":900,
+                "job":"Sound Designer",
+                "name":"Christopher Boyes",
+                "profile_path":"/qPYrAJif2AYqgUckgE9bEkjrdVw.jpg"
+            },
+            {  
+                "credit_id":"549601ad9251412c4e00333b",
+                "department":"Sound",
+                "gender":0,
+                "id":900,
+                "job":"Sound Re-Recording Mixer",
+                "name":"Christopher Boyes",
+                "profile_path":"/qPYrAJif2AYqgUckgE9bEkjrdVw.jpg"
+            },
+            {  
+                "credit_id":"56472df0c3a368261a0031bb",
+                "department":"Camera",
+                "gender":0,
+                "id":3285,
+                "job":"Director of Photography",
+                "name":"Seamus McGarvey",
+                "profile_path":"/yXEsxEMHlMDemBy8JrHZFAmd3uD.jpg"
+            },
+            {  
+                "credit_id":"539c4d08c3a36810c100214e",
+                "department":"Production",
+                "gender":1,
+                "id":7232,
+                "job":"Casting",
+                "name":"Sarah Finn",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4e35c3a36810c9002171",
+                "department":"Art",
+                "gender":2,
+                "id":6055,
+                "job":"Set Decoration",
+                "name":"Victor J. Zolfo",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549694d5c3a3686ae1006274",
+                "department":"Visual Effects",
+                "gender":2,
+                "id":6037,
+                "job":"Visual Effects Supervisor",
+                "name":"Colin Strause",
+                "profile_path":"/r5JVeKjHtc394izdBJs9T0hCH7L.jpg"
+            },
+            {  
+                "credit_id":"549694ec92514132ed004142",
+                "department":"Visual Effects",
+                "gender":2,
+                "id":6038,
+                "job":"Visual Effects Supervisor",
+                "name":"Greg Strause",
+                "profile_path":"/xcEcDFHoTkIuOkLeWRuX3ksJmy1.jpg"
+            },
+            {  
+                "credit_id":"59ae532f925141072304f687",
+                "department":"Production",
+                "gender":2,
+                "id":7624,
+                "job":"Executive Producer",
+                "name":"Stan Lee",
+                "profile_path":"/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+            },
+            {  
+                "credit_id":"59ae526ac3a3682c2204e2da",
+                "department":"Writing",
+                "gender":2,
+                "id":7624,
+                "job":"Comic Book",
+                "name":"Stan Lee",
+                "profile_path":"/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1b1",
+                "department":"Production",
+                "gender":2,
+                "id":7626,
+                "job":"Executive Producer",
+                "name":"Avi Arad",
+                "profile_path":"/kIG4HF5LSywU0ZdDheDaEsxxohu.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1c9",
+                "department":"Production",
+                "gender":2,
+                "id":10850,
+                "job":"Producer",
+                "name":"Kevin Feige",
+                "profile_path":"/AewbqQQT0FbcE358rcbopZ3zgDV.jpg"
+            },
+            {  
+                "credit_id":"570b898e9251413a0e0006c2",
+                "department":"Art",
+                "gender":0,
+                "id":8285,
+                "job":"Supervising Art Director",
+                "name":"Richard L. Johnson",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4d74c3a36810da002247",
+                "department":"Art",
+                "gender":2,
+                "id":9546,
+                "job":"Production Design",
+                "name":"James Chinlund",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a319c3a3686ae90044bd",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":12619,
+                "job":"Wigmaker",
+                "name":"Erwin H. Kupitz",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1ab",
+                "department":"Writing",
+                "gender":2,
+                "id":12891,
+                "job":"Screenplay",
+                "name":"Joss Whedon",
+                "profile_path":"/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1a1",
+                "department":"Directing",
+                "gender":2,
+                "id":12891,
+                "job":"Director",
+                "name":"Joss Whedon",
+                "profile_path":"/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1e7",
+                "department":"Writing",
+                "gender":2,
+                "id":12891,
+                "job":"Story",
+                "name":"Joss Whedon",
+                "profile_path":"/dTiVsuaTVTeGmvkhcyJvKp2A5kr.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b211",
+                "department":"Costume & Make-Up",
+                "gender":1,
+                "id":13009,
+                "job":"Costume Design",
+                "name":"Alexandra Byrne",
+                "profile_path":"/zQbgltu0mgT3HCmfi7DRHrhvEhL.jpg"
+            },
+            {  
+                "credit_id":"5496022e9251413af7003237",
+                "department":"Sound",
+                "gender":1,
+                "id":15893,
+                "job":"Sound Effects Editor",
+                "name":"Teresa Eckton",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a11a9251417a810039a9",
+                "department":"Crew",
+                "gender":0,
+                "id":14771,
+                "job":"Stunt Coordinator",
+                "name":"R.A. Rondell",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a334c3a3686af300568c",
+                "department":"Camera",
+                "gender":2,
+                "id":10832,
+                "job":"Additional Photography",
+                "name":"Gabriel Beristain",
+                "profile_path":"/zpy2AF6fmOFgZTKcLV1Wa3raQ9N.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1db",
+                "department":"Editing",
+                "gender":2,
+                "id":35176,
+                "job":"Editor",
+                "name":"Jeffrey Ford",
+                "profile_path":"/jcnSoKsJj7131oScRDmg8HMhK77.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1e1",
+                "department":"Writing",
+                "gender":2,
+                "id":11011,
+                "job":"Story",
+                "name":"Zak Penn",
+                "profile_path":"/tPwOS2wk8FFoWpXnDYK77bKcuWB.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b21d",
+                "department":"Writing",
+                "gender":2,
+                "id":18866,
+                "job":"Characters",
+                "name":"Jack Kirby",
+                "profile_path":"/xLVSa7mX1BCyVoKD2wyRGEQXj8M.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1c3",
+                "department":"Production",
+                "gender":2,
+                "id":15277,
+                "job":"Executive Producer",
+                "name":"Jon Favreau",
+                "profile_path":"/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg"
+            },
+            {  
+                "credit_id":"539c4d1dc3a368653d001b31",
+                "department":"Production",
+                "gender":1,
+                "id":20540,
+                "job":"Casting",
+                "name":"Randi Hiller",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4e08c3a36810e3002096",
+                "department":"Art",
+                "gender":0,
+                "id":20786,
+                "job":"Art Direction",
+                "name":"Randy Moore",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"56870683c3a3685f8900b82b",
+                "department":"Sound",
+                "gender":2,
+                "id":24192,
+                "job":"Music Supervisor",
+                "name":"Dave Jordan",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1b7",
+                "department":"Production",
+                "gender":0,
+                "id":41018,
+                "job":"Executive Producer",
+                "name":"Chris Brigham",
+                "profile_path":"/lbWFcY3aVB8vG7tWwBXILJM8jyH.jpg"
+            },
+            {  
+                "credit_id":"5495a4bb9251416e1e003fde",
+                "department":"Art",
+                "gender":0,
+                "id":41890,
+                "job":"Set Designer",
+                "name":"Marisa Frantz",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549603c0c3a3680ff50036b6",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":113123,
+                "job":"Visual Effects Producer",
+                "name":"Anouk Deveault-Moreau",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1bd",
+                "department":"Production",
+                "gender":2,
+                "id":57027,
+                "job":"Executive Producer",
+                "name":"Louis D'Esposito",
+                "profile_path":"/pNvtXPy8kil9WWFtySahnNbvc3R.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1f9",
+                "department":"Production",
+                "gender":2,
+                "id":113672,
+                "job":"Executive Producer",
+                "name":"Alan Fine",
+                "profile_path":"/7Ntt3WWg25ivLT8Os3LeZW1WxIC.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1f3",
+                "department":"Production",
+                "gender":0,
+                "id":113674,
+                "job":"Executive Producer",
+                "name":"Victoria Alonso",
+                "profile_path":"/xF7Qe1tqgk9KtY8kThKHBWhMqxc.jpg"
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b1ff",
+                "department":"Production",
+                "gender":0,
+                "id":113675,
+                "job":"Executive Producer",
+                "name":"Jeremy Latcham",
+                "profile_path":"/t0O2uclvVToZWwTkEBfaHHeH8fN.jpg"
+            },
+            {  
+                "credit_id":"5496a56fc3a3686ae1006429",
+                "department":"Crew",
+                "gender":0,
+                "id":95844,
+                "job":"Transportation Coordinator",
+                "name":"Jim Chesney",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"52fe4495c3a368484e02b205",
+                "department":"Editing",
+                "gender":0,
+                "id":1018965,
+                "job":"Editor",
+                "name":"Lisa Lassek",
+                "profile_path":"/eS72rb8ccHwtgTT4JcmWyycc4NY.jpg"
+            },
+            {  
+                "credit_id":"5495a4d192514132ed002a96",
+                "department":"Art",
+                "gender":0,
+                "id":1068055,
+                "job":"Set Designer",
+                "name":"Jim Hewitt",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4daec3a368653d001b53",
+                "department":"Art",
+                "gender":0,
+                "id":1172441,
+                "job":"Art Direction",
+                "name":"Gregory S. Hooper",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4eea0e0a267a4c002a91",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1319134,
+                "job":"Costume Supervisor",
+                "name":"Suzi Turnbull",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4d9cc3a36810e300208a",
+                "department":"Art",
+                "gender":1,
+                "id":1322017,
+                "job":"Art Direction",
+                "name":"Jann Engel",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549601cbc3a3686ae9004daf",
+                "department":"Sound",
+                "gender":0,
+                "id":1327030,
+                "job":"Sound Re-Recording Mixer",
+                "name":"Lora Hirschberg",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4e66c3a36810b5002075",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1329417,
+                "job":"Makeup Department Head",
+                "name":"John Blake",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4239251416e1e005781",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1330567,
+                "job":"Set Costumer",
+                "name":"Anthony Almaraz",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4d88c3a36810b5002066",
+                "department":"Art",
+                "gender":0,
+                "id":1330582,
+                "job":"Art Direction",
+                "name":"Benjamin Edelberg",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4dc0c3a36810c100216b",
+                "department":"Art",
+                "gender":0,
+                "id":1330583,
+                "job":"Art Direction",
+                "name":"William O. Hunter",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4eb90e0a267a5a002b5d",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1330584,
+                "job":"Costume Supervisor",
+                "name":"Rhonney Greene",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"539c4ece0e0a267a56002c14",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1330585,
+                "job":"Costume Supervisor",
+                "name":"Angelique Paull",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495ffe39251413f75003304",
+                "department":"Crew",
+                "gender":0,
+                "id":1335066,
+                "job":"Property Master",
+                "name":"Andrew Petrotta",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a521c3a3686ae1004793",
+                "department":"Art",
+                "gender":0,
+                "id":1336191,
+                "job":"Set Designer",
+                "name":"Sam Page",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496015cc3a3680fc6002fdd",
+                "department":"Sound",
+                "gender":0,
+                "id":1339446,
+                "job":"Supervising Sound Editor",
+                "name":"Frank E. Eulner",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549602089251413f7500333c",
+                "department":"Editing",
+                "gender":0,
+                "id":1339448,
+                "job":"Dialogue Editor",
+                "name":"Matthew Hartman",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a50ec3a3686ae3005ed5",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1339457,
+                "job":"Set Costumer",
+                "name":"Claire Sandrin",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"568706659251414ecb011f61",
+                "department":"Directing",
+                "gender":1,
+                "id":1339468,
+                "job":"Script Supervisor",
+                "name":"Trudy Ramirez",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549604b99251413af700327e",
+                "department":"Crew",
+                "gender":0,
+                "id":1347720,
+                "job":"Visual Effects Art Director",
+                "name":"Aaron McBride",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549600c39251416e1e0047b1",
+                "department":"Art",
+                "gender":0,
+                "id":1347734,
+                "job":"Assistant Art Director",
+                "name":"Stephen Morahan",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549602549251413af700323d",
+                "department":"Sound",
+                "gender":0,
+                "id":1352421,
+                "job":"Foley",
+                "name":"Sean England",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a48e92514130fc002f02",
+                "department":"Art",
+                "gender":0,
+                "id":1357047,
+                "job":"Set Designer",
+                "name":"Aric Cheng",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a3d39251412c4e002b30",
+                "department":"Art",
+                "gender":0,
+                "id":1357055,
+                "job":"Art Department Coordinator",
+                "name":"Candice Muriedas",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a4a19251412c4e002b44",
+                "department":"Art",
+                "gender":0,
+                "id":1360093,
+                "job":"Set Designer",
+                "name":"Tim Croshaw",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549604fe9251413af7003282",
+                "department":"Visual Effects",
+                "gender":2,
+                "id":1368873,
+                "job":"Visual Effects Producer",
+                "name":"Michel Mielke",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"54960547c3a3680ff50036e0",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1368875,
+                "job":"Visual Effects Producer",
+                "name":"Julie Orosz",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549601f1c3a3686af300478e",
+                "department":"Editing",
+                "gender":0,
+                "id":1376901,
+                "job":"Dialogue Editor",
+                "name":"Marshall Winn",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495ff3792514130fc003723",
+                "department":"Art",
+                "gender":0,
+                "id":1378220,
+                "job":"Leadman",
+                "name":"Jason Bedig",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549693309251416e1e005633",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1379986,
+                "job":"Visual Effects Supervisor",
+                "name":"Alessandro Cioffi",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496031e9251413f75003356",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1384368,
+                "job":"Visual Effects Producer",
+                "name":"Daniel Brimer",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a4f79251412c4e002b51",
+                "department":"Art",
+                "gender":0,
+                "id":1386908,
+                "job":"Set Designer",
+                "name":"Jeff Markwith",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496057a9251416e2b004d85",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1388871,
+                "job":"Visual Effects Producer",
+                "name":"Susan Pickett",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a4339251413f75002af0",
+                "department":"Art",
+                "gender":0,
+                "id":1389128,
+                "job":"Assistant Art Director",
+                "name":"Nick S. Cross",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a4089251413af7002a30",
+                "department":"Art",
+                "gender":0,
+                "id":1389131,
+                "job":"Construction Coordinator",
+                "name":"John Hoskins",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4da9251413f750042d5",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1392143,
+                "job":"Set Costumer",
+                "name":"Bob Moore Jr.",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a6b59251417162000f61",
+                "department":"Production",
+                "gender":0,
+                "id":1392947,
+                "job":"Location Manager",
+                "name":"Aaron Spaulding",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549604a29251417a81002949",
+                "department":"Crew",
+                "gender":0,
+                "id":1394753,
+                "job":"Visual Effects Editor",
+                "name":"George McCarthy",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549694889251413f7500418a",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1394961,
+                "job":"Visual Effects Supervisor",
+                "name":"Daniel P. Rosen",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a48392514132ed004294",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1395030,
+                "job":"Set Costumer",
+                "name":"Alison Evans",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496037692514130fc003779",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1395320,
+                "job":"Visual Effects Producer",
+                "name":"Sean Cushing",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a17ec3a3681153003dd8",
+                "department":"Camera",
+                "gender":2,
+                "id":1395463,
+                "job":"Camera Operator",
+                "name":"Mitch Dubin",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a155c3a3686ae10063ca",
+                "department":"Camera",
+                "gender":0,
+                "id":1399071,
+                "job":"Camera Operator",
+                "name":"Hans Bjerno",
+                "profile_path":"/tzeE3ATzHWyEQH32GYeGuSgr1xz.jpg"
+            },
+            {  
+                "credit_id":"5496a6f5c3a3680ff5004817",
+                "department":"Production",
+                "gender":0,
+                "id":1399893,
+                "job":"Location Manager",
+                "name":"Tom Moisides",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a1ecc3a3686ae3005e89",
+                "department":"Camera",
+                "gender":0,
+                "id":1400082,
+                "job":"Still Photographer",
+                "name":"Zade Rosenthal",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549600fac3a3686ae1005125",
+                "department":"Crew",
+                "gender":0,
+                "id":1400488,
+                "job":"Scenic Artist",
+                "name":"Victor Morales",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549694559251416e2b005db9",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1400560,
+                "job":"Visual Effects Supervisor",
+                "name":"Erik Nash",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"54969423c3a3680fc6003e11",
+                "department":"Visual Effects",
+                "gender":2,
+                "id":1401722,
+                "job":"Visual Effects Supervisor",
+                "name":"Matt McDonald",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496052d9251412c4e003396",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401793,
+                "job":"Visual Effects Producer",
+                "name":"Cyndi Ochs",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496958ec3a3686ae1006284",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401803,
+                "job":"Visual Effects Supervisor",
+                "name":"Guy Williams",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a3459251416e1e003fad",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1401821,
+                "job":"Hairstylist",
+                "name":"Tijen Osman",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a3729251413f75002ad7",
+                "department":"Production",
+                "gender":0,
+                "id":1401823,
+                "job":"Production Supervisor",
+                "name":"Don J. Hug",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a3909251412c4e002b25",
+                "department":"Production",
+                "gender":0,
+                "id":1401824,
+                "job":"Production Supervisor",
+                "name":"Nadia Paine",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495a3abc3a3686af3003fae",
+                "department":"Art",
+                "gender":0,
+                "id":1401825,
+                "job":"Art Department Coordinator",
+                "name":"Marcella Brennan",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495ff699251416e1e004793",
+                "department":"Art",
+                "gender":0,
+                "id":1401884,
+                "job":"Sculptor",
+                "name":"Yann Denoual",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5495ff90c3a3686ae100510a",
+                "department":"Art",
+                "gender":0,
+                "id":1401885,
+                "job":"Sculptor",
+                "name":"Clark Kelly",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496000f9251417a810028d5",
+                "department":"Art",
+                "gender":0,
+                "id":1401886,
+                "job":"Leadman",
+                "name":"John Millard",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496005e9251412c4e003310",
+                "department":"Art",
+                "gender":0,
+                "id":1401887,
+                "job":"Sculptor",
+                "name":"Duncan Crawford",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549602ce9251413af700324d",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401890,
+                "job":"Visual Effects Producer",
+                "name":"Jeff Atherton",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549603019251413af7003253",
+                "department":"Crew",
+                "gender":0,
+                "id":1401891,
+                "job":"Visual Effects Editor",
+                "name":"Jeremy Bradley",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549603489251413af700325d",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401892,
+                "job":"Visual Effects Producer",
+                "name":"Mihaela Chifor",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549603a1c3a3681153002fc2",
+                "department":"Crew",
+                "gender":0,
+                "id":1401893,
+                "job":"Visual Effects Editor",
+                "name":"Lorelei David",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"54960422c3a3686ae9004dff",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401894,
+                "job":"Visual Effects Producer",
+                "name":"John L. Jack",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496047692514130fc00379c",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401895,
+                "job":"Visual Effects Producer",
+                "name":"Kathleen Lynch",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549604db9251412c4e00338d",
+                "department":"Crew",
+                "gender":0,
+                "id":1401896,
+                "job":"Visual Effects Editor",
+                "name":"James Meikle",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549605a0c3a3680fc6003032",
+                "department":"Crew",
+                "gender":0,
+                "id":1401897,
+                "job":"Visual Effects Editor",
+                "name":"Danny Rafic",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549605e39251412c4e0033a7",
+                "department":"Crew",
+                "gender":0,
+                "id":1401898,
+                "job":"Visual Effects Editor",
+                "name":"Cameron Sharp",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"54960630c3a3681153002ff7",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401899,
+                "job":"Visual Effects Producer",
+                "name":"Georg Wieland",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549693809251413f75004179",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401965,
+                "job":"Visual Effects Supervisor",
+                "name":"Bryan Grill",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549693a99251417315000e69",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401966,
+                "job":"Visual Effects Supervisor",
+                "name":"Venti Hristova",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549693dd9251417315000e6f",
+                "department":"Crew",
+                "gender":0,
+                "id":1401967,
+                "job":"Visual Effects Art Director",
+                "name":"Alex Jaeger",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549694b792514132ed00413d",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401968,
+                "job":"Visual Effects Supervisor",
+                "name":"Janek Sirrs",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"549695019251416e2b005dc8",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401970,
+                "job":"Visual Effects Supervisor",
+                "name":"Nigel Sumner",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496956cc3a36831b800370b",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401971,
+                "job":"Visual Effects Supervisor",
+                "name":"Jeff White",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a1bfc3a36831b800384d",
+                "department":"Camera",
+                "gender":0,
+                "id":1401987,
+                "job":"Camera Operator",
+                "name":"Christopher A. Schenck",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a228c3a3680fc6003f63",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401988,
+                "job":"Lighting Technician",
+                "name":"Chris Napolitano",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a23cc3a3686ae3005e8e",
+                "department":"Camera",
+                "gender":2,
+                "id":1401989,
+                "job":"Camera Operator",
+                "name":"John S. Moyer",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a280c3a36831b800385d",
+                "department":"Crew",
+                "gender":0,
+                "id":1401990,
+                "job":"Video Assist Operator",
+                "name":"Kevin McKenna",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a29d9251416e2b005f17",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401991,
+                "job":"Lighting Technician",
+                "name":"Jason Linebaugh",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a2ba92514132ed004267",
+                "department":"Crew",
+                "gender":0,
+                "id":1401992,
+                "job":"Video Assist Operator",
+                "name":"Jimi Johnson",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a2d4c3a3686ae3005e9a",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401993,
+                "job":"Lighting Technician",
+                "name":"Sherman Jackson",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a31ac3a3686af3005687",
+                "department":"Camera",
+                "gender":0,
+                "id":1401994,
+                "job":"Additional Photography",
+                "name":"Michael Burgess",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a3559251417a810039d2",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401995,
+                "job":"Lighting Technician",
+                "name":"Russell Ayer",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a36e92514130fc0047bd",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401996,
+                "job":"Lighting Technician",
+                "name":"David M. Adams",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a3a79251417a810039dc",
+                "department":"Lighting",
+                "gender":0,
+                "id":1401997,
+                "job":"Gaffer",
+                "name":"Bill O'Leary",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a3edc3a3681153003e13",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1401998,
+                "job":"Animation Director",
+                "name":"Tom Meade",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a43a9251417a810039f2",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1401999,
+                "job":"Set Costumer",
+                "name":"Paul John Carli",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4569251416e2b005f45",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402000,
+                "job":"Set Costumer",
+                "name":"Scott T. Coppock",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a46b92514132ed00428e",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402001,
+                "job":"Set Costumer",
+                "name":"Emily Egge",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4a9c3a3680ff50047fc",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402002,
+                "job":"Set Costumer",
+                "name":"Askia Won-Ling Jacob",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4c19251413f750042cf",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402003,
+                "job":"Set Costumer",
+                "name":"Carol McLennan",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a4f3c3a3686ae1006418",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402004,
+                "job":"Set Costumer",
+                "name":"Aura Sperling Pierce",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a524c3a3686ae3005ed8",
+                "department":"Costume & Make-Up",
+                "gender":0,
+                "id":1402005,
+                "job":"Set Costumer",
+                "name":"Jesse Trevino",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a552c3a3686ae9005f6d",
+                "department":"Sound",
+                "gender":0,
+                "id":1402006,
+                "job":"Music Editor",
+                "name":"Steve Durkee",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a5ad9251417a81003a23",
+                "department":"Crew",
+                "gender":0,
+                "id":1402007,
+                "job":"Translator",
+                "name":"Tatiana Chapman",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a5d2c3a3686af30056b9",
+                "department":"Crew",
+                "gender":1,
+                "id":1402008,
+                "job":"Dialect Coach",
+                "name":"Kathleen S. Dunn",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a5fdc3a3681153003e3b",
+                "department":"Crew",
+                "gender":0,
+                "id":1402009,
+                "job":"Studio Teachers",
+                "name":"Allegro Hopkins",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a673c3a3686ae9005f85",
+                "department":"Crew",
+                "gender":0,
+                "id":1402010,
+                "job":"Studio Teachers",
+                "name":"Kristy Viera",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a6d1c3a3686af30056d4",
+                "department":"Production",
+                "gender":0,
+                "id":1402011,
+                "job":"Location Manager",
+                "name":"David Rumble",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a70dc3a3681153003e4b",
+                "department":"Production",
+                "gender":0,
+                "id":1402012,
+                "job":"Publicist",
+                "name":"Ruben Malaret",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a7269251417315000ffe",
+                "department":"Production",
+                "gender":0,
+                "id":1402013,
+                "job":"Location Manager",
+                "name":"Scott Allen Logan",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5496a73ec3a3680fc6003fc2",
+                "department":"Crew",
+                "gender":0,
+                "id":1402014,
+                "job":"Unit Publicist",
+                "name":"Ken Lingad",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"571260d8c3a368663600348e",
+                "department":"Crew",
+                "gender":0,
+                "id":1407019,
+                "job":"Visual Effects Editor",
+                "name":"Mark Edward Wright",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"553c29eac3a368784500b344",
+                "department":"Crew",
+                "gender":2,
+                "id":1412756,
+                "job":"Visual Effects Editor",
+                "name":"Chris O'Connell",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5518ccfc92514115000033a7",
+                "department":"Writing",
+                "gender":0,
+                "id":1447326,
+                "job":"Storyboard",
+                "name":"Jane Wu",
+                "profile_path":"/Ypw5qKAimytqBFYfwSA5mbSHyD.jpg"
+            },
+            {  
+                "credit_id":"553d5a32c3a368066d001daf",
+                "department":"Visual Effects",
+                "gender":2,
+                "id":1450362,
+                "job":"Visual Effects",
+                "name":"Scott F. Johnston",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"5534071a92514110140041b1",
+                "department":"Crew",
+                "gender":0,
+                "id":1456696,
+                "job":"Compositors",
+                "name":"Brian N. Bentley",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"553b29799251412c270007fb",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1457930,
+                "job":"Visual Effects",
+                "name":"James Baker",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"553ea6c59251411f40000066",
+                "department":"Crew",
+                "gender":0,
+                "id":1457935,
+                "job":"Compositors",
+                "name":"Michael Queen",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"55495951c3a36841b20008a6",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1459736,
+                "job":"Animation",
+                "name":"Travis Tohill",
+                "profile_path":null
+            },
+            {  
+                "credit_id":"55519b10c3a368426f003468",
+                "department":"Visual Effects",
+                "gender":0,
+                "id":1463568,
+                "job":"Visual Effects",
+                "name":"Mike Marcuzzi",
+                "profile_path":null
+            }
+        ]
+    },
+    "images":{  
+        "backdrops":[  
+
+        ],
+        "posters":[  
+
+        ]
+    },
+    "keywords":{  
+        "keywords":[  
+            {  
+                "id":242,
+                "name":"new york"
+            },
+            {  
+                "id":5539,
+                "name":"shield"
+            },
+            {  
+                "id":8828,
+                "name":"marvel comic"
+            },
+            {  
+                "id":9715,
+                "name":"superhero"
+            },
+            {  
+                "id":9717,
+                "name":"based on comic book"
+            },
+            {  
+                "id":14909,
+                "name":"alien invasion"
+            },
+            {  
+                "id":155030,
+                "name":"superhero team"
+            },
+            {  
+                "id":179430,
+                "name":"aftercreditsstinger"
+            },
+            {  
+                "id":179431,
+                "name":"duringcreditsstinger"
+            },
+            {  
+                "id":180547,
+                "name":"marvel cinematic universe"
+            }
+        ]
+    },
+    "releases":{  
+        "countries":[  
+            {  
+                "certification":"PG-13",
+                "iso_3166_1":"US",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"DE",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"T",
+                "iso_3166_1":"IT",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"U",
+                "iso_3166_1":"FR",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"Qatar Cinemas",
+                "iso_3166_1":"QA",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"TW",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"M",
+                "iso_3166_1":"AU",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"HU",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"11",
+                "iso_3166_1":"DK",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"10V",
+                "iso_3166_1":"ZA",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"11",
+                "iso_3166_1":"SE",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"CZ",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"ES",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"12+",
+                "iso_3166_1":"LV",
+                "primary":false,
+                "release_date":"2012-05-01"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"IL",
+                "primary":false,
+                "release_date":"2012-05-10"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"BE",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"NL",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"NZ",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PH",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"M/12",
+                "iso_3166_1":"PT",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"AR",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"CL",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"DO",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"Κ-13",
+                "iso_3166_1":"GR",
+                "primary":false,
+                "release_date":"2012-04-25"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"HK",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"IE",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"MY",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PE",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"12세 이상 관람가",
+                "iso_3166_1":"KR",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"CO",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"CR",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"FI",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"GT",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"IS",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"IN",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"MX",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"NO",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PA",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PY",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"UY",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"VN",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"BG",
+                "primary":false,
+                "release_date":"2012-05-01"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"SG",
+                "primary":false,
+                "release_date":"2012-05-01"
+            },
+            {  
+                "certification":"PG-13",
+                "iso_3166_1":"TH",
+                "primary":false,
+                "release_date":"2012-05-01"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"BH",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"HR",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"KW",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"RU",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"SI",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"UA",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"PG",
+                "iso_3166_1":"CA",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"EE",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"ID",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"LT",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"RO",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"TR",
+                "primary":false,
+                "release_date":"2012-05-04"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"AM",
+                "primary":false,
+                "release_date":"2012-05-10"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PK",
+                "primary":false,
+                "release_date":"2012-05-11"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"PL",
+                "primary":false,
+                "release_date":"2012-05-11"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"MK",
+                "primary":false,
+                "release_date":"2012-05-11"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"KH",
+                "primary":false,
+                "release_date":"2012-05-17"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"GE",
+                "primary":false,
+                "release_date":"2012-05-31"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"JP",
+                "primary":false,
+                "release_date":"2012-08-14"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"AT",
+                "primary":false,
+                "release_date":"2012-04-26"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"KZ",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"",
+                "iso_3166_1":"BD",
+                "primary":false,
+                "release_date":"2012-08-03"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"SK",
+                "primary":false,
+                "release_date":"2012-05-03"
+            },
+            {  
+                "certification":"12",
+                "iso_3166_1":"BR",
+                "primary":false,
+                "release_date":"2012-04-27"
+            },
+            {  
+                "certification":"12A",
+                "iso_3166_1":"GB",
+                "primary":false,
+                "release_date":"2012-04-26"
+            }
+        ]
+    },
+    "reviews":{  
+        "page":1,
+        "results":[  
+            {  
+                "id":"4fce8f8819c29523880000de",
+                "author":"xenocast",
+                "content":"With a movie like this you wonder how all of the otherwise, main characters will work together and support the story.\r\n\r\nNo problems here.  While as might be expected, R. Downey Jr. comes across largely central, it is still a good mix and IMHO the best scenes in the movie involve the generated Hulk character.\r\n\r\nWith that kind of successful melding of characters, Hollywood-scale egos and even computer generated characters; you have to give it up to the writers and director to make this the successful film that it is.",
+                "url":"https://www.themoviedb.org/review/4fce8f8819c29523880000de"
+            }
+        ],
+        "total_pages":1,
+        "total_results":1
+    },
+    "similar":{  
+        "page":1,
+        "results":[  
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    878
+                ],
+                "id":1771,
+                "original_language":"en",
+                "original_title":"Captain America: The First Avenger",
+                "overview":"Predominantly set during World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
+                "release_date":"2011-07-22",
+                "poster_path":"/default-poster.jpg",
+                "popularity":154.482954,
+                "title":"Captain America: The First Avenger",
+                "video":false,
+                "vote_average":6.6,
+                "vote_count":7100
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    14,
+                    878
+                ],
+                "id":8536,
+                "original_language":"en",
+                "original_title":"Superman II",
+                "overview":"Three escaped criminals from the planet Krypton test the Man of Steel's mettle. Led by Gen. Zod, the Kryptonians take control of the White House and partner with Lex Luthor to destroy Superman and rule the world. But Superman, who attempts to make himself human in order to get closer to Lois, realizes he has a responsibility to save the planet.",
+                "release_date":"1980-12-04",
+                "poster_path":"/default-poster.jpg",
+                "popularity":29.927492,
+                "title":"Superman II",
+                "video":false,
+                "vote_average":6.5,
+                "vote_count":629
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    878,
+                    28,
+                    12
+                ],
+                "id":1724,
+                "original_language":"en",
+                "original_title":"The Incredible Hulk",
+                "overview":"Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+                "release_date":"2008-06-12",
+                "poster_path":"/default-poster.jpg",
+                "popularity":119.806211,
+                "title":"The Incredible Hulk",
+                "video":false,
+                "vote_average":6.1,
+                "vote_count":3045
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    14,
+                    878
+                ],
+                "id":49521,
+                "original_language":"en",
+                "original_title":"Man of Steel",
+                "overview":"A young boy learns that he has extraordinary powers and is not of this earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.",
+                "release_date":"2013-06-12",
+                "poster_path":"/default-poster.jpg",
+                "popularity":243.943708,
+                "title":"Man of Steel",
+                "video":false,
+                "vote_average":6.5,
+                "vote_count":6360
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    14,
+                    878
+                ],
+                "id":1924,
+                "original_language":"en",
+                "original_title":"Superman",
+                "overview":"Mild-mannered Clark Kent works as a reporter at the Daily Planet alongside his crush, Lois Lane − who's in love with Superman. Clark must summon his superhero alter ego when the nefarious Lex Luthor launches a plan to take over the world.",
+                "release_date":"1978-12-13",
+                "poster_path":"/default-poster.jpg",
+                "popularity":48.173295,
+                "title":"Superman",
+                "video":false,
+                "vote_average":6.9,
+                "vote_count":1025
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    35,
+                    28,
+                    12,
+                    14,
+                    878
+                ],
+                "id":9531,
+                "original_language":"en",
+                "original_title":"Superman III",
+                "overview":"Aiming to defeat the Man of Steel, wealthy executive Ross Webster hires bumbling but brilliant Gus Gorman to develop synthetic kryptonite, which yields some unexpected psychological effects in the third installment of the 1980s Superman franchise. Between rekindling romance with his high school sweetheart and saving himself, Superman must contend with a powerful supercomputer.",
+                "release_date":"1983-06-17",
+                "poster_path":"/default-poster.jpg",
+                "popularity":25.856852,
+                "title":"Superman III",
+                "video":false,
+                "vote_average":5.3,
+                "vote_count":490
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    12,
+                    14,
+                    28,
+                    878
+                ],
+                "id":1452,
+                "original_language":"en",
+                "original_title":"Superman Returns",
+                "overview":"Superman returns to discover his 5-year absence has allowed Lex Luthor to walk free, and that those he was closest too felt abandoned and have moved on. Luthor plots his ultimate revenge that could see millions killed and change the face of the planet forever, as well as ridding himself of the Man of Steel.",
+                "release_date":"2006-06-28",
+                "poster_path":"/default-poster.jpg",
+                "popularity":58.495726,
+                "title":"Superman Returns",
+                "video":false,
+                "vote_average":5.4,
+                "vote_count":1401
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    878
+                ],
+                "id":99861,
+                "original_language":"en",
+                "original_title":"Avengers: Age of Ultron",
+                "overview":"When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+                "release_date":"2015-04-22",
+                "poster_path":"/default-poster.jpg",
+                "popularity":268.999946,
+                "title":"Avengers: Age of Ultron",
+                "video":false,
+                "vote_average":7.3,
+                "vote_count":6822
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    16
+                ],
+                "id":379291,
+                "original_language":"en",
+                "original_title":"Justice League vs. Teen Titans",
+                "overview":"Robin is sent by Batman to work with the Teen Titans after his volatile behavior botches up a Justice League mission. The Titans must then step up to face Trigon after he possesses the League and threatens to conquer the world.",
+                "release_date":"2016-03-29",
+                "poster_path":"/default-poster.jpg",
+                "popularity":10.361889,
+                "title":"Justice League vs. Teen Titans",
+                "video":false,
+                "vote_average":6.8,
+                "vote_count":170
+            },
+            {  
+                "adult":false,
+                "backdrop_path":null,
+                "genre_ids":[  
+                    28,
+                    12,
+                    878
+                ],
+                "id":299534,
+                "original_language":"en",
+                "original_title":"Avengers: Infinity War Part 2",
+                "overview":"Plot unknown.",
+                "release_date":"2019-04-24",
+                "poster_path":null,
+                "popularity":9.510818,
+                "title":"Avengers: Infinity War Part 2",
+                "video":false,
+                "vote_average":0.0,
+                "vote_count":9
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    16,
+                    878
+                ],
+                "id":13640,
+                "original_language":"en",
+                "original_title":"Superman: Doomsday",
+                "overview":"When LexCorps accidentally unleash a murderous creature, Doomsday, Superman meets his greatest challenge as a champion. Based on the \"The Death of Superman\" storyline that appeared in DC Comics' publications in the 1990s",
+                "release_date":"2007-09-18",
+                "poster_path":"/default-poster.jpg",
+                "popularity":8.097080999999999,
+                "title":"Superman: Doomsday",
+                "video":false,
+                "vote_average":6.5,
+                "vote_count":135
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    80,
+                    18
+                ],
+                "id":272,
+                "original_language":"en",
+                "original_title":"Batman Begins",
+                "overview":"Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+                "release_date":"2005-06-10",
+                "poster_path":"/default-poster.jpg",
+                "popularity":297.672485,
+                "title":"Batman Begins",
+                "video":false,
+                "vote_average":7.5,
+                "vote_count":7416
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    878,
+                    12
+                ],
+                "id":1726,
+                "original_language":"en",
+                "original_title":"Iron Man",
+                "overview":"After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+                "release_date":"2008-04-30",
+                "poster_path":"/default-poster.jpg",
+                "popularity":355.778216,
+                "title":"Iron Man",
+                "video":false,
+                "vote_average":7.4,
+                "vote_count":8846
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    18,
+                    28,
+                    80,
+                    53
+                ],
+                "id":155,
+                "original_language":"en",
+                "original_title":"The Dark Knight",
+                "overview":"Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+                "release_date":"2008-07-16",
+                "poster_path":"/default-poster.jpg",
+                "popularity":596.12748,
+                "title":"The Dark Knight",
+                "video":false,
+                "vote_average":8.199999999999999,
+                "vote_count":12115
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    14,
+                    878
+                ],
+                "id":9738,
+                "original_language":"en",
+                "original_title":"Fantastic Four",
+                "overview":"During a space voyage, four scientists are altered by cosmic rays: Reed Richards gains the ability to stretch his body; Sue Storm can become invisible; Johnny Storm controls fire; and Ben Grimm is turned into a super-strong … thing. Together, these \"Fantastic Four\" must now thwart the evil plans of Dr. Doom and save the world from certain destruction.",
+                "release_date":"2005-06-29",
+                "poster_path":"/default-poster.jpg",
+                "popularity":119.520156,
+                "title":"Fantastic Four",
+                "video":false,
+                "vote_average":5.5,
+                "vote_count":2993
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    14
+                ],
+                "id":76338,
+                "original_language":"en",
+                "original_title":"Thor: The Dark World",
+                "overview":"Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+                "release_date":"2013-10-29",
+                "poster_path":"/default-poster.jpg",
+                "popularity":205.944944,
+                "title":"Thor: The Dark World",
+                "video":false,
+                "vote_average":6.8,
+                "vote_count":4800
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    28,
+                    12,
+                    16,
+                    80,
+                    878
+                ],
+                "id":69735,
+                "original_language":"en",
+                "original_title":"Batman: Year One",
+                "overview":"Two men come to Gotham City: Bruce Wayne after years abroad feeding his lifelong obsession for justice and Jim Gordon after being too honest a cop with the wrong people elsewhere. After learning painful lessons about the city's corruption on its streets and police department respectively, this pair learn how to fight back their own way. With that, Gotham's evildoers from top to bottom are terrorized by the mysterious Batman and the equally heroic Gordon is assigned to catch him by comrades who both hate and fear him themselves. In the ensuing manhunt, both find much in common as the seeds of an unexpected friendship are laid with additional friends and rivals helping to start the legend.",
+                "release_date":"2011-09-27",
+                "poster_path":"/default-poster.jpg",
+                "popularity":15.496795,
+                "title":"Batman: Year One",
+                "video":false,
+                "vote_average":7.1,
+                "vote_count":252
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    878,
+                    28,
+                    12
+                ],
+                "id":102899,
+                "original_language":"en",
+                "original_title":"Ant-Man",
+                "overview":"Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
+                "release_date":"2015-07-14",
+                "poster_path":"/default-poster.jpg",
+                "popularity":234.188303,
+                "title":"Ant-Man",
+                "video":false,
+                "vote_average":7.0,
+                "vote_count":5926
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    12,
+                    28,
+                    878
+                ],
+                "id":10138,
+                "original_language":"en",
+                "original_title":"Iron Man 2",
+                "overview":"With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press and the public to share his technology with the military. Unwilling to let go of his invention, Stark, with Pepper Potts and James 'Rhodey' Rhodes at his side, must forge new alliances – and confront powerful enemies.",
+                "release_date":"2010-04-28",
+                "poster_path":"/default-poster.jpg",
+                "popularity":265.944525,
+                "title":"Iron Man 2",
+                "video":false,
+                "vote_average":6.6,
+                "vote_count":6899
+            },
+            {  
+                "adult":false,
+                "backdrop_path":"/default-backdrop.jpg",
+                "genre_ids":[  
+                    12,
+                    14,
+                    28
+                ],
+                "id":10195,
+                "original_language":"en",
+                "original_title":"Thor",
+                "overview":"Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+                "release_date":"2011-04-21",
+                "poster_path":"/default-poster.jpg",
+                "popularity":262.301663,
+                "title":"Thor",
+                "video":false,
+                "vote_average":6.6,
+                "vote_count":6579
+            }
+        ],
+        "total_pages":14,
+        "total_results":275
+    },
+    "translations":{  
+        "translations":[  
+            {  
+                "iso_639_1":"bg",
+                "iso_3166_1":"BG",
+                "name":"български език",
+                "english_name":"Bulgarian"
+            },
+            {  
+                "iso_639_1":"cs",
+                "iso_3166_1":"CZ",
+                "name":"Český",
+                "english_name":"Czech"
+            },
+            {  
+                "iso_639_1":"da",
+                "iso_3166_1":"DK",
+                "name":"Dansk",
+                "english_name":"Danish"
+            },
+            {  
+                "iso_639_1":"de",
+                "iso_3166_1":"DE",
+                "name":"Deutsch",
+                "english_name":"German"
+            },
+            {  
+                "iso_639_1":"el",
+                "iso_3166_1":"GR",
+                "name":"ελληνικά",
+                "english_name":"Greek"
+            },
+            {  
+                "iso_639_1":"en",
+                "iso_3166_1":"US",
+                "name":"English",
+                "english_name":"English"
+            },
+            {  
+                "iso_639_1":"es",
+                "iso_3166_1":"ES",
+                "name":"Español",
+                "english_name":"Spanish"
+            },
+            {  
+                "iso_639_1":"es",
+                "iso_3166_1":"MX",
+                "name":"Español",
+                "english_name":"Spanish"
+            },
+            {  
+                "iso_639_1":"fa",
+                "iso_3166_1":"IR",
+                "name":"فارسی",
+                "english_name":"Persian"
+            },
+            {  
+                "iso_639_1":"fi",
+                "iso_3166_1":"FI",
+                "name":"suomi",
+                "english_name":"Finnish"
+            },
+            {  
+                "iso_639_1":"fr",
+                "iso_3166_1":"CA",
+                "name":"Français",
+                "english_name":"French"
+            },
+            {  
+                "iso_639_1":"fr",
+                "iso_3166_1":"FR",
+                "name":"Français",
+                "english_name":"French"
+            },
+            {  
+                "iso_639_1":"he",
+                "iso_3166_1":"IL",
+                "name":"עִבְרִית",
+                "english_name":"Hebrew"
+            },
+            {  
+                "iso_639_1":"hr",
+                "iso_3166_1":"HR",
+                "name":"Hrvatski",
+                "english_name":"Croatian"
+            },
+            {  
+                "iso_639_1":"hu",
+                "iso_3166_1":"HU",
+                "name":"Magyar",
+                "english_name":"Hungarian"
+            },
+            {  
+                "iso_639_1":"id",
+                "iso_3166_1":"ID",
+                "name":"Bahasa indonesia",
+                "english_name":"Indonesian"
+            },
+            {  
+                "iso_639_1":"it",
+                "iso_3166_1":"IT",
+                "name":"Italiano",
+                "english_name":"Italian"
+            },
+            {  
+                "iso_639_1":"ja",
+                "iso_3166_1":"JP",
+                "name":"日本語",
+                "english_name":"Japanese"
+            },
+            {  
+                "iso_639_1":"ko",
+                "iso_3166_1":"KR",
+                "name":"한국어/조선말",
+                "english_name":"Korean"
+            },
+            {  
+                "iso_639_1":"lv",
+                "iso_3166_1":"LV",
+                "name":"Latviešu",
+                "english_name":"Latvian"
+            },
+            {  
+                "iso_639_1":"nl",
+                "iso_3166_1":"NL",
+                "name":"Nederlands",
+                "english_name":"Dutch"
+            },
+            {  
+                "iso_639_1":"no",
+                "iso_3166_1":"NO",
+                "name":"Norsk",
+                "english_name":"Norwegian"
+            },
+            {  
+                "iso_639_1":"pl",
+                "iso_3166_1":"PL",
+                "name":"Polski",
+                "english_name":"Polish"
+            },
+            {  
+                "iso_639_1":"pt",
+                "iso_3166_1":"BR",
+                "name":"Português",
+                "english_name":"Portuguese"
+            },
+            {  
+                "iso_639_1":"pt",
+                "iso_3166_1":"PT",
+                "name":"Português",
+                "english_name":"Portuguese"
+            },
+            {  
+                "iso_639_1":"ro",
+                "iso_3166_1":"RO",
+                "name":"Română",
+                "english_name":"Romanian"
+            },
+            {  
+                "iso_639_1":"ru",
+                "iso_3166_1":"RU",
+                "name":"Pусский",
+                "english_name":"Russian"
+            },
+            {  
+                "iso_639_1":"sk",
+                "iso_3166_1":"SK",
+                "name":"Slovenčina",
+                "english_name":"Slovak"
+            },
+            {  
+                "iso_639_1":"sr",
+                "iso_3166_1":"RS",
+                "name":"Srpski",
+                "english_name":"Serbian"
+            },
+            {  
+                "iso_639_1":"sv",
+                "iso_3166_1":"SE",
+                "name":"svenska",
+                "english_name":"Swedish"
+            },
+            {  
+                "iso_639_1":"th",
+                "iso_3166_1":"TH",
+                "name":"ภาษาไทย",
+                "english_name":"Thai"
+            },
+            {  
+                "iso_639_1":"tr",
+                "iso_3166_1":"TR",
+                "name":"Türkçe",
+                "english_name":"Turkish"
+            },
+            {  
+                "iso_639_1":"uk",
+                "iso_3166_1":"UA",
+                "name":"Український",
+                "english_name":"Ukrainian"
+            },
+            {  
+                "iso_639_1":"vi",
+                "iso_3166_1":"VN",
+                "name":"Tiếng Việt",
+                "english_name":"Vietnamese"
+            },
+            {  
+                "iso_639_1":"zh",
+                "iso_3166_1":"CN",
+                "name":"普通话",
+                "english_name":"Mandarin"
+            },
+            {  
+                "iso_639_1":"zh",
+                "iso_3166_1":"TW",
+                "name":"普通话",
+                "english_name":"Mandarin"
+            }
+        ]
+    },
     "videos":{  
         "results":[  
             {  

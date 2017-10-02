@@ -26,3 +26,13 @@ Vue.filter('format', (value) => {
     }
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 })
+
+Vue.filter('toDate', (value) => {
+    if (!value) {
+        return ''
+    }
+
+    const months = [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC' ]
+    const dateArr = value.split('-')
+    return dateArr[2] + ' ' + months[Number(dateArr[1])] + ' ' + dateArr[0]
+})

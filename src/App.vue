@@ -32,6 +32,9 @@
         max-width: 1000px;
         margin: 0 auto;
     }
+    .one-half {
+        width: 50%;
+    }
     .clearfix {
         &:before,
         &:after {
@@ -74,17 +77,46 @@
     .bullet {
         font-size: 10px;
         font-weight: 700;
-        color: #616161;
+        color: #C7A605;
         display: inline-block;
         padding: 3px;
-        border: 1px solid #CCC;
+        border: 1px solid #C7A605;
         border-radius: 2px;
-        background-color: #DDD;
-        box-shadow: 0 0 1px #999;
+        background-color: transparent;
         margin: 2px 5px 2px 0;
         text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+            color: #000;
+            background-color: #C7A605;
+        }
     }
     .color-yellow {
         color: #C7A605;
+    }
+    .table {
+        display: table;
+
+        .table-row {
+            display: table-row;
+        }
+        .table-cell {
+            display: table-cell;
+            padding: 3px 5px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    .text-small {
+        font-size: 12px;
+    }
+    .text-bold {
+        font-weight: bold;
     }
 </style>
