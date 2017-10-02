@@ -9,6 +9,6 @@ export default {
         DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_UPCOMING, (movies) => { callback(movies) })
     },
     getDetails (id, callback) {
-        DataService.getDetails(id, Vue.config.MOVIE_DETAILS, (data) => { callback(data) })
+        DataService.getDetails(id, Vue.config.TMDB_MOVIE_DETAILS, (data) => { callback(data) })
     }
 }

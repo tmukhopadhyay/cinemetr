@@ -1,64 +1,56 @@
 <template>
     <section>
-        <figure class="poster-wrapper">
-            <img :src="imagePath + data.backdrop_path" class="poster" />
+        <figure class="poster-wrapper" :style="{ backgroundImage: 'url(' + imagePath + tmdb.backdrop_path + ')' }">
+            <section class="site-width clearfix statistic">
+                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" />
+                <section class="pull-left metadata">
+                    <h2 class="title">{{tmdb.title || tmdb.name}}</h2>
+                    <p class="captions">
+                        <a href="#" class="bullet" v-for="genre in tmdb.genres" :key="genre.id">
+                            {{genre.name}}
+                        </a>
+                    </p>
+                    <p class="certification text-small color-yellow">
+                        <span class="item">{{omdb.Released}} ({{omdb.Country}})</span>
+                        <span class="item">{{omdb.Rated}}</span>
+                        <span class="item">{{omdb.Runtime}}</span>
+                    </p>
+                    <section class="table credits text-small text-bold">
+                        <section class="table-row">
+                            <span class="table-cell">DIRECTOR</span>
+                            <span class="table-cell color-yellow">{{omdb.Director}}</span>
+                        </section>
+                        <section class="table-row">
+                            <span class="table-cell">WRITERS</span>
+                            <span class="table-cell color-yellow">{{omdb.Writer}}</span>
+                        </section>
+                    </section>
+                    <p class="overview">{{tmdb.overview}}</p>
+                </section>
+                <section class="pull-left rating-container">
+                    <section class="featured">
+                        <p class="title">{{omdb.imdbRating}}</p>
+                        <p class="subtitle">{{omdb.imdbVotes}} USERS</p>
+                        <i class="fa fa-star icon" aria-hidden="true"></i>
+                    </section>
+                    <section class="clearfix rating-list">
+                        <section class="pull-left one-half rating">
+                            <p class="title">
+                                <template v-for="rating in omdb.Ratings" v-if="rating.Source === 'Rotten Tomatoes'">
+                                    {{rating.Value}}
+                                </template>
+                            </p>
+                            <p class="subtitle">ROTTEN TOMATOES</p>
+                        </section>
+                        <section class="pull-left one-half rating">
+                            <p class="title">{{omdb.Metascore}}</p>
+                            <p class="subtitle">METASCORE</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
             <section class="overlay"></section>
         </figure>
-        <section class="site-width clearfix statistic">
-            <img :src="imagePath + data.poster_path" class="pull-left snapshot" />
-            <section class="pull-left metadata">
-                <h2 class="title">{{data.title || data.name}}</h2>
-                <p class="captions">
-                    <a href="#" class="bullet" v-for="genre in data.genres" :key="genre.id">
-                        {{genre.name}}
-                    </a>
-                </p>
-                <p v-for="(country, index) in data.releases.countries"
-                    v-if="index < 1"
-                    :key="country.iso_3166_1"
-                    class="certification text-small color-yellow">
-                        <span class="item">{{country.release_date | toDate}} ({{country.iso_3166_1}})</span>
-                        <span class="item">{{country.certification}}</span>
-                        <span class="item">{{data.runtime}} MIN</span>
-                </p>
-                <section class="table credits text-small text-bold">
-                    <section class="table-row">
-                        <span class="table-cell">DIRECTOR</span>
-                        <span class="table-cell color-yellow">
-                            <template v-for="person in data.credits.crew" v-if="person.job === 'Director'">
-                                {{person.name}}
-                            </template>
-                        </span>
-                    </section>
-                    <section class="table-row">
-                        <span class="table-cell">WRITERS</span>
-                        <span class="table-cell color-yellow">
-                            <template v-for="(person, index) in data.credits.crew" v-if="person.department === 'Writing'">
-                                {{person.name}}<template v-if="index < (data.credits.crew.length - 1)">, </template>
-                            </template>
-                        </span>
-                    </section>
-                </section>
-                <p class="overview">{{data.overview}}</p>
-            </section>
-            <section class="pull-left rating-container">
-                <section class="featured">
-                    <p class="title">{{data.vote_average}}</p>
-                    <p class="subtitle">{{data.vote_count | format}} USERS</p>
-                    <i class="fa fa-star icon" aria-hidden="true"></i>
-                </section>
-                <section class="clearfix rating-list">
-                    <section class="pull-left one-half rating">
-                        <p class="title">90%</p>
-                        <p class="subtitle">ROTTEN TOMATOES</p>
-                    </section>
-                    <section class="pull-left one-half rating">
-                        <p class="title">78</p>
-                        <p class="subtitle">METASCORE</p>
-                    </section>
-                </section>
-            </section>
-        </section>
     </section>
 </template>
 
@@ -73,7 +65,8 @@
             return {
                 imagePath: Vue.config.IMAGE_PATH,
                 backdropPath: Vue.config.BACKDROP_PATH,
-                data: {}
+                omdb: {},
+                tmdb: {}
             }
         },
         props: {
@@ -81,7 +74,10 @@
             type: String
         },
         created () {
-            MovieService.getDetails(this.id, (data) => { this.data = data })
+            MovieService.getDetails(this.id, (data) => {
+                this.omdb = data.omdb
+                this.tmdb = data.tmdb
+            })
         }
     }
 </script>
@@ -89,6 +85,11 @@
 <style lang="scss" scoped>
     .poster-wrapper {
         position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 450px;
+        margin-bottom: 200px;
 
         .poster {
             display: block;
@@ -101,21 +102,24 @@
             height: 100%;
             width: 100%;
             background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 0.2) 50%,
-                rgba(0, 0, 0, 0.6) 70%,
-                rgba(0, 0, 0, 1) 100%)
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.6) 70%,
+                rgba(255, 255, 255, 1) 100%)
         }
     }
     .statistic {
-        position: relative;
-        top: -157px;
+        position: absolute;
+        bottom: -146px;
+        left: 50%;
+        margin-left: -500px;
+        z-index: 1000;
 
         .snapshot {
             width: 20%;
         }
         .metadata {
-            color: #DDD;
+            color: #333;
             width: 60%;
             padding: 0 20px;
 
@@ -129,6 +133,8 @@
                 margin-bottom: 10px;
             }
             .certification {
+                text-transform: uppercase;
+
                 .item {
                     margin-right: 20px;
                 }
@@ -164,7 +170,7 @@
                 }
                 .icon {
                     position: absolute;
-                    bottom: -7px;
+                    bottom: -9px;
                     left: 50%;
                     margin-left: -7px;
                 }
