@@ -7,5 +7,8 @@ export default {
     },
     getUpcomingMovies (callback) {
         DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_UPCOMING, (movies) => { callback(movies) })
+    },
+    getDetails (id, callback) {
+        DataService.getDetails(id, Vue.config.MOVIE_DETAILS, (data) => { callback(data) })
     }
 }

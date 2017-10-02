@@ -10,6 +10,7 @@ Object.assign(Vue.config, {
     SEARCH_MOVIE: process.env.SEARCH_MOVIE,
     MOVIE_DETAILS: process.env.MOVIE_DETAILS,
     SEARCH_SERIES: process.env.SEARCH_SERIES,
+    SHOW_DETAILS: process.env.SHOW_DETAILS,
     SELECT_NOW_PLAYING: process.env.SELECT_NOW_PLAYING,
     SELECT_UPCOMING: process.env.SELECT_UPCOMING,
     SELECT_POPULAR: process.env.SELECT_POPULAR

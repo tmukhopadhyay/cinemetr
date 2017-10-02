@@ -7,10 +7,10 @@
 <script>
     import Vue from 'vue'
 
-    import DetailsService from '../../services/details.service'
+    import SeriesService from '../../services/series.service'
 
     export default {
-        name: 'appDetails',
+        name: 'appShow',
         data () {
             return {
                 imagePath: Vue.config.IMAGE_PATH,
@@ -19,11 +19,11 @@
             }
         },
         props: {
-            id: String,
+            id: Number | String,
             type: String
         },
         created () {
-            DetailsService.getDetails(this.id, (data) => { this.data = data })
+            SeriesService.getDetails(this.id, (data) => { this.data = data })
         }
     }
 </script>

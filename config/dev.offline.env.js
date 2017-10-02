@@ -10,6 +10,7 @@ module.exports = merge(prodEnv, {
     SEARCH_MOVIE: '"movies.json"',
     MOVIE_DETAILS: '"movie.json"',
     SEARCH_SERIES: '"series.json"',
+    SHOW_DETAILS: '"show.json"',
     SELECT_NOW_PLAYING: '""',
     SELECT_UPCOMING: '""',
     SELECT_POPULAR: '""'

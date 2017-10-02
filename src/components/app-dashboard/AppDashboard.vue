@@ -25,7 +25,7 @@
             :image-path="imagePath"
             title="Tv shows"
             subtitle="Popular"
-            type="tv">
+            type="show">
         </app-segment>
     </section>
 </template>

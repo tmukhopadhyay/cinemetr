@@ -8,6 +8,7 @@ module.exports = {
     SEARCH_MOVIE: '"movie/"',
     MOVIE_DETAILS: '"movie/"',
     SEARCH_SERIES: '"tv/"',
+    SHOW_DETAILS: '"tv/"',
     SELECT_NOW_PLAYING: '"now_playing"',
     SELECT_UPCOMING: '"upcoming"',
     SELECT_POPULAR: '"popular"'

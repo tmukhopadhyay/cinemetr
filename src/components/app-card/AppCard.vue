@@ -36,10 +36,9 @@
         methods: {
             goToDetails (item) {
                 this.$router.push({
-                    name: 'AppDetails',
+                    name: 'App' + this.type.charAt(0).toUpperCase() + this.type.slice(1),
                     params: {
-                        id: item.id,
-                        type: this.type
+                        id: item.id
                     }
                 })
             }

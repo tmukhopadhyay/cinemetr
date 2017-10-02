@@ -7,7 +7,7 @@
           "vote_average":7.4,
           "title":"Kingsman: The Golden Circle",
           "popularity":169.646793,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Kingsman: The Golden Circle",
           "genre_ids":[  
@@ -27,7 +27,7 @@
           "vote_average":6.4,
           "title":"Annabelle: Creation",
           "popularity":166.569849,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Annabelle: Creation",
           "genre_ids":[  
@@ -46,7 +46,7 @@
           "vote_average":6.6,
           "title":"mother!",
           "popularity":125.671439,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"mother!",
           "genre_ids":[  
@@ -65,7 +65,7 @@
           "vote_average":6.7,
           "title":"War for the Planet of the Apes",
           "popularity":97.955808,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"War for the Planet of the Apes",
           "genre_ids":[  
@@ -85,7 +85,7 @@
           "vote_average":4.8,
           "title":"American Assassin",
           "popularity":90.994145,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"American Assassin",
           "genre_ids":[  
@@ -104,7 +104,7 @@
           "vote_average":7.1,
           "title":"Ballerina",
           "popularity":82.449555,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Ballerina",
           "genre_ids":[  
@@ -125,7 +125,7 @@
           "vote_average":6.5,
           "title":"Captain Underpants: The First Epic Movie",
           "popularity":67.990636,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Captain Underpants: The First Epic Movie",
           "genre_ids":[  
@@ -146,7 +146,7 @@
           "vote_average":7.4,
           "title":"What Happened to Monday",
           "popularity":65.417446,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"What Happened to Monday",
           "genre_ids":[  
@@ -165,7 +165,7 @@
           "vote_average":3.3,
           "title":"Flatliners",
           "popularity":60.380226,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Flatliners",
           "genre_ids":[  
@@ -184,7 +184,7 @@
           "vote_average":10,
           "title":"Blade Runner 2049",
           "popularity":56.836696,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Blade Runner 2049",
           "genre_ids":[  
@@ -202,7 +202,7 @@
           "vote_average":6.9,
           "title":"Shot Caller",
           "popularity":44.416196,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Shot Caller",
           "genre_ids":[  
@@ -222,7 +222,7 @@
           "vote_average":6.1,
           "title":"Atomic Blonde",
           "popularity":42.071741,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Atomic Blonde",
           "genre_ids":[  
@@ -241,7 +241,7 @@
           "vote_average":6.2,
           "title":"American Made",
           "popularity":40.120422,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"American Made",
           "genre_ids":[  
@@ -262,7 +262,7 @@
           "vote_average":7.8,
           "title":"The Big Sick",
           "popularity":37.597629,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"The Big Sick",
           "genre_ids":[  
@@ -282,7 +282,7 @@
           "vote_average":6.6,
           "title":"A Dog's Purpose",
           "popularity":32.136509,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"A Dog's Purpose",
           "genre_ids":[  
@@ -303,7 +303,7 @@
           "vote_average":0,
           "title":"Thor: Ragnarok",
           "popularity":31.073705,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Thor: Ragnarok",
           "genre_ids":[  
@@ -324,7 +324,7 @@
           "vote_average":0,
           "title":"My Little Pony: The Movie",
           "popularity":29.668976,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"My Little Pony: The Movie",
           "genre_ids":[  
@@ -345,7 +345,7 @@
           "vote_average":6.4,
           "title":"Logan Lucky",
           "popularity":29.200417,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"Logan Lucky",
           "genre_ids":[  
@@ -365,7 +365,7 @@
           "vote_average":6.7,
           "title":"Thelma",
           "popularity":26.165182,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"no",
           "original_title":"Thelma",
           "genre_ids":[  
@@ -385,7 +385,7 @@
           "vote_average":6.9,
           "title":"The Shack",
           "popularity":25.984392,
-          "poster_path":"\/default-poster.png",
+          "poster_path":"\/default-poster.jpg",
           "original_language":"en",
           "original_title":"The Shack",
           "genre_ids":[  
