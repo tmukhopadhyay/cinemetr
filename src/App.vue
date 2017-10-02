@@ -77,19 +77,18 @@
     .bullet {
         font-size: 10px;
         font-weight: 700;
-        color: #C7A605;
+        color: #333;
         display: inline-block;
         padding: 3px;
         border: 1px solid #C7A605;
         border-radius: 2px;
-        background-color: transparent;
+        background-color: #C7A605;
         margin: 2px 5px 2px 0;
         text-decoration: none;
         transition: all 0.2s;
 
         &:hover {
-            color: #000;
-            background-color: #C7A605;
+            background-color: #AE9204;
         }
     }
     .color-yellow {

@@ -10,7 +10,7 @@
                             {{genre.name}}
                         </a>
                     </p>
-                    <p class="certification text-small color-yellow">
+                    <p class="certification text-small text-bold color-yellow">
                         <span class="item">{{omdb.Released}} ({{omdb.Country}})</span>
                         <span class="item">{{omdb.Rated}}</span>
                         <span class="item">{{omdb.Runtime}}</span>
