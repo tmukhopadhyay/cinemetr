@@ -27,6 +27,11 @@
     body {
         font-family: 'Lato', sans-serif;
         overflow-x: hidden;
+        image-rendering:-webkit-optimize-contrast;
+        image-rendering:-moz-crisp-edges;
+        image-rendering:-o-crisp-edges;
+        -ms-interpolation-mode:nearest-neighbor;
+        text-rendering: optimizeLegibility;
     }
     .site-width {
         max-width: 1000px;

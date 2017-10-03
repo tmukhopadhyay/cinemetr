@@ -1,6 +1,6 @@
 <template>
     <section>
-        <figure class="poster-wrapper" :style="{ backgroundImage: 'url(' + imagePath + tmdb.backdrop_path + ')' }">
+        <figure class="poster-wrapper" :style="{ backgroundImage: 'url(' + backdropPath + tmdb.backdrop_path + ')' }">
             <section class="site-width clearfix statistic">
                 <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" />
                 <section class="pull-left metadata">
@@ -10,7 +10,7 @@
                             {{genre.name}}
                         </a>
                     </p>
-                    <p class="certification text-small text-bold color-yellow">
+                    <p class="certification text-small text-bold">
                         <span class="item">{{omdb.Released}} ({{omdb.Country}})</span>
                         <span class="item">{{omdb.Rated}}</span>
                         <span class="item">{{omdb.Runtime}}</span>
@@ -89,7 +89,7 @@
         background-repeat: no-repeat;
         background-position: top;
         height: 450px;
-        margin-bottom: 200px;
+        margin-bottom: 170px;
 
         .poster {
             display: block;
@@ -110,7 +110,7 @@
     }
     .statistic {
         position: absolute;
-        bottom: -146px;
+        bottom: -143px;
         left: 50%;
         margin-left: -500px;
         z-index: 1000;
@@ -125,7 +125,7 @@
 
             .title {
                 font-size: 30px;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 24px;
                 margin-bottom: 15px;
             }
@@ -133,6 +133,7 @@
                 margin-bottom: 10px;
             }
             .certification {
+                color: #616161;
                 text-transform: uppercase;
 
                 .item {
