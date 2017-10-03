@@ -1,0 +1,29 @@
+{  
+    "Title":"Game of Thrones",
+    "Year":"2011–",
+    "Rated":"TV-MA",
+    "Released":"17 Apr 2011",
+    "Runtime":"57 min",
+    "Genre":"Adventure, Drama, Fantasy",
+    "Director":"N/A",
+    "Writer":"David Benioff, D.B. Weiss",
+    "Actors":"Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington",
+    "Plot":"In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
+    "Language":"English",
+    "Country":"USA, UK",
+    "Awards":"Won 1 Golden Globe. Another 249 wins & 422 nominations.",
+    "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3NTQ1NDg1Ml5BMl5BanBnXkFtZTgwNzY2NDA0MjI@._V1_SX300.jpg",
+    "Ratings":[
+        {
+            "Source":"Internet Movie Database",
+            "Value":"9.5/10"
+        }
+    ],
+    "Metascore":"N/A",
+    "imdbRating":"9.5",
+    "imdbVotes":"1,234,117",
+    "imdbID":"tt0944947",
+    "Type":"series",
+    "totalSeasons":"8",
+    "Response":"True"
+}

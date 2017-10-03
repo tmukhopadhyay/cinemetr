@@ -48,6 +48,9 @@
             display: block;
         }
     }
+    .relative {
+        position: relative;
+    }
     .section-title {
         font-size: 18px;
         font-weight: 700;

@@ -11,6 +11,7 @@ import router from './router'
 
 import './config/app.config'
 import './filters/app.filters'
+import './mixins/app.mixins'
 
 Vue.use(VueResource)
 Vue.use(VueRx, Rx)
