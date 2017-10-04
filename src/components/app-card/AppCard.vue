@@ -1,22 +1,23 @@
 <template>
     <figure class="card clearfix" @click="goToDetails(item)">
-        <img :src="imagePath + item.poster_path" class="poster" />
+        <img :src="item.poster" class="poster" />
         <section class="overlay"></section>
         <figcaption>
             <header>
-                {{item.title || item.name}}
-                <i class="fa fa-fw fa-info-circle color-yellow"
+                {{item.title}}
+                <i v-if="item.hasTooltip"
+                    class="fa fa-fw fa-info-circle color-yellow"
                     aria-hidden="true"
-                    v-tooltip.right="item.overview"></i>
+                    v-tooltip.right="item.tooltipText"></i>
             </header>
             <p class="captions">
-                <a href="#" class="bullet" v-for="genre in item.genre_ids" :key="genre.id">
-                    {{genre | genreName}}
+                <a href="#" class="bullet" v-for="label in item.labels" :key="label.id">
+                    {{label.name}}
                 </a>
             </p>
-            <p class="rating clearfix">
+            <p v-if="item.hasRatings" class="rating clearfix">
                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                {{item.vote_average}} / 10 from {{item.vote_count | format}} users
+                {{item.rating.value}} / 10 from {{item.rating.count | format}} users
             </p>
         </figcaption>
     </figure>
@@ -36,7 +37,7 @@
         methods: {
             goToDetails (item) {
                 this.$router.push({
-                    name: 'App' + this.type.charAt(0).toUpperCase() + this.type.slice(1),
+                    name: 'App' + item.type.charAt(0).toUpperCase() + item.type.slice(1),
                     params: {
                         id: item.id
                     }

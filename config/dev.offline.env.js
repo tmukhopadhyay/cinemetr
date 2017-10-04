@@ -11,10 +11,12 @@ module.exports = merge(prodEnv, {
     OMDB_SHOW_DETAILS: '"omdb-show.json"',
     SEARCH_MOVIE: '"movies.json"',
     SEARCH_SERIES: '"series.json"',
+    SEARCH_PEOPLE: '"people.json"',
     SELECT_NOW_PLAYING: '""',
     SELECT_UPCOMING: '""',
     SELECT_POPULAR: '""',
     TMDB_BASE_URL: '"/static/data/"',
     TMDB_MOVIE_DETAILS: '"tmdb-movie.json"',
-    TMDB_SHOW_DETAILS: '"tmdb-show.json"'
+    TMDB_SHOW_DETAILS: '"tmdb-show.json"',
+    TMDB_PERSON_DETAILS: '"person.json"'
 })

@@ -3,7 +3,6 @@
         <app-carousel
             :data="upcomingMovies"
             :inverse-scaling="150"
-            :image-path="imagePath"
             :slide-items="9"
             :slide-height="278"
             :slide-width="185"
@@ -14,18 +13,20 @@
         <app-segment
             :background="false"
             :data="nowPlayingMovies"
-            :image-path="imagePath"
             title="Movies"
-            subtitle="Now Playing"
-            type="movie">
+            subtitle="Now Playing">
         </app-segment>
         <app-segment
             :background="true"
             :data="popularSeries"
-            :image-path="imagePath"
             title="Tv shows"
-            subtitle="Popular"
-            type="show">
+            subtitle="Popular">
+        </app-segment>
+        <app-segment
+            :background="false"
+            :data="popularPeople"
+            title="People"
+            subtitle="Popular">
         </app-segment>
     </section>
 </template>
@@ -38,6 +39,7 @@
 
     import MovieService from '../../services/movies.service'
     import SeriesService from '../../services/series.service'
+    import PeopleService from '../../services/people.service'
 
     export default {
         name: 'appDashboard',
@@ -50,13 +52,15 @@
                 imagePath: Vue.config.IMAGE_PATH,
                 upcomingMovies: [],
                 nowPlayingMovies: [],
-                popularSeries: []
+                popularSeries: [],
+                popularPeople: []
             }
         },
         created () {
             MovieService.getUpcomingMovies((movies) => { this.upcomingMovies = movies })
             MovieService.getNowPlayingMovies((movies) => { this.nowPlayingMovies = movies })
             SeriesService.getPopularSeries((series) => { this.popularSeries = series })
+            PeopleService.getPopularPeople((people) => { this.popularPeople = people })
         }
     }
 </script>

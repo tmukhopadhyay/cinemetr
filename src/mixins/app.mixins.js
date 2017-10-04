@@ -3,7 +3,10 @@ import Vue from 'vue'
 Vue.mixin({
     methods: {
         isNotEmpty (obj) {
-            return obj !== null && Object.keys(obj).length !== 0
+            return obj && Object.keys(obj).length !== 0
+        },
+        getGenreFromId (id) {
+            return window.genres.find(genre => genre.id === id)
         }
     }
 })

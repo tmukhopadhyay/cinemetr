@@ -102,6 +102,15 @@
     .color-yellow {
         color: #C7A605;
     }
+    .color-twitter {
+        color: #0084b4;
+    }
+    .color-facebook {
+        color: #3B5998;
+    }
+    .color-instagram {
+        color: #BC2A8D;
+    }
     .table {
         display: table;
 

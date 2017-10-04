@@ -9,17 +9,6 @@ Vue.filter('truncate', (value, maxLength) => {
     return value.substr(0, maxLength) + '...'
 })
 
-Vue.filter('genreName', (value) => {
-    if (!value) {
-        return ''
-    }
-    let genreObj = window.genres.find(genre => genre.id === value)
-    if (genreObj) {
-        return genreObj.name
-    }
-    return ''
-})
-
 Vue.filter('format', (value) => {
     if (!value) {
         return ''

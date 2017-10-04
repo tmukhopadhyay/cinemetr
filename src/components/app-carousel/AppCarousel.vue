@@ -17,7 +17,7 @@
             :space="slideSpace">
                 <slide v-for="(item, index) in data" :index="index" :key="item.id">
                     <figure>
-                        <img :src="imagePath + item.poster_path" />
+                        <img :src="item.poster" />
                         <figcaption>{{item.title}}</figcaption>
                     </figure>
                 </slide>
@@ -52,7 +52,6 @@
                 type: Number,
                 default: 300
             },
-            imagePath: String,
             slideItems: {
                 type: Number,
                 default: 5
