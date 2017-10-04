@@ -22,15 +22,24 @@
                         <i class="fa fa-instagram fa-2x color-instagram" aria-hidden="true"></i>
                     </a>
                 </p>
-                <p class="captions">
-                    <a href="#"
-                        class="bullet"
-                        v-for="(credit, index) in person.combined_credits.cast"
-                        v-if="index < 30"
-                        :key="credit.credit_id">
-                            {{credit.title || credit.name}}
-                    </a>
-                </p>
+                <section class="table credits text-small text-bold">
+                    <section class="table-row">
+                        <span class="table-cell">MOVIE</span>
+                        <span class="table-cell color-yellow">
+                            <template v-for="(credit, index) in person.movie_credits.cast" v-if="index < 20">
+                                {{credit.title}}<template v-if="index < 19">,</template>
+                            </template>
+                        </span>
+                    </section>
+                    <section class="table-row">
+                        <span class="table-cell">TV</span>
+                        <span class="table-cell color-yellow">
+                            <template v-for="(credit, index) in person.tv_credits.cast" v-if="index < 20">
+                                {{credit.name}}<template v-if="index < 19">,</template>
+                            </template>
+                        </span>
+                    </section>
+                </section>
             </section>
             <section class="pull-left rating-container">
                 <section class="featured">
