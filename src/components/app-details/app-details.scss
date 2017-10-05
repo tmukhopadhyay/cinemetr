@@ -30,7 +30,7 @@
 .statistic {
     z-index: 1000;
     padding-top: 293px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     .snapshot {
         width: 20%;
@@ -112,5 +112,63 @@
                 padding: 18px 10px;
             }
         }
+    }
+}
+.segment {
+    font-size: 13px;
+    line-height: 20px;
+    color: #616161;
+    padding: 30px 0 30px;
+
+    .content-wrapper {
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+    .rail {
+        padding: 5px;
+
+        figure {
+            padding-top: 10px;
+            border-top: 1px solid #DDD;
+
+            .poster {
+                display: block;
+                width: 22%;
+                height: 108px;
+            }
+            figcaption {
+                width: 78%;
+                padding-left: 15px;
+
+                .title {
+                    font-weight: 700;
+                    line-height: 16px;
+                    margin: -2px 0 2px;
+                }
+                .subtitle {
+                    font-size: 12px;
+                    color: #888;
+                    margin-bottom: 3px;
+                }
+                .captions {
+                    margin-bottom: 3px;
+                }
+                .rating {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #888;
+                }
+            }
+        }
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3) {
+            figure {
+                border-top-width: 0;
+            }
+        }
+    }
+    &.background {
+        background-color: #E6E6E6;
     }
 }

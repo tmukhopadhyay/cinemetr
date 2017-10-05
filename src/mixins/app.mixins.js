@@ -6,7 +6,7 @@ Vue.mixin({
             return obj && Object.keys(obj).length !== 0
         },
         getGenreFromId (id) {
-            return window.genres.find(genre => genre.id === id)
+            return window.genres.find(genre => genre.id === id) || {}
         }
     }
 })

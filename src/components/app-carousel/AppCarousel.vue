@@ -1,8 +1,8 @@
 <template>
     <section class="carousel" v-if="data.length">
         <h3 class="section-title" v-if="title">{{title}}</h3>
-        <h3 class="site-width section-subtitle" v-if="subtitle">
-            {{subtitle}}
+        <h3 class="site-width section-subtitle">
+            <template v-if="subtitle">{{subtitle}}</template>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
         <carousel-3d
@@ -10,6 +10,7 @@
             :controls-visible="true"
             :controls-prev-html="'&lt;i class=&quot;fa fa-chevron-circle-left&quot;&gt;&lt;/i&gt;'"
             :controls-next-html="'&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt;'"
+            :disable3d="disable3d"
             :display="slideItems"
             :inverse-scaling="inverseScaling"
             :height="slideHeight"
@@ -18,7 +19,7 @@
                 <slide v-for="(item, index) in data" :index="index" :key="item.id">
                     <figure>
                         <img :src="item.poster" />
-                        <figcaption>{{item.title}}</figcaption>
+                        <figcaption v-if="item.title">{{item.title}}</figcaption>
                     </figure>
                 </slide>
         </carousel-3d>
@@ -47,6 +48,10 @@
             data: {
                 type: Array,
                 default: []
+            },
+            disable3d: {
+                type: Boolean,
+                default: false
             },
             inverseScaling: {
                 type: Number,

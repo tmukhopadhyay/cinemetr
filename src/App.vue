@@ -40,6 +40,18 @@
     .one-half {
         width: 50%;
     }
+    .one-third {
+        width: 33.3333%;
+    }
+    .two-third {
+        width: 66.6666%;
+    }
+    .pull-left {
+        float: left;
+    }
+    .pull-right {
+        float: right;
+    }
     .clearfix {
         &:before,
         &:after {
@@ -85,6 +97,7 @@
     .bullet {
         font-size: 10px;
         font-weight: 700;
+        line-height: 10px;
         color: #333;
         display: inline-block;
         padding: 3px;
