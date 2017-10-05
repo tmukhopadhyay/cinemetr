@@ -1,7 +1,7 @@
 <template>
     <section>
         <app-spinner :spinner-status="spinnerStatus"></app-spinner>
-        <section class="relative" v-if="isNotEmpty(omdb) && isNotEmpty(tmdb)">
+        <section class="relative" v-show="!spinnerStatus" v-if="isNotEmpty(omdb) && isNotEmpty(tmdb)">
             <figure class="poster-wrapper">
                 <img class="poster" :src="backdropPath + tmdb.backdrop_path" />
                 <section class="overlay"></section>
@@ -132,17 +132,24 @@
             type: String
         },
         created () {
-            MovieService.getDetails(this.id, (data) => {
-                this.spinnerStatus = false
-                this.omdb = data.omdb
-                this.tmdb = data.tmdb
-                this.similarMovies = MovieService.contructCards(this.tmdb.similar.results)
-            })
+            this.getData()
         },
         methods: {
+            getData () {
+                this.spinnerStatus = true
+                MovieService.getDetails(this.id, (data) => {
+                    this.spinnerStatus = false
+                    this.omdb = data.omdb
+                    this.tmdb = data.tmdb
+                    this.similarMovies = MovieService.contructCards(this.tmdb.similar.results)
+                })
+            },
             getDefaultPoster (e) {
                 e.target.src = '/static/images/default-poster.jpg'
             }
+        },
+        watch: {
+            '$route': 'getData'
         }
     }
 </script>

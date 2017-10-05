@@ -1,7 +1,7 @@
 <template>
     <section>
         <app-spinner :spinner-status="spinnerStatus"></app-spinner>
-        <section v-if="isNotEmpty(person)">
+        <section v-show="!spinnerStatus" v-if="isNotEmpty(person)">
             <section class="relative">
                 <figure class="poster-wrapper">
                     <img class="poster" :src="backdropPath + person.combined_credits.cast[0].backdrop_path" />
@@ -160,21 +160,28 @@
             type: String
         },
         created () {
-            PeopleService.getDetails(this.id, (data) => {
-                this.spinnerStatus = false
-                this.person = data
-                this.person.tagged_images.results.forEach((image) => {
-                    this.carouselData.push({ poster: this.imagePath + image.file_path })
-                })
-                this.person.images.profiles.forEach((image) => {
-                    this.carouselData.push({ poster: this.imagePath + image.file_path })
-                })
-            })
+            this.getData()
         },
         methods: {
+            getData () {
+                this.spinnerStatus = true
+                PeopleService.getDetails(this.id, (data) => {
+                    this.spinnerStatus = false
+                    this.person = data
+                    this.person.tagged_images.results.forEach((image) => {
+                        this.carouselData.push({ poster: this.imagePath + image.file_path })
+                    })
+                    this.person.images.profiles.forEach((image) => {
+                        this.carouselData.push({ poster: this.imagePath + image.file_path })
+                    })
+                })
+            },
             getDefaultPoster (e) {
                 e.target.src = '/static/images/default-poster.jpg'
             }
+        },
+        watch: {
+            '$route': 'getData'
         }
     }
 </script>
