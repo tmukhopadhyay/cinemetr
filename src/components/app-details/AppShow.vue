@@ -54,6 +54,36 @@
                     </section> -->
                 </section>
             </section>
+            <section class="segment background">
+                <h3 class="site-width section-title">CAST &amp; CREW</h3>
+                <h3 class="site-width section-subtitle">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </h3>
+                <section class="content-wrapper clearfix">
+                    <section class="pull-left one-fourth rail" v-for="credit in tmdb.credits.cast">
+                        <figure class="pull-left">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.profile_path"
+                                @error="getDefaultPoster" />
+                            <figcaption class="pull-left">
+                                <p class="title">{{credit.name}}</p>
+                                <p class="subtitle">as {{credit.character}}</p>
+                            </figcaption>
+                        </figure>
+                    </section>
+                    <section class="pull-left one-fourth rail" v-for="credit in tmdb.credits.crew">
+                        <figure class="pull-left">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.profile_path"
+                                @error.once="getDefaultPoster" />
+                            <figcaption class="pull-left content">
+                                <p class="title">{{credit.name}}</p>
+                                <p class="subtitle">{{credit.job}}</p>
+                            </figcaption>
+                        </figure>
+                    </section>
+                </section>
+            </section>
         </section>
     </section>
 </template>
@@ -88,6 +118,11 @@
                 this.omdb = data.omdb
                 this.tmdb = data.tmdb
             })
+        },
+        methods: {
+            getDefaultPoster (e) {
+                e.target.src = '/static/images/default-poster.jpg'
+            }
         }
     }
 </script>

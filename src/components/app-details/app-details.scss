@@ -160,9 +160,22 @@
                 }
             }
         }
-        &:first-child,
-        &:nth-child(2),
-        &:nth-child(3) {
+        &.one-fourth {
+            .poster {
+                width: 14%;
+                height: 50px;
+            }
+            figcaption {
+                width: 86%;
+            }
+        }
+        &.one-third:first-child,
+        &.one-fourth:first-child,
+        &.one-third:nth-child(2),
+        &.one-fourth:nth-child(2),
+        &.one-third:nth-child(3),
+        &.one-fourth:nth-child(3),
+        &.one-fourth:nth-child(4) {
             figure {
                 border-top-width: 0;
             }

@@ -46,6 +46,9 @@
     .two-third {
         width: 66.6666%;
     }
+    .one-fourth {
+        width: 25%;
+    }
     .pull-left {
         float: left;
     }
