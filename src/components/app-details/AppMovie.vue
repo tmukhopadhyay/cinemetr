@@ -9,7 +9,7 @@
             <section class="site-width clearfix statistic">
                 <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" />
                 <section class="pull-left metadata">
-                    <h2 class="title">{{tmdb.title || tmdb.name}}</h2>
+                    <h2 class="title">{{tmdb.title}} ({{omdb.Year}})</h2>
                     <p class="captions">
                         <a href="#" class="bullet" v-for="genre in tmdb.genres" :key="genre.id">
                             {{genre.name}}
@@ -54,7 +54,13 @@
                     </section>
                 </section>
             </section>
-            <section class="segment background">
+            <app-segment
+                :background="true"
+                :data="similarMovies"
+                title="Movies"
+                subtitle="You May Like">
+            </app-segment>
+            <section class="segment">
                 <h3 class="site-width section-title">CAST &amp; CREW</h3>
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -84,6 +90,16 @@
                     </section>
                 </section>
             </section>
+            <section class="segment background" v-if="tmdb.reviews.results.length">
+                <h3 class="site-width section-title">USER REVIEWS</h3>
+                <h3 class="site-width section-subtitle">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </h3>
+                <section class="site-width feed" v-for="review in tmdb.reviews.results" :key="review.id">
+                    <p class="title">By {{review.author}}</p>
+                    <p class="content">{{review.content}}</p>
+                </section>
+            </section>
         </section>
     </section>
 </template>
@@ -92,12 +108,14 @@
     import Vue from 'vue'
 
     import AppSpinner from '../app-spinner/AppSpinner'
+    import AppSegment from '../app-segment/AppSegment'
     import MovieService from '../../services/movies.service'
 
     export default {
         name: 'appMovie',
         components: {
-            'app-spinner': AppSpinner
+            'app-spinner': AppSpinner,
+            'app-segment': AppSegment
         },
         data () {
             return {
@@ -105,6 +123,7 @@
                 backdropPath: Vue.config.BACKDROP_PATH,
                 omdb: {},
                 tmdb: {},
+                similarMovies: [],
                 spinnerStatus: true
             }
         },
@@ -117,6 +136,7 @@
                 this.spinnerStatus = false
                 this.omdb = data.omdb
                 this.tmdb = data.tmdb
+                this.similarMovies = MovieService.contructCards(this.tmdb.similar.results)
             })
         },
         methods: {

@@ -23,5 +23,5 @@ Vue.filter('toDate', (value) => {
 
     const months = [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC' ]
     const dateArr = value.split('-')
-    return dateArr[2] + ' ' + months[Number(dateArr[1])] + ' ' + dateArr[0]
+    return dateArr[2] + ' ' + months[Number(dateArr[1]) - 1] + ' ' + dateArr[0]
 })

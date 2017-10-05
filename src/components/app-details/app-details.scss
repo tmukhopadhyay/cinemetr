@@ -143,12 +143,13 @@
                 .title {
                     font-weight: 700;
                     line-height: 16px;
-                    margin: -2px 0 2px;
+                    margin: -2px 0 5px;
                 }
                 .subtitle {
                     font-size: 12px;
+                    line-height: 16px;
                     color: #888;
-                    margin-bottom: 3px;
+                    margin-bottom: 5px;
                 }
                 .captions {
                     margin-bottom: 3px;
@@ -162,11 +163,11 @@
         }
         &.one-fourth {
             .poster {
-                width: 14%;
-                height: 50px;
+                width: 17%;
+                height: 61px;
             }
             figcaption {
-                width: 86%;
+                width: 83%;
             }
         }
         &.one-third:first-child,
@@ -179,6 +180,21 @@
             figure {
                 border-top-width: 0;
             }
+        }
+    }
+    .feed {
+        background-color: #FFF;
+        border: 1px solid #CCC;
+        border-radius: 3px;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+
+        .title {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
     &.background {

@@ -1,10 +1,10 @@
 <template>
-    <section class="segment" :class="{background: background}">
+    <section class="segment" v-if="data.length" :class="{background: background}">
         <h3 class="section-title">{{title}}</h3>
         <h3 class="site-width section-subtitle">
             {{subtitle}} <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
-        <ul v-if="data.length" class="clearfix site-width cards">
+        <ul class="clearfix site-width cards">
             <li v-for="(item, index) in data" v-if="index < 8" :key="item.id" class="pull-left card-wrapper">
                 <app-card :item="item"></app-card>
             </li>
