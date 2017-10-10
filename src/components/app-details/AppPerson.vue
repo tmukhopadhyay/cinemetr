@@ -8,7 +8,7 @@
                     <section class="overlay"></section>
                 </figure>
                 <section class="site-width clearfix statistic">
-                    <img :src="imagePath + person.profile_path" class="pull-left snapshot" />
+                    <img :src="imagePath + person.profile_path" class="pull-left snapshot" @error="getDefaultPoster" />
                     <section class="pull-left metadata">
                         <h2 class="title">{{person.name}}</h2>
                         <p class="certification text-small text-bold">
@@ -87,14 +87,22 @@
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </h3>
                 <section class=" content-wrapper clearfix">
-                    <section class="pull-left one-third rail" v-for="credit in person.combined_credits.cast">
+                    <section class="pull-left one-third rail"
+                        v-for="credit in person.combined_credits.cast"
+                        :key="credit.credit_id">
                         <figure class="pull-left">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.poster_path"
-                                @error="getDefaultPoster" />
+                            <router-link :to="{ name: 'AppMovie', params: { id: credit.id } }">
+                                <img class="pull-left poster"
+                                    :src="imagePath + credit.poster_path"
+                                    @error="getDefaultPoster" />
+                            </router-link>
                             <figcaption class="pull-left">
-                                <p class="title">{{credit.title || credit.name}}</p>
-                                <p class="subtitle">as {{credit.character}}</p>
+                                <p class="title">
+                                    <router-link :to="{ name: 'AppMovie', params: { id: credit.id } }">
+                                        {{credit.title || credit.name}}
+                                    </router-link>
+                                </p>
+                                <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
                                 <p class="captions">
                                     <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
                                         {{getGenreFromId(id).name}}
@@ -107,7 +115,9 @@
                             </figcaption>
                         </figure>
                     </section>
-                    <section class="pull-left one-third rail" v-for="credit in person.combined_credits.crew">
+                    <section class="pull-left one-third rail"
+                        v-for="credit in person.combined_credits.crew"
+                        :key="credit.credit_id">
                         <figure class="pull-left">
                             <img class="pull-left poster"
                                 :src="imagePath + credit.poster_path"
@@ -175,9 +185,6 @@
                         this.carouselData.push({ poster: this.imagePath + image.file_path })
                     })
                 })
-            },
-            getDefaultPoster (e) {
-                e.target.src = '/static/images/default-poster.jpg'
             }
         },
         watch: {

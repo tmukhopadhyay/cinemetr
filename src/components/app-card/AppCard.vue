@@ -1,6 +1,6 @@
 <template>
     <figure class="card clearfix" @click="goToDetails(item)">
-        <img :src="item.poster" class="poster" />
+        <img :src="item.poster" class="poster" @error="getDefaultPoster" />
         <section class="overlay"></section>
         <figcaption>
             <header>
@@ -47,7 +47,7 @@
     }
 </script>
 
-<style lang="scss" scoped>    
+<style lang="scss" scoped>
     .card {
         cursor: pointer;
         position: relative;

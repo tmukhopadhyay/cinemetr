@@ -143,7 +143,17 @@
                 .title {
                     font-weight: 700;
                     line-height: 16px;
+                    color: #616161;
                     margin: -2px 0 5px;
+
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
                 .subtitle {
                     font-size: 12px;
@@ -152,11 +162,12 @@
                     margin-bottom: 5px;
                 }
                 .captions {
-                    margin-bottom: 3px;
+                    margin-bottom: 7px;
                 }
                 .rating {
                     font-size: 12px;
                     font-weight: 700;
+                    line-height: 12px;
                     color: #888;
                 }
             }

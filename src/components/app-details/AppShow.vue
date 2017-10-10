@@ -7,7 +7,7 @@
                 <section class="overlay"></section>
             </figure>
             <section class="site-width clearfix statistic">
-                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" />
+                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" @error="getDefaultPoster" />
                 <section class="pull-left metadata">
                     <h2 class="title">{{tmdb.title || tmdb.name}}</h2>
                     <p class="captions">
@@ -123,9 +123,6 @@
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
                 })
-            },
-            getDefaultPoster (e) {
-                e.target.src = '/static/images/default-poster.jpg'
             }
         },
         watch: {

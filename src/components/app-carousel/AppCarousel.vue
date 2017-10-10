@@ -18,7 +18,7 @@
             :space="slideSpace">
                 <slide v-for="(item, index) in data" :index="index" :key="item.id">
                     <figure>
-                        <img :src="item.poster" />
+                        <img :src="item.poster" @error="getDefaultPoster" />
                         <figcaption v-if="item.title">{{item.title}}</figcaption>
                     </figure>
                 </slide>

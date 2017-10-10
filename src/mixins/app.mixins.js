@@ -7,6 +7,9 @@ Vue.mixin({
         },
         getGenreFromId (id) {
             return window.genres.find(genre => genre.id === id) || {}
+        },
+        getDefaultPoster (e) {
+            e.target.src = '/static/images/default-poster.png'
         }
     }
 })

@@ -7,7 +7,7 @@
                 <section class="overlay"></section>
             </figure>
             <section class="site-width clearfix statistic">
-                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" />
+                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" @error="getDefaultPoster" />
                 <section class="pull-left metadata">
                     <h2 class="title">{{tmdb.title}} ({{omdb.Year}})</h2>
                     <p class="captions">
@@ -143,9 +143,6 @@
                     this.tmdb = data.tmdb
                     this.similarMovies = MovieService.contructCards(this.tmdb.similar.results)
                 })
-            },
-            getDefaultPoster (e) {
-                e.target.src = '/static/images/default-poster.jpg'
             }
         },
         watch: {
