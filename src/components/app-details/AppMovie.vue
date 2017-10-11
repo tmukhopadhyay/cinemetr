@@ -9,53 +9,62 @@
             <section class="site-width clearfix statistic">
                 <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" @error="getDefaultPoster" />
                 <section class="pull-left metadata">
-                    <h2 class="title">{{tmdb.title}} ({{omdb.Year}})</h2>
+                    <h2 class="title">{{tmdb.title}} ({{omdb.year}})</h2>
                     <p class="captions">
                         <a href="#" class="bullet" v-for="genre in tmdb.genres" :key="genre.id">
                             {{genre.name}}
                         </a>
                     </p>
                     <p class="certification text-small text-bold">
-                        <span class="item">{{omdb.Released}} ({{omdb.Country}})</span>
-                        <span class="item">{{omdb.Rated}}</span>
-                        <span class="item">{{omdb.Runtime}}</span>
+                        <span class="item">{{omdb.release_date | toDate}} ({{omdb.metadata.countries.join(', ')}})</span>
+                        <span class="item">{{omdb.content_rating}}</span>
+                        <span class="item">{{omdb.length}} Min</span>
                     </p>
                     <section class="table credits text-small text-bold">
                         <section class="table-row">
-                            <span class="table-cell">DIRECTOR</span>
-                            <span class="table-cell color-yellow">{{omdb.Director}}</span>
+                            <span class="table-cell">DIRECTOR(S)</span>
+                            <span class="table-cell color-yellow">{{omdb.director}}</span>
                         </section>
                         <section class="table-row">
-                            <span class="table-cell">WRITERS</span>
-                            <span class="table-cell color-yellow">{{omdb.Writer}}</span>
+                            <span class="table-cell">WRITER(S)</span>
+                            <span class="table-cell color-yellow">{{omdb.writers.join(', ')}}</span>
+                        </section>
+                        <section class="table-row">
+                            <span class="table-cell">STARS</span>
+                            <span class="table-cell color-yellow">{{omdb.stars.join(', ')}}</span>
                         </section>
                     </section>
-                    <p class="overview">{{tmdb.overview}}</p>
+                    <p class="overview">{{omdb.description}}</p>
                 </section>
                 <section class="pull-left rating-container">
                     <section class="featured">
-                        <p class="title">{{omdb.imdbRating}}</p>
-                        <p class="subtitle">{{omdb.imdbVotes}} USERS</p>
+                        <p class="title">{{omdb.rating}}</p>
+                        <p class="subtitle">{{omdb.rating_count}} USERS</p>
                         <i class="fa fa-star icon" aria-hidden="true"></i>
                     </section>
                     <section class="clearfix rating-list">
                         <section class="pull-left one-half rating">
-                            <p class="title">
-                                <template v-for="rating in omdb.Ratings" v-if="rating.Source === 'Rotten Tomatoes'">
-                                    {{rating.Value}}
-                                </template>
-                            </p>
-                            <p class="subtitle">ROTTEN TOMATOES</p>
+                            <p class="title">{{tmdb.popularity.toFixed(1)}}</p>
+                            <p class="subtitle">POPULARITY</p>
                         </section>
                         <section class="pull-left one-half rating">
-                            <p class="title">{{omdb.Metascore}}</p>
-                            <p class="subtitle">METASCORE</p>
+                            <p class="title">{{tmdb.reviews.total_results}}</p>
+                            <p class="subtitle">REVIEW(S)</p>
                         </section>
                     </section>
                 </section>
             </section>
+            <section class="segment background">
+                <section class="site-width clearfix">
+                    <h3 class="section-title">STORYLINE</h3>
+                    <h3 class="section-subtitle">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </h3>
+                    <span class="text-regular">{{omdb.storyline}}</span>
+                </section>
+            </section>
             <app-segment
-                :background="true"
+                :background="false"
                 :data="similarMovies"
                 title="Movies"
                 subtitle="You May Like">
@@ -66,24 +75,40 @@
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </h3>
                 <section class="content-wrapper clearfix">
-                    <section class="pull-left one-fourth rail" v-for="credit in tmdb.credits.cast">
+                    <section class="pull-left one-fourth rail"
+                        v-for="credit in tmdb.credits.cast"
+                        :key="credit.credit_id">
                         <figure class="pull-left">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.profile_path"
-                                @error="getDefaultPoster" />
+                            <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                <img class="pull-left poster"
+                                    :src="imagePath + credit.profile_path"
+                                    @error="getDefaultPerson" />
+                            </router-link>
                             <figcaption class="pull-left">
-                                <p class="title">{{credit.name}}</p>
+                                <p class="title">
+                                    <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                        {{credit.name}}
+                                    </router-link>
+                                </p>
                                 <p class="subtitle">as {{credit.character}}</p>
                             </figcaption>
                         </figure>
                     </section>
-                    <section class="pull-left one-fourth rail" v-for="credit in tmdb.credits.crew">
+                    <section class="pull-left one-fourth rail"
+                        v-for="credit in tmdb.credits.crew"
+                        :key="credit.credit_id">
                         <figure class="pull-left">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.profile_path"
-                                @error.once="getDefaultPoster" />
+                            <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                <img class="pull-left poster"
+                                    :src="imagePath + credit.profile_path"
+                                    @error.once="getDefaultPerson" />
+                            </router-link>
                             <figcaption class="pull-left content">
-                                <p class="title">{{credit.name}}</p>
+                                <p class="title">
+                                    <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                        {{credit.name}}
+                                    </router-link>
+                                </p>
                                 <p class="subtitle">{{credit.job}}</p>
                             </figcaption>
                         </figure>
@@ -95,7 +120,7 @@
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </h3>
-                <section class="site-width feed" v-for="review in tmdb.reviews.results" :key="review.id">
+                <section class="site-width feed text-regular" v-for="review in tmdb.reviews.results" :key="review.id">
                     <p class="title">By {{review.author}}</p>
                     <p class="content">{{review.content}}</p>
                 </section>

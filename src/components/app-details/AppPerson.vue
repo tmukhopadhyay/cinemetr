@@ -8,7 +8,7 @@
                     <section class="overlay"></section>
                 </figure>
                 <section class="site-width clearfix statistic">
-                    <img :src="imagePath + person.profile_path" class="pull-left snapshot" @error="getDefaultPoster" />
+                    <img :src="imagePath + person.profile_path" class="pull-left snapshot" @error="getDefaultPerson" />
                     <section class="pull-left metadata">
                         <h2 class="title">{{person.name}}</h2>
                         <p class="certification text-small text-bold">
@@ -52,7 +52,7 @@
                         <section class="clearfix rating-list">
                             <section class="pull-left one-half rating">
                                 <p class="title">{{person.tv_credits.cast.length}}</p>
-                                <p class="subtitle">TV APPEARENCES</p>
+                                <p class="subtitle">TV</p>
                             </section>
                             <section class="pull-left one-half rating">
                                 <p class="title">{{person.movie_credits.cast.length}}</p>
@@ -68,7 +68,7 @@
                     <h3 class="section-subtitle">
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </h3>
-                    {{person.biography}}
+                    <span class="text-regular">{{person.biography}}</span>
                 </section>
             </section>
             <app-carousel

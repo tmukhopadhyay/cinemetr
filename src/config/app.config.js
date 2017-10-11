@@ -5,7 +5,6 @@ Object.assign(Vue.config, {
     isOffline: process.env.isOffline,
     BACKDROP_PATH: process.env.BACKDROP_PATH,
     IMAGE_PATH: process.env.IMAGE_PATH,
-    OMDB_API_KEY: process.env.OMDB_API_KEY,
     OMDB_BASE_URL: process.env.OMDB_BASE_URL,
     OMDB_MOVIE_DETAILS: process.env.OMDB_MOVIE_DETAILS,
     OMDB_SHOW_DETAILS: process.env.OMDB_SHOW_DETAILS,

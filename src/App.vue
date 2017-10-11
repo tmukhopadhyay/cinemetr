@@ -145,6 +145,10 @@
             }
         }
     }
+    .text-regular {
+        font-size: 14px;
+        line-height: 22px;
+    }
     .text-small {
         font-size: 12px;
     }

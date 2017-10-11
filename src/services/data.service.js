@@ -20,11 +20,7 @@ export default {
             .then(data => {
                 if (omdbType !== null) {
                     let tmdbData = data.body
-                    let omdbUrl = Vue.config.OMDB_BASE_URL + omdbType + '&apikey=' + Vue.config.OMDB_API_KEY + '&i=' + (data.body.imdb_id || data.body.external_ids.imdb_id)
-                    if (Vue.config.isOffline) {
-                        omdbUrl = Vue.config.OMDB_BASE_URL + omdbType + '?apikey=' + Vue.config.OMDB_API_KEY
-                    }
-                    Vue.http.get(omdbUrl)
+                    Vue.http.get(Vue.config.OMDB_BASE_URL + omdbType + '?movie_id=' + (data.body.imdb_id || data.body.external_ids.imdb_id))
                         .then(data => {
                             callback({
                                 omdb: data.body,
