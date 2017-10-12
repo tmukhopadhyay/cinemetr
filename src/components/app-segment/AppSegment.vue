@@ -4,11 +4,11 @@
         <h3 class="site-width section-subtitle">
             {{subtitle}} <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
-        <ul class="clearfix site-width cards">
-            <li v-for="(item, index) in data" v-if="index < 8" :key="item.id" class="pull-left card-wrapper">
-                <app-card :item="item"></app-card>
-            </li>
-        </ul>
+        <nav class="clearfix site-width cards">
+            <template v-for="(item, index) in data" v-if="index < 8">
+                <app-card :item="item" :key="item.id"></app-card>
+            </template>
+        </nav>
     </section>
 </template>
 
@@ -40,12 +40,17 @@
         padding: 25px 0 30px;
 
         .cards {
-            .card-wrapper {
-                width: 25%;
-            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         &.background {
             background-color: #E6E6E6;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .segment {
+            padding: 20px 0 0;
         }
     }
 </style>

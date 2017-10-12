@@ -90,7 +90,7 @@
                                         {{credit.name}}
                                     </router-link>
                                 </p>
-                                <p class="subtitle">as {{credit.character}}</p>
+                                <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
                             </figcaption>
                         </figure>
                     </section>

@@ -4,7 +4,7 @@
         <section v-show="!spinnerStatus" v-if="isNotEmpty(person)">
             <section class="relative">
                 <figure class="poster-wrapper">
-                    <img class="poster" :src="backdropPath + person.combined_credits.cast[0].backdrop_path" />
+                    <img class="poster" :src="backdropPath + personBackground" @error="getDefaultBackdrop" />
                     <section class="overlay"></section>
                 </figure>
                 <section class="site-width clearfix statistic">
@@ -62,7 +62,7 @@
                     </section>
                 </section>
             </section>
-            <section class="segment background">
+            <section class="segment background" v-if="person.biography">
                 <section class="site-width clearfix">
                     <h3 class="section-title">BIOGRAPHY</h3>
                     <h3 class="section-subtitle">
@@ -91,14 +91,14 @@
                         v-for="credit in person.combined_credits.cast"
                         :key="credit.credit_id">
                         <figure class="pull-left">
-                            <router-link :to="{ name: 'AppMovie', params: { id: credit.id } }">
+                            <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
                                 <img class="pull-left poster"
                                     :src="imagePath + credit.poster_path"
                                     @error="getDefaultPoster" />
                             </router-link>
                             <figcaption class="pull-left">
                                 <p class="title">
-                                    <router-link :to="{ name: 'AppMovie', params: { id: credit.id } }">
+                                    <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
                                         {{credit.title || credit.name}}
                                     </router-link>
                                 </p>
@@ -119,11 +119,17 @@
                         v-for="credit in person.combined_credits.crew"
                         :key="credit.credit_id">
                         <figure class="pull-left">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.poster_path"
-                                @error.once="getDefaultPoster" />
+                            <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                                <img class="pull-left poster"
+                                    :src="imagePath + credit.poster_path"
+                                    @error.once="getDefaultPoster" />
+                            </router-link>
                             <figcaption class="pull-left content">
-                                <p class="title">{{credit.title || credit.name}}</p>
+                                <p class="title">
+                                    <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                                        {{credit.title || credit.name}}
+                                    </router-link>
+                                </p>
                                 <p class="subtitle">{{credit.job}}</p>
                                 <p class="captions">
                                     <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
@@ -161,6 +167,7 @@
                 imagePath: Vue.config.IMAGE_PATH,
                 backdropPath: Vue.config.BACKDROP_PATH,
                 person: {},
+                personBackground: '',
                 carouselData: [],
                 spinnerStatus: true
             }
@@ -184,6 +191,9 @@
                     this.person.images.profiles.forEach((image) => {
                         this.carouselData.push({ poster: this.imagePath + image.file_path })
                     })
+                    this.personBackground = this.person.tagged_images.results.find((image) => image.aspect_ratio > 1.5)
+                        ? this.person.tagged_images.results.find((image) => image.aspect_ratio > 1.5).file_path
+                        : ''
                 })
             }
         },

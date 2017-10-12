@@ -51,6 +51,7 @@
     .card {
         cursor: pointer;
         position: relative;
+        flex-basis: 25%;
 
         .poster {
             display: block;
@@ -91,6 +92,16 @@
                 color: #CCC;
                 font-weight: 700;
             }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .card {
+            flex-basis: 50%;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .card {
+            flex-basis: 100%;
         }
     }
 </style>

@@ -59,6 +59,16 @@
                     <span class="text-regular">{{omdb.storyline}}</span>
                 </section>
             </section>
+            <app-carousel
+                :data="carouselData"
+                :disable3d="true"
+                :inverse-scaling="150"
+                :slide-items="5"
+                :slide-height="280"
+                :slide-width="190"
+                :slide-space="202"
+                title="Seasons">
+            </app-carousel>
             <section class="segment">
                 <h3 class="site-width section-title">CAST &amp; CREW</h3>
                 <h3 class="site-width section-subtitle">
@@ -80,7 +90,7 @@
                                         {{credit.name}}
                                     </router-link>
                                 </p>
-                                <p class="subtitle">as {{credit.character}}</p>
+                                <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
                             </figcaption>
                         </figure>
                     </section>
@@ -113,11 +123,13 @@
     import Vue from 'vue'
 
     import AppSpinner from '../app-spinner/AppSpinner'
+    import AppCarousel from '../app-carousel/AppCarousel'
     import SeriesService from '../../services/series.service'
 
     export default {
         name: 'appShow',
         components: {
+            'app-carousel': AppCarousel,
             'app-spinner': AppSpinner
         },
         data () {
@@ -126,6 +138,7 @@
                 backdropPath: Vue.config.BACKDROP_PATH,
                 omdb: {},
                 tmdb: {},
+                carouselData: [],
                 spinnerStatus: true
             }
         },
@@ -143,6 +156,10 @@
                     this.spinnerStatus = false
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
+
+                    this.tmdb.seasons.forEach((season) => {
+                        this.carouselData.push({ poster: this.imagePath + season.poster_path })
+                    })
                 })
             }
         },

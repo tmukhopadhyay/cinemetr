@@ -24,6 +24,11 @@ export default new Router({
         component: AppShow,
         props: true
     }, {
+        path: '/show/:id',
+        name: 'AppTv',
+        component: AppShow,
+        props: true
+    }, {
         path: '/person/:id',
         name: 'AppPerson',
         component: AppPerson,

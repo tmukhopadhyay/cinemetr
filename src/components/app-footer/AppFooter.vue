@@ -37,6 +37,7 @@
         line-height: 22px;
         background-color: #27272E;
         padding: 40px 20px;
+        word-break: break-word;
 
         .sitemap {
             margin-bottom: 40px;

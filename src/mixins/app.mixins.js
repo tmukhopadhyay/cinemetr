@@ -13,6 +13,9 @@ Vue.mixin({
         },
         getDefaultPerson (e) {
             e.target.src = '/static/images/default-person.png'
+        },
+        getDefaultBackdrop (e) {
+            e.target.src = '/static/images/default-backdrop.jpg'
         }
     }
 })
