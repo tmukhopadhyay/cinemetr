@@ -64,12 +64,19 @@
                 :disable3d="true"
                 :inverse-scaling="150"
                 :slide-items="5"
-                :slide-height="280"
+                :slide-height="282"
                 :slide-width="190"
                 :slide-space="202"
+                :start-index="2"
                 title="Seasons">
             </app-carousel>
-            <section class="segment">
+            <app-segment
+                :background="false"
+                :data="similarShows"
+                title="Shows"
+                subtitle="You May Like">
+            </app-segment>
+            <section class="segment background">
                 <h3 class="site-width section-title">CAST &amp; CREW</h3>
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -124,12 +131,14 @@
 
     import AppSpinner from '../app-spinner/AppSpinner'
     import AppCarousel from '../app-carousel/AppCarousel'
+    import AppSegment from '../app-segment/AppSegment'
     import SeriesService from '../../services/series.service'
 
     export default {
         name: 'appShow',
         components: {
             'app-carousel': AppCarousel,
+            'app-segment': AppSegment,
             'app-spinner': AppSpinner
         },
         data () {
@@ -139,6 +148,7 @@
                 omdb: {},
                 tmdb: {},
                 carouselData: [],
+                similarShows: [],
                 spinnerStatus: true
             }
         },
@@ -157,9 +167,16 @@
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
 
-                    this.tmdb.seasons.forEach((season) => {
-                        this.carouselData.push({ poster: this.imagePath + season.poster_path })
+                    this.tmdb.seasons.slice(1).forEach((season) => {
+                        this.carouselData.push({
+                            poster: this.imagePath + season.poster_path,
+                            captions: [
+                                'SEASON ' + season.season_number + ' / ' + season.episode_count + ' EPISODES',
+                                this.toDate(season.air_date)
+                            ]
+                        })
                     })
+                    this.similarShows = SeriesService.contructCards(this.tmdb.similar.results)
                 })
             }
         },

@@ -69,7 +69,7 @@
                 title="Movies"
                 subtitle="You May Like">
             </app-segment>
-            <section class="segment">
+            <section class="segment" :class="{'background': !tmdb.reviews.results.length}">
                 <h3 class="site-width section-title">CAST &amp; CREW</h3>
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>

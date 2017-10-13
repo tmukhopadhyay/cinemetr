@@ -71,16 +71,11 @@
                     <span class="text-regular">{{person.biography}}</span>
                 </section>
             </section>
-            <app-carousel
-                :data="carouselData"
-                :disable3d="true"
-                :inverse-scaling="150"
-                :slide-items="9"
-                :slide-height="150"
-                :slide-width="105"
-                :slide-space="111"
+            <app-lightbox
+                :data="lightboxData"
+                :items="5"
                 title="Photos">
-            </app-carousel>
+            </app-lightbox>
             <section class="segment">
                 <h3 class="site-width section-title">FILMOGRAPHY</h3>
                 <h3 class="site-width section-subtitle">
@@ -153,13 +148,13 @@
     import Vue from 'vue'
 
     import AppSpinner from '../app-spinner/AppSpinner'
-    import AppCarousel from '../app-carousel/AppCarousel'
+    import AppLightbox from '../app-lightbox/AppLightbox'
     import PeopleService from '../../services/people.service'
 
     export default {
         name: 'appMovie',
         components: {
-            'app-carousel': AppCarousel,
+            'app-lightbox': AppLightbox,
             'app-spinner': AppSpinner
         },
         data () {
@@ -168,7 +163,7 @@
                 backdropPath: Vue.config.BACKDROP_PATH,
                 person: {},
                 personBackground: '',
-                carouselData: [],
+                lightboxData: [],
                 spinnerStatus: true
             }
         },
@@ -185,12 +180,7 @@
                 PeopleService.getDetails(this.id, (data) => {
                     this.spinnerStatus = false
                     this.person = data
-                    this.person.tagged_images.results.forEach((image) => {
-                        this.carouselData.push({ poster: this.imagePath + image.file_path })
-                    })
-                    this.person.images.profiles.forEach((image) => {
-                        this.carouselData.push({ poster: this.imagePath + image.file_path })
-                    })
+                    this.lightboxData = this.person.images.profiles.concat(this.person.tagged_images.results)
                     this.personBackground = this.person.tagged_images.results.find((image) => image.aspect_ratio > 1.5)
                         ? this.person.tagged_images.results.find((image) => image.aspect_ratio > 1.5).file_path
                         : ''

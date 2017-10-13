@@ -15,11 +15,14 @@
             :inverse-scaling="inverseScaling"
             :height="slideHeight"
             :width="slideWidth"
-            :space="slideSpace">
+            :space="slideSpace"
+            :start-index="startIndex">
                 <slide v-for="(item, index) in data" :index="index" :key="item.id">
                     <figure>
                         <img :src="item.poster" @error="getDefaultPoster" />
-                        <figcaption v-if="item.title">{{item.title}}</figcaption>
+                        <figcaption v-if="item.captions">
+                            <p v-for="(caption, index) in item.captions" :key="index">{{caption}}</p>
+                        </figcaption>
                     </figure>
                 </slide>
         </carousel-3d>
@@ -73,6 +76,10 @@
                 type: Number,
                 default: 240
             },
+            startIndex: {
+                type: Number,
+                default: 0
+            },
             title: String,
             subtitle: String
         }
@@ -87,6 +94,27 @@
         .carousel-3d-container {
             .carousel-3d-slide {
                 border-color: rgba(0, 0, 0, .6);
+
+                figcaption {
+                    font-size: 12px;
+                    color: #FFF;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    border-top: 1px solid rgba(255, 255, 255, 0.4);
+                    padding: 7px;
+                    text-align: center;
+
+                    p {
+                        margin-top: 4px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
+                }
             }
             .carousel-3d-controls {
                 .prev,
