@@ -5,8 +5,6 @@ import Rx from 'rxjs/Rx'
 import VueRx from 'vue-rx'
 import VueResource from 'vue-resource'
 import VTooltip from 'v-tooltip'
-import VueLazyLoad from 'vue-lazyload'
-import VueTouch from 'vue-touch'
 
 import App from './App'
 import router from './router'
@@ -18,8 +16,6 @@ import './mixins/app.mixins'
 Vue.use(VueResource)
 Vue.use(VueRx, Rx)
 Vue.use(VTooltip)
-Vue.use(VueLazyLoad)
-Vue.use(VueTouch, { name: 'v-touch' })
 
 /* eslint-disable no-new */
 new Vue({

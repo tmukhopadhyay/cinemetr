@@ -1,7 +1,7 @@
 <template>
     <section class="carousel" v-if="data.length">
         <h3 class="section-title" v-if="title">{{title}}</h3>
-        <h3 class="site-width section-subtitle">
+        <h3 class="site-width section-subtitle" v-if="!disableSubtitle">
             <template v-if="subtitle">{{subtitle}}</template>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
@@ -17,14 +17,27 @@
             :width="slideWidth"
             :space="slideSpace"
             :start-index="startIndex">
-                <slide v-for="(item, index) in data" :index="index" :key="item.id">
-                    <figure>
-                        <img :src="item.poster" @error="getDefaultPoster" />
-                        <figcaption v-if="item.captions">
-                            <p v-for="(caption, index) in item.captions" :key="index">{{caption}}</p>
-                        </figcaption>
-                    </figure>
-                </slide>
+                <template v-if="videoSlider">
+                    <slide v-for="(item, index) in data" :index="index" :key="item.id">
+                        <iframe
+                            :id="item.id"
+                            :width="slideWidth"
+                            :height="slideHeight"
+                            :src="'https://www.youtube.com/embed/' + item.key"
+                            frameborder="0">
+                        </iframe>
+                    </slide>
+                </template>
+                <template v-else>
+                    <slide v-for="(item, index) in data" :index="index" :key="item.id">
+                        <figure>
+                            <img :src="item.poster" @error="getDefaultPoster" />
+                            <figcaption v-if="item.captions">
+                                <p v-for="(caption, index) in item.captions" :key="index">{{caption}}</p>
+                            </figcaption>
+                        </figure>
+                    </slide>
+                </template>
         </carousel-3d>
     </section>
 </template>
@@ -48,10 +61,7 @@
                 type: Boolean,
                 default: false
             },
-            data: {
-                type: Array,
-                default: []
-            },
+            data: Array,
             disable3d: {
                 type: Boolean,
                 default: false
@@ -81,7 +91,15 @@
                 default: 0
             },
             title: String,
-            subtitle: String
+            subtitle: String,
+            disableSubtitle: {
+                type: Boolean,
+                default: false
+            },
+            videoSlider: {
+                type: Boolean,
+                default: false
+            }
         }
     }
 </script>

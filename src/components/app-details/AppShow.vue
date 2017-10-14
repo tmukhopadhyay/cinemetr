@@ -7,7 +7,34 @@
                 <section class="overlay"></section>
             </figure>
             <section class="site-width clearfix statistic">
-                <img :src="imagePath + tmdb.poster_path" class="pull-left snapshot" @error="getDefaultPoster" />
+                <figure class="pull-left snapshot">
+                    <img :src="imagePath + tmdb.poster_path" @error="getDefaultPoster" />
+                    <svg width="50px" height="50px" viewBox="0 0 50 50" class="play-icon" v-if="modalCarousel.length">
+                        <title>Play Icon</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Video-Component-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+                            <g id="Video-Player---Variations" transform="translate(-455.000000, -165.000000)">
+                                <g id="Blue">
+                                    <g id="Vid-Player:-16:9-Ratio-@-460x259" transform="translate(250.000000, 60.000000)">
+                                        <g id="Play-Icon" transform="translate(205.000000, 105.000000)">
+                                            <circle id="Mask" stroke="#E0BB06" stroke-width="2" cx="25" cy="25" r="24"></circle>
+                                            <text id="" font-family="FontAwesome" font-size="32" font-weight="normal" fill="#E0BB06">
+                                                <tspan x="15" y="37"></tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <app-modal
+                        v-if="modalCarousel.length"
+                        :use-carousel="true"
+                        :data="modalCarousel"
+                        :video-slider="true">
+                    </app-modal>
+                </figure>
                 <section class="pull-left metadata">
                     <h2 class="title">{{tmdb.title || tmdb.name}}</h2>
                     <p class="captions">
@@ -81,45 +108,41 @@
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </h3>
-                <section class="content-wrapper clearfix">
-                    <section class="pull-left one-fourth rail"
+                <section class="content-wrapper">
+                    <figure class="one-fourth rail"
                         v-for="credit in tmdb.credits.cast"
                         :key="credit.credit_id">
-                        <figure class="pull-left">
-                            <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                                <img class="pull-left poster"
-                                    :src="imagePath + credit.profile_path"
-                                    @error="getDefaultPerson" />
-                            </router-link>
-                            <figcaption class="pull-left">
-                                <p class="title">
-                                    <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                                        {{credit.name}}
-                                    </router-link>
-                                </p>
-                                <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
-                            </figcaption>
-                        </figure>
-                    </section>
-                    <section class="pull-left one-fourth rail"
+                        <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.profile_path"
+                                @error="getDefaultPerson" />
+                        </router-link>
+                        <figcaption class="pull-left">
+                            <p class="title">
+                                <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                    {{credit.name}}
+                                </router-link>
+                            </p>
+                            <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="one-fourth rail"
                         v-for="credit in tmdb.credits.crew"
                         :key="credit.credit_id">
-                        <figure class="pull-left">
-                            <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                                <img class="pull-left poster"
-                                    :src="imagePath + credit.profile_path"
-                                    @error.once="getDefaultPerson" />
-                            </router-link>
-                            <figcaption class="pull-left content">
-                                <p class="title">
-                                    <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                                        {{credit.name}}
-                                    </router-link>
-                                </p>
-                                <p class="subtitle">{{credit.job}}</p>
-                            </figcaption>
-                        </figure>
-                    </section>
+                        <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.profile_path"
+                                @error.once="getDefaultPerson" />
+                        </router-link>
+                        <figcaption class="pull-left content">
+                            <p class="title">
+                                <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
+                                    {{credit.name}}
+                                </router-link>
+                            </p>
+                            <p class="subtitle">{{credit.job}}</p>
+                        </figcaption>
+                    </figure>
                 </section>
             </section>
         </section>
@@ -129,6 +152,7 @@
 <script>
     import Vue from 'vue'
 
+    import AppModal from '../app-modal/AppModal'
     import AppSpinner from '../app-spinner/AppSpinner'
     import AppCarousel from '../app-carousel/AppCarousel'
     import AppSegment from '../app-segment/AppSegment'
@@ -137,6 +161,7 @@
     export default {
         name: 'appShow',
         components: {
+            'app-modal': AppModal,
             'app-carousel': AppCarousel,
             'app-segment': AppSegment,
             'app-spinner': AppSpinner
@@ -149,7 +174,8 @@
                 tmdb: {},
                 carouselData: [],
                 similarShows: [],
-                spinnerStatus: true
+                spinnerStatus: true,
+                modalCarousel: []
             }
         },
         props: {
@@ -177,6 +203,7 @@
                         }
                     })
                     this.similarShows = SeriesService.contructCards(this.tmdb.similar.results)
+                    this.modalCarousel = this.tmdb.videos.results.map((video) => video)
                 })
             }
         },

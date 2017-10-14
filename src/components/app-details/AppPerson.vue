@@ -81,63 +81,59 @@
                 <h3 class="site-width section-subtitle">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </h3>
-                <section class=" content-wrapper clearfix">
-                    <section class="pull-left one-third rail"
+                <section class=" content-wrapper">
+                    <figure class="one-third rail"
                         v-for="credit in person.combined_credits.cast"
                         :key="credit.credit_id">
-                        <figure class="pull-left">
-                            <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                                <img class="pull-left poster"
-                                    :src="imagePath + credit.poster_path"
-                                    @error="getDefaultPoster" />
-                            </router-link>
-                            <figcaption class="pull-left">
-                                <p class="title">
-                                    <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                                        {{credit.title || credit.name}}
-                                    </router-link>
-                                </p>
-                                <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
-                                <p class="captions">
-                                    <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
-                                        {{getGenreFromId(id).name}}
-                                    </a>
-                                </p>
-                                <p class="rating clearfix">
-                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                                    {{credit.vote_average}} / 10 from {{credit.vote_count | format}} users
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </section>
-                    <section class="pull-left one-third rail"
+                        <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.poster_path"
+                                @error="getDefaultPoster" />
+                        </router-link>
+                        <figcaption class="pull-left">
+                            <p class="title">
+                                <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                                    {{credit.title || credit.name}}
+                                </router-link>
+                            </p>
+                            <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
+                            <p class="captions">
+                                <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
+                                    {{getGenreFromId(id).name}}
+                                </a>
+                            </p>
+                            <p class="rating clearfix">
+                                <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                {{credit.vote_average}} / 10 from {{credit.vote_count | format}} users
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="one-third rail"
                         v-for="credit in person.combined_credits.crew"
                         :key="credit.credit_id">
-                        <figure class="pull-left">
-                            <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                                <img class="pull-left poster"
-                                    :src="imagePath + credit.poster_path"
-                                    @error.once="getDefaultPoster" />
-                            </router-link>
-                            <figcaption class="pull-left content">
-                                <p class="title">
-                                    <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                                        {{credit.title || credit.name}}
-                                    </router-link>
-                                </p>
-                                <p class="subtitle">{{credit.job}}</p>
-                                <p class="captions">
-                                    <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
-                                        {{getGenreFromId(id).name}}
-                                    </a>
-                                </p>
-                                <p class="rating clearfix">
-                                    <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                                    {{credit.vote_average}} / 10 from {{credit.vote_count | format}} users
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </section>
+                        <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                            <img class="pull-left poster"
+                                :src="imagePath + credit.poster_path"
+                                @error.once="getDefaultPoster" />
+                        </router-link>
+                        <figcaption class="pull-left content">
+                            <p class="title">
+                                <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
+                                    {{credit.title || credit.name}}
+                                </router-link>
+                            </p>
+                            <p class="subtitle">{{credit.job}}</p>
+                            <p class="captions">
+                                <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
+                                    {{getGenreFromId(id).name}}
+                                </a>
+                            </p>
+                            <p class="rating clearfix">
+                                <i class="fa fa-star color-yellow" aria-hidden="true"></i>
+                                {{credit.vote_average}} / 10 from {{credit.vote_count | format}} users
+                            </p>
+                        </figcaption>
+                    </figure>
                 </section>
             </section>
         </section>
