@@ -167,14 +167,14 @@
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
 
-                    this.tmdb.seasons.slice(1).forEach((season) => {
-                        this.carouselData.push({
+                    this.carouselData = this.tmdb.seasons.slice(1).map((season) => {
+                        return {
                             poster: this.imagePath + season.poster_path,
                             captions: [
                                 'SEASON ' + season.season_number + ' / ' + season.episode_count + ' EPISODES',
                                 this.toDate(season.air_date)
                             ]
-                        })
+                        }
                     })
                     this.similarShows = SeriesService.contructCards(this.tmdb.similar.results)
                 })
