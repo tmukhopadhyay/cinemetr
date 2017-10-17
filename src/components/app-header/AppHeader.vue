@@ -66,16 +66,14 @@
                 font-size: 14px;
                 font-weight: 700;
                 color: #616161;
-                line-height: 44px;
+                line-height: 42px;
+                background-color: #F1F1F1;
+                border-top: 2px solid #C7A605;
                 float: left;
                 padding: 10px 15px;
                 cursor: default;
 
                 &:hover {
-                    line-height: 42px;
-                    background-color: #F1F1F1;
-                    border-top: 2px solid #C7A605;
-
                     .menu-panel {
                         display: block;
                     }
