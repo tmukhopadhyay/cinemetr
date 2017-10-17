@@ -3,7 +3,7 @@
         <app-spinner :spinner-status="spinnerStatus"></app-spinner>
         <section class="relative" v-show="!spinnerStatus" v-if="isNotEmpty(omdb) && isNotEmpty(tmdb)">
             <figure class="poster-wrapper">
-                <img class="poster" :src="backdropPath + tmdb.backdrop_path" />
+                <img class="poster" :src="backdropPath + tmdb.backdrop_path" @error="getDefaultBackdrop" />
                 <section class="overlay"></section>
             </figure>
             <section class="site-width clearfix statistic">

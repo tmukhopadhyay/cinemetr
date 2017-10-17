@@ -42,5 +42,10 @@ export default {
             'alternative_titles%2Cchanges%2Ccredits%2Cimages%2Ckeywords%2Creleases%2Creviews%2Csimilar%2Ctranslations%2Cvideos',
             (data) => { callback(data) }
         )
+    },
+    search (searchText, callback) {
+        DataService.search(Vue.config.SEARCH_MOVIE, searchText, (movies) => {
+            callback(movies)
+        })
     }
 }

@@ -33,6 +33,13 @@
         -ms-interpolation-mode:nearest-neighbor;
         text-rendering: optimizeLegibility;
     }
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     .site-width {
         max-width: 1000px;
         margin: 0 auto;

@@ -8,6 +8,7 @@ Object.assign(Vue.config, {
     OMDB_BASE_URL: process.env.OMDB_BASE_URL,
     OMDB_MOVIE_DETAILS: process.env.OMDB_MOVIE_DETAILS,
     OMDB_SHOW_DETAILS: process.env.OMDB_SHOW_DETAILS,
+    SEARCH: process.env.SEARCH,
     SEARCH_MOVIE: process.env.SEARCH_MOVIE,
     SEARCH_SERIES: process.env.SEARCH_SERIES,
     SEARCH_PEOPLE: process.env.SEARCH_PEOPLE,

@@ -9,6 +9,7 @@ module.exports = merge(prodEnv, {
     OMDB_BASE_URL: '"/static/data/"',
     OMDB_MOVIE_DETAILS: '"omdb-movie.json"',
     OMDB_SHOW_DETAILS: '"omdb-show.json"',
+    SEARCH: '""',
     SEARCH_MOVIE: '"movies.json"',
     SEARCH_SERIES: '"series.json"',
     SEARCH_PEOPLE: '"people.json"',

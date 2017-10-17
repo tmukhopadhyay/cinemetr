@@ -5,6 +5,21 @@ Vue.mixin({
         isNotEmpty (obj) {
             return obj && Object.keys(obj).length !== 0
         },
+        debounce (func, wait, immediate) {
+            let timeout
+            return function () {
+                let context = this
+                let args = arguments
+                let later = function () {
+                    timeout = null
+                    if (!immediate) func.apply(context, args)
+                }
+                let callNow = immediate && !timeout
+                clearTimeout(timeout)
+                timeout = setTimeout(later, wait)
+                if (callNow) func.apply(context, args)
+            }
+        },
         getGenreFromId (id) {
             return window.genres.find(genre => genre.id === id) || {}
         },

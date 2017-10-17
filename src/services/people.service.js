@@ -35,5 +35,10 @@ export default {
             'changes%2Ccombined_credits%2Cexternal_ids%2Cimages%2Cmovie_credits%2Ctagged_images%2Ctv_credits',
             (data) => { callback(data) }
         )
+    },
+    search (searchText, callback) {
+        DataService.search(Vue.config.SEARCH_PEOPLE, searchText, (people) => {
+            callback(people)
+        })
     }
 }

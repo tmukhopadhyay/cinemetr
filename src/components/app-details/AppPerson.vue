@@ -29,8 +29,14 @@
                             <section class="table-row">
                                 <span class="table-cell">MOVIE</span>
                                 <span class="table-cell color-yellow">
-                                    <template v-for="(credit, index) in person.movie_credits.cast" v-if="index < 20">
-                                        {{credit.title}}<template v-if="index < 19">,</template>
+                                    <template
+                                        v-for="(credit, index) in person.movie_credits.cast"
+                                        v-if="index < 20">
+                                        <router-link
+                                            :to="{ name: 'AppMovie', params: { id: credit.id } }"
+                                            :key="credit.id"
+                                            class="color-yellow">
+                                            {{credit.title}}</router-link><template v-if="index < 19">, </template>
                                     </template>
                                 </span>
                             </section>
@@ -38,7 +44,11 @@
                                 <span class="table-cell">TV</span>
                                 <span class="table-cell color-yellow">
                                     <template v-for="(credit, index) in person.tv_credits.cast" v-if="index < 20">
-                                        {{credit.name}}<template v-if="index < 19">,</template>
+                                        <router-link
+                                            :to="{ name: 'AppShow', params: { id: credit.id } }"
+                                            :key="credit.id"
+                                            class="color-yellow">
+                                            {{credit.name}}</router-link><template v-if="index < 19">, </template>
                                     </template>
                                 </span>
                             </section>
