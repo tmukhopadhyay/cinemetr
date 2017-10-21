@@ -4,7 +4,7 @@ module.exports = {
     IMAGE_PATH: '"https://image.tmdb.org/t/p/w300"',
     NODE_ENV: '"production"',
     OMDB_API_KEY: '"636bd88a"',
-    OMDB_BASE_URL: '"http://www.omdbapi.com/"',
+    OMDB_BASE_URL: '"https://www.omdbapi.com/"',
     OMDB_MOVIE_DETAILS: '""',
     OMDB_SHOW_DETAILS: '""',
     SEARCH: '"search/"',
