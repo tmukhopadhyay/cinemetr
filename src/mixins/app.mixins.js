@@ -30,7 +30,7 @@ Vue.mixin({
             e.target.src = '/static/images/default-person.png'
         },
         getDefaultBackdrop (e) {
-            e.target.src = '/static/images/default-backdrop.jpg'
+            e.target.src = '/static/images/default-backdrop.svg'
         },
         toDate (value) {
             if (!value) {

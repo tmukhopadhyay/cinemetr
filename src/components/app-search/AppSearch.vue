@@ -112,6 +112,8 @@
         },
         methods: {
             getData (pageNum) {
+                window.scroll(0, 0)
+
                 this.results = []
                 this.spinnerStatus = true
 

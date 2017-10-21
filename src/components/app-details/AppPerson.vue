@@ -12,7 +12,7 @@
                     <section class="pull-left metadata">
                         <h2 class="title">{{person.name}}</h2>
                         <p class="certification text-small text-bold">
-                            <span class="item">BORN {{person.birthday | toDate}} IN {{person.place_of_birth}}</span>
+                            <span class="item" v-if="person.birthday">BORN {{person.birthday | toDate}} IN {{person.place_of_birth}}</span>
                             <span class="item" v-if="person.deathday">DIED {{person.deathday | toDate}}</span>
                         </p>
                         <p class="certification text-small text-bold">
@@ -85,7 +85,8 @@
             <app-lightbox
                 :data="lightboxData"
                 :items="5"
-                title="Photos">
+                title="Photos"
+                v-if="lightboxData.length">
             </app-lightbox>
             <section class="segment">
                 <h3 class="site-width section-title">FILMOGRAPHY</h3>

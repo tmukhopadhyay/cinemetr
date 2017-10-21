@@ -1,255 +1,29 @@
 {
-    "title":"Game of Thrones",
-    "content_rating":"TV-MA",
-    "original_title":"",
-    "metadata":{
-        "languages":[
-            "English"
-        ],
-        "asp_retio":"1.78 : 1",
-        "filming_locations":[
-            "Iceland"
-        ],
-        "also_known_as":[
-            "A Song of Ice and Fire"
-        ],
-        "countries":[
-            "USA",
-            "UK"
-        ],
-        "gross":"",
-        "sound_mix":[
-            "Dolby Digital",
-            "Dolby Atmos(Home video release)"
-        ],
-        "budget":""
-    },
-    "release_date":"",
-    "director":"",
-    "url":{
-        "url":"http://www.imdb.com/title/tt0944947"
-    },
-    "year":"",
-    "trailer":[
+    "Title":"Game of Thrones",
+    "Year":"2011–",
+    "Rated":"TV-MA",
+    "Released":"17 Apr 2011",
+    "Runtime":"57 min",
+    "Genre":"Adventure, Drama, Fantasy",
+    "Director":"N/A",
+    "Writer":"David Benioff, D.B. Weiss",
+    "Actors":"Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington",
+    "Plot":"Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.",
+    "Language":"English",
+    "Country":"USA, UK",
+    "Awards":"Won 1 Golden Globe. Another 252 wins & 427 nominations.",
+    "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3NTQ1NDg1Ml5BMl5BanBnXkFtZTgwNzY2NDA0MjI@._V1_SX300.jpg",
+    "Ratings":[
         {
-            "mimeType":"video/mp4",
-            "definition":"480p",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BMGVmMTM2MzQtYThmNC00NzU5LTg3YjYtZjVmOGM2OWYyNWU0XkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4?Expires=1507817013&Signature=jWcCquUtG8E~kWj2fivObe3BvbZfc61T57~bx5IUFFmPqoqa0HW4ujWr4x5zcTZy~B5miEkEqQmGtS9ngJd0T9A8lZcx4hD8uS07hMnVokfGeQt8JdFkDLbDRScMxFriRI7WokWn3~xxgYN0TjmHQB5Hku7-boI2c0c9KdZoL7I_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
-        },
-        {
-            "mimeType":"video/mp4",
-            "definition":"720p",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BZDRhNjUxMTMtNjc2MC00Y2I1LWI2NDUtMTA4NTQ5ZjJhZDNjXkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4?Expires=1507817013&Signature=r3PAb-1h5jhSBXPYE0kWrUw6lWiX390Oq2vRwX0YEuHKDIOz5ohb5NIasXfOHfhuAT9jqpMksHqpQgTUVKt-PthysE6CN4q6GOtVvFsEP-69dqU6t2cJU9whptZPDXwoCE6M9uvf4dVLsWKPPclMeOp2Rkj1MQSDNnRid27o5FY_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
-        },
-        {
-            "mimeType":"video/mp4",
-            "definition":"SD",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BY2U4NmZkOTQtZmY2ZC00YWMzLWExMDItNDE0MDhhMDU2NGNkXkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@.mp4?Expires=1507817013&Signature=nHA9UQqEZsNk4EejEqTN4qHH2mdtcNoTVO9cwBy27fjuGdAYy8HT3oeoq3yjz0XNbOtx4IDwutoR946BpqwUvX5DddPck0969bhZlpWDqiM61BkRee5MfU~cdtD9o90yX8FfcyYG-roHukxsCRBrVjbQzjvvCszbdkboQfVLD3o_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
-        },
-        {
-            "mimeType":"application/x-mpegURL",
-            "definition":"auto",
-            "videoUrl":"https://imdb-video.media-imdb.com/vi1226094873/hls-1503337163244-master.m3u8?Expires=1507817013&Signature=SQO19z-DHdLVYW~U1SOMFO93SD3EcP2vxv~wG7CXM9FSGMw69wZwvYhtooytleGjz8stJouP7HA4b4-0~hRrUyAGtAiaToVaVNHIs5gmGaHYwl0DMV6WyRmX~5gLdBrpwnIE7C9hK0qfN-9PvcdqIw70fwC2Wl-l6eNBTXyqNt28ORp~4J1h-tnBgMv5mNbM~L10G~bNrpo~rDPQ~UXpOhoSm5Gu47xm1u-OazVDWIRIpHyT1ujWiB0YlaU4G0Xs-FhzFROHQm97wyN6BE7VB1mQx2eAvolXazfSGTF5LsyDB7COllN-Oi5GvcOr~9Jw9u2N-BtGlap-weN4VIgEdQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"
+            "Source":"Internet Movie Database",
+            "Value":"9.5/10"
         }
     ],
-    "length":"57",
-    "cast":[
-        {
-            "character":"&#160;Tyrion Lannister                  (61 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM1MTI5Mzc0MF5BMl5BanBnXkFtZTYwNzgzOTQz._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0227759/?ref_=tt_cl_t1",
-            "name":"Peter Dinklage"
-        },
-        {
-            "character":"&#160;Cersei Lannister                  (58 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMzIwMjIwNjg0M15BMl5BanBnXkFtZTgwOTI3MDEzMDE@._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0372176/?ref_=tt_cl_t2",
-            "name":"Lena Headey"
-        },
-        {
-            "character":"&#160;Daenerys Targaryen                  (56 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNjg3OTg4MDczMl5BMl5BanBnXkFtZTgwODc0NzUwNjE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3592338/?ref_=tt_cl_t3",
-            "name":"Emilia Clarke"
-        },
-        {
-            "character":"&#160;Jon Snow                  (56 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTA2NTI0NjYxMTBeQTJeQWpwZ15BbWU3MDIxMjgyNzY@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3229685/?ref_=tt_cl_t4",
-            "name":"Kit Harington"
-        },
-        {
-            "character":"&#160;Sansa Stark                  (54 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTgyNzE5OTkzMV5BMl5BanBnXkFtZTgwNzM4ODAzMjE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3849842/?ref_=tt_cl_t5",
-            "name":"Sophie Turner"
-        },
-        {
-            "character":"&#160;Arya Stark                  (53 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTkwNDQ3MjY1NV5BMl5BanBnXkFtZTcwMjQzMzEzOQ@@._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3586035/?ref_=tt_cl_t6",
-            "name":"Maisie Williams"
-        },
-        {
-            "character":"&#160;Jaime Lannister                  (49 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MzkzOTk0NF5BMl5BanBnXkFtZTcwNjU5NTgzMQ@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0182666/?ref_=tt_cl_t7",
-            "name":"Nikolaj Coster-Waldau"
-        },
-        {
-            "character":"&#160;Jorah Mormont                  (48 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2NzU2NjI2MF5BMl5BanBnXkFtZTcwMzI1OTQ3Mw@@._V1_UY44_CR17,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0322513/?ref_=tt_cl_t8",
-            "name":"Iain Glen"
-        },
-        {
-            "character":"&#160;Theon Greyjoy                  (43 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BOTc0OTI3ODIxOF5BMl5BanBnXkFtZTcwNDA2MDg0Nw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0654295/?ref_=tt_cl_t9",
-            "name":"Alfie Allen"
-        },
-        {
-            "character":"&#160;Samwell Tarly                  (43 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MTQ3NTU4M15BMl5BanBnXkFtZTcwNzI0OTYyOQ@@._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm4263213/?ref_=tt_cl_t10",
-            "name":"John Bradley"
-        },
-        {
-            "character":"&#160;Petyr 'Littlefinger' Baelish                  (41 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwNzE4MzMxNl5BMl5BanBnXkFtZTgwOTYwMTEyMDE@._V1_UY44_CR0,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0318821/?ref_=tt_cl_t11",
-            "name":"Aidan Gillen"
-        },
-        {
-            "character":"&#160;Lord Varys                  (41 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNDM3NDYyNDE5NV5BMl5BanBnXkFtZTcwNDIxNzQyOA@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0384152/?ref_=tt_cl_t12",
-            "name":"Conleth Hill"
-        },
-        {
-            "character":"&#160;Brienne of Tarth                  (37 episodes, 2012-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMzA3MTcxMTMzM15BMl5BanBnXkFtZTcwMDI2MDg0Nw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3729225/?ref_=tt_cl_t13",
-            "name":"Gwendoline Christie"
-        },
-        {
-            "character":"&#160;Davos Seaworth                  (36 episodes, 2012-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyMDM0NzQ5NV5BMl5BanBnXkFtZTcwNDkyODQyNw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0192377/?ref_=tt_cl_t14",
-            "name":"Liam Cunningham"
-        },
-        {
-            "character":"&#160;Bran Stark                  (35 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0MjM5MDkwMV5BMl5BanBnXkFtZTgwMTM0NzkwNTE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm3652842/?ref_=tt_cl_t15",
-            "name":"Isaac Hempstead Wright"
-        },
-        {
-            "character":"&#160;Bronn                  (34 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5NzA1MTkzM15BMl5BanBnXkFtZTgwMzQ5MDI2NTE@._V1_UY44_CR5,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0283492/?ref_=tt_cl_t16",
-            "name":"Jerome Flynn"
-        },
-        {
-            "character":"&#160;Missandei                  (34 episodes, 2013-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM3NzQ4ODU0M15BMl5BanBnXkFtZTcwMDM4Njg3OA@@._V1_UY44_CR0,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm2812026/?ref_=tt_cl_t17",
-            "name":"Nathalie Emmanuel"
-        },
-        {
-            "character":"&#160;Sandor 'The Hound' Clegane                  (33 episodes, 2011-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxODk5MTUwMV5BMl5BanBnXkFtZTgwNDEwMTgxNDE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0564920/?ref_=tt_cl_t18",
-            "name":"Rory McCann"
-        },
-        {
-            "character":"&#160;Grand Maester Pycelle                  (31 episodes, 2011-2016)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4MDg3MjA2NV5BMl5BanBnXkFtZTcwNjAxNzczNA@@._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0002103/?ref_=tt_cl_t19",
-            "name":"Julian Glover"
-        },
-        {
-            "character":"&#160;Eddison Tollett                  (30 episodes, 2012-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMzg0NjYwOV5BMl5BanBnXkFtZTgwMjgyMjE3NzE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0174005/?ref_=tt_cl_t20",
-            "name":"Ben Crompton"
-        },
-        {
-            "character":"&#160;Podrick Payne                  (30 episodes, 2012-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwNjk5MjU2N15BMl5BanBnXkFtZTgwMzk1NjEwNzE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm4535552/?ref_=tt_cl_t21",
-            "name":"Daniel Portman"
-        },
-        {
-            "character":"&#160;Melisandre                  (28 episodes, 2012-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzNjkyNzEyOV5BMl5BanBnXkFtZTcwNjE5MDUyNg@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0396924/?ref_=tt_cl_t22",
-            "name":"Carice van Houten"
-        },
-        {
-            "character":"&#160;Tormund Giantsbane                  (28 episodes, 2013-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BODAzNTYyODg4OF5BMl5BanBnXkFtZTcwNjk1ODg4Nw@@._V1_UY44_CR4,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm1970465/?ref_=tt_cl_t23",
-            "name":"Kristofer Hivju"
-        },
-        {
-            "character":"&#160;Grey Worm                  (28 episodes, 2013-2017)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BN2IzOWVlZDYtZmFhZS00ZmQ5LThmNjItMjM1MjM2NGE4NjJhXkEyXkFqcGdeQXVyNTI5NjIyMw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm2760664/?ref_=tt_cl_t24",
-            "name":"Jacob Anderson"
-        },
-        {
-            "character":"&#160;Tywin Lannister                  (27 episodes, 2011-2015)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMzY0Mjg4MzM0Ml5BMl5BanBnXkFtZTcwODc4NTIxNw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0001097/?ref_=tt_cl_t25",
-            "name":"Charles Dance"
-        },
-        {
-            "character":"&#160;Margaery Tyrell                  (26 episodes, 2012-2016)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNjM4NjQwMzE1Ml5BMl5BanBnXkFtZTgwNjg5MTM0NzE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm1754059/?ref_=tt_cl_t26",
-            "name":"Natalie Dormer"
-        },
-        {
-            "character":"&#160;Joffrey Baratheon                  (26 episodes, 2011-2014)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNjEyMzc2NjE5MF5BMl5BanBnXkFtZTgwOTQyODM0MTE@._V1_UY44_CR17,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0322416/?ref_=tt_cl_t27",
-            "name":"Jack Gleeson"
-        },
-        {
-            "character":"&#160;Catelyn Stark                  (25 episodes, 2011-2013)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjI5OTczOTQ5Nl5BMl5BanBnXkFtZTcwMTU4MzEzOQ@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0265610/?ref_=tt_cl_t28",
-            "name":"Michelle Fairley"
-        },
-        {
-            "character":"&#160;Barristan Selmy                  (25 episodes, 2011-2015)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMTE0NjUxNV5BMl5BanBnXkFtZTcwOTA1ODg5NA@@._V1_UY44_CR17,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0568400/?ref_=tt_cl_t29",
-            "name":"Ian McElhinney"
-        }
-    ],
-    "imdb_id":"tt0944947",
-    "rating":"9.5",
-    "genre":[
-        "Adventure",
-        "Drama",
-        "Fantasy"
-    ],
-    "rating_count":"1,244,156",
-    "storyline":"In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
-    "description":"Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.",
-    "writers":[
-        "David Benioff",
-        "D.B. Weiss"
-    ],
-    "stars":[
-        "Emilia Clarke",
-        "Peter Dinklage",
-        "Kit Harington"
-    ],
-    "poster":{
-        "large":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3NTQ1NDg1Ml5BMl5BanBnXkFtZTgwNzY2NDA0MjI@._V1_.jpg",
-        "thumb":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3NTQ1NDg1Ml5BMl5BanBnXkFtZTgwNzY2NDA0MjI@._V1_UX182_CR0,0,182,268_AL_.jpg"
-    }
+    "Metascore":"N/A",
+    "imdbRating":"9.5",
+    "imdbVotes":"1,246,659",
+    "imdbID":"tt0944947",
+    "Type":"series",
+    "totalSeasons":"8",
+    "Response":"True"
 }

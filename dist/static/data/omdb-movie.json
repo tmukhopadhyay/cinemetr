@@ -1,182 +1,40 @@
 {
-    "title":"The Avengers",
-    "content_rating":"PG-13",
-    "original_title":"",
-    "metadata":{
-        "languages":[
-            "English",
-            "Russian",
-            "Hindi"
-        ],
-        "asp_retio":"1.78 : 1",
-        "filming_locations":[
-            "Pittsburgh",
-            "Pennsylvania",
-            "USA"
-        ],
-        "also_known_as":[
-            "Group Hug"
-        ],
-        "countries":[
-            "USA"
-        ],
-        "gross":"$623,357,910              (USA)",
-        "sound_mix":[
-            "Datasat",
-            "Dolby Digital",
-            "Dolby Surround 7.1",
-            "SDDS",
-            "Sonics-DDP"
-        ],
-        "budget":"$220,000,000              (estimated)"
-    },
-    "release_date":"2012-05-04",
-    "director":"Joss Whedon",
-    "url":{
-        "url":"http://www.imdb.com/title/tt0848228"
-    },
-    "year":"2012",
-    "trailer":[
+    "Title":"The Avengers",
+    "Year":"2012",
+    "Rated":"PG-13",
+    "Released":"04 May 2012",
+    "Runtime":"143 min",
+    "Genre":"Action, Adventure, Sci-Fi",
+    "Director":"Joss Whedon",
+    "Writer":"Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+    "Actors":"Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Plot":"Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "Language":"English, Russian, Hindi",
+    "Country":"USA",
+    "Awards":"Nominated for 1 Oscar. Another 37 wins & 79 nominations.",
+    "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
+    "Ratings":[
         {
-            "mimeType":"video/mp4",
-            "definition":"480p",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BMjE0NjU2NDE3MF5BMTFeQW1wNF5BbWU3MDE4OTg1MDg@.mp4?Expires=1507816945&Signature=oVVOImTsyR0O2nelMdBHBfJNsA9Vy4PSvfR68bSycs0lTKD7w5AGWImrueJ07pmnVvs1~FDeFA723RWZfZzFa-GGDgXr7SzeIiKzSd7NliU55NgVKIbR5hgIBBjV2-PvF7Z774lNRUItuNz4hr5RPvmvpu~3EvcLbhsBdDCMSIo_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
+            "Source":"Internet Movie Database",
+            "Value":"8.1/10"
         },
         {
-            "mimeType":"video/webm",
-            "definition":"SD",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BMTAyNTA0NjcxNDBeQTExXkF3ZWJtXkFtZTcwNDg5ODUwOA@@.webm?Expires=1507816945&Signature=w4L~Oz2icml~X4yW27z6WEejl7L5sgL2tLwuIGQgiPXEOUG4gVNQA~Sc-glVrX5GKNBlx65T0CwbVmshpQ90OvTVPl~od911eL3eG6xtHYa5k7P7rNt5xj~8mA5KPzUlxF-6k5GaOlRkrkWeI9lcVQbV3fX5k~z7~9kWY8sk3aM_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
+            "Source":"Rotten Tomatoes",
+            "Value":"92%"
         },
         {
-            "mimeType":"video/mp4",
-            "definition":"SD",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BNzcyNDc1NjU4OF5BMTFeQW1wNF5BbWU3MDA4OTg1MDg@.mp4?Expires=1507816945&Signature=L6rf2PXIE3EtBLT4S1GAss6RU9KPwlvzOTWgxLX58yyI3QZ9fu5KKAkVgReB9lXYN4xMxq958Qhy5W4F-KcSI67JqYzCyJu9zosvR8yUuN44bamOqVLXvENViTSBlb9UgxPNLi94~H0dAVPWtHkxve0o5GMDOUCNby7g~I8ReZE_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
-        },
-        {
-            "mimeType":"video/webm",
-            "definition":"SD",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BNTI1MjgxNTM0N15BMTFeQXdlYm1eQW1lNzA5Nzk4NTA4.webm?Expires=1507816945&Signature=qBqbim5wSXPR3efpr-wRTGNZTH8YRtAeMhf81SXC8nWvXY6rbT2-wGZB5oQ4aEpmbCSVkIWkKdHmbei3e5jgPfqhdhPTEVltZIDeyGRYR34LeYSqeuxrJmcXVM6ufUo~64xfjJeN~y3WwhSIBy~4iW0aKnIwjhQvl0HpsYn9RAk_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
-        },
-        {
-            "mimeType":"video/mp4",
-            "definition":"SD",
-            "videoUrl":"https://video-http.media-imdb.com/MV5BMTc0Mzc5NTg0M15BMTFeQW1wNF5BbWU3MDc5OTg1MDg@.mp4?Expires=1507816945&Signature=kHzkZsgGIi7d6NLYIo9uBFfxfQxIyLQ9lALlhLw-3a0W5MfXTOolCF-8qjX-6Xe8vofn69OlECx2cy-k7f41wFqNwnY31y4Ma~~qvg0~uBNZk1-Sp7eGDcL~xsfmC4nBpuZPuBJ3O~KSyHK7QnwaenHxOom6Oavdi4BsWg9CJ20_&Key-Pair-Id=APKAILW5I44IHKUN2DYA"
+            "Source":"Metacritic",
+            "Value":"69/100"
         }
     ],
-    "length":"143",
-    "cast":[
-        {
-            "character":"Tony Stark /              Iron Man",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0000375/?ref_=tt_cl_t1",
-            "name":"Robert Downey Jr."
-        },
-        {
-            "character":"Steve Rogers /              Captain America",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NTg1OTQzMF5BMl5BanBnXkFtZTcwNjIyMjkyMg@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0262635/?ref_=tt_cl_t2",
-            "name":"Chris Evans"
-        },
-        {
-            "character":"Bruce Banner /              The Hulk",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNDQyNzMzZTMtYjlkNS00YzFhLWFhMTctY2M4YmQ1NmRhODBkXkEyXkFqcGdeQXVyNjcyNzgyOTE@._V1_UY44_CR1,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0749263/?ref_=tt_cl_t3",
-            "name":"Mark Ruffalo"
-        },
-        {
-            "character":"Thor",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm1165110/?ref_=tt_cl_t4",
-            "name":"Chris Hemsworth"
-        },
-        {
-            "character":"Natasha Romanoff /              Black Widow",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY44_CR2,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0424060/?ref_=tt_cl_t5",
-            "name":"Scarlett Johansson"
-        },
-        {
-            "character":"Clint Barton /              Hawkeye",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BOTk2NDc2ODgzMF5BMl5BanBnXkFtZTcwMTMzOTQ4Nw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0719637/?ref_=tt_cl_t6",
-            "name":"Jeremy Renner"
-        },
-        {
-            "character":"Loki",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTEwNjE0Njg2MTReQTJeQWpwZ15BbWU3MDEyODM1ODc@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm1089991/?ref_=tt_cl_t7",
-            "name":"Tom Hiddleston"
-        },
-        {
-            "character":"Agent Phil Coulson",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjYyNjAwNDUyOV5BMl5BanBnXkFtZTgwOTc5NzgyNjE@._V1_UY44_CR0,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0163988/?ref_=tt_cl_t8",
-            "name":"Clark Gregg"
-        },
-        {
-            "character":"Agent Maria Hill",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzNTUyMTczM15BMl5BanBnXkFtZTcwMjMxNTM4Nw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm1130627/?ref_=tt_cl_t9",
-            "name":"Cobie Smulders"
-        },
-        {
-            "character":"Selvig",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4NDUzOTY0N15BMl5BanBnXkFtZTYwNjYxODE0._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0001745/?ref_=tt_cl_t10",
-            "name":"Stellan Skarsg\u00e5rd"
-        },
-        {
-            "character":"Nick Fury",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1NTQwMTYxNl5BMl5BanBnXkFtZTYwMjA1MzY1._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0000168/?ref_=tt_cl_t11",
-            "name":"Samuel L. Jackson"
-        },
-        {
-            "character":"Pepper Potts",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BNzIxOTQ1NTU1OV5BMl5BanBnXkFtZTcwMTQ4MDY0Nw@@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0000569/?ref_=tt_cl_t12",
-            "name":"Gwyneth Paltrow"
-        },
-        {
-            "character":"Jarvis       (voice)",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwODg1MTA5Ml5BMl5BanBnXkFtZTcwNDQwMTQxMw@@._V1_UY44_CR0,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0079273/?ref_=tt_cl_t13",
-            "name":"Paul Bettany"
-        },
-        {
-            "character":"The Other",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMTg3MDU2NV5BMl5BanBnXkFtZTcwNjk0NTM2OQ@@._V1_UY44_CR14,0,32,44_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0219206/?ref_=tt_cl_t14",
-            "name":"Alexis Denisof"
-        },
-        {
-            "character":"NASA Scientist",
-            "image":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjM1ODg5MjQ4MF5BMl5BanBnXkFtZTgwMzA5MTQxNTE@._UY317_CR16,0,214,317_AL_.jpg",
-            "link":"http://www.imdb.com/name/nm0071416/?ref_=tt_cl_t15",
-            "name":"Tina Benko"
-        }
-    ],
-    "imdb_id":"tt0848228",
-    "rating":"8.1",
-    "genre":[
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-    ],
-    "rating_count":"1,065,422",
-    "storyline":"Nick Fury is the director of S.H.I.E.L.D., an international peace-keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.",
-    "description":"Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "writers":[
-        "Joss Whedon",
-        "Zak Penn"
-    ],
-    "stars":[
-        "Robert Downey Jr.",
-        "Chris Evans",
-        "Scarlett Johansson"
-    ],
-    "poster":{
-        "large":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_.jpg",
-        "thumb":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
-    }
+    "Metascore":"69",
+    "imdbRating":"8.1",
+    "imdbVotes":"1,065,150",
+    "imdbID":"tt0848228",
+    "Type":"movie",
+    "DVD":"25 Sep 2012",
+    "BoxOffice":"$623,279,547",
+    "Production":"Walt Disney Pictures",
+    "Website":"http://marvel.com/avengers_movie",
+    "Response":"True"
 }

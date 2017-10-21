@@ -63,6 +63,8 @@
             }
         },
         created () {
+            window.scroll(0, 0)
+
             MovieService.getUpcomingMovies(true, 2, (movies) => { this.upcomingMovies = movies })
             MovieService.getNowPlayingMovies(false, 1, (movies) => { this.nowPlayingMovies = movies })
             SeriesService.getAiringToday(false, 1, (series) => { this.popularSeries = series })
