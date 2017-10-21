@@ -11,8 +11,7 @@ export default {
                 hasTooltip: true,
                 tooltipText: show.overview,
                 labels: show.genre_ids.map((id) => {
-                    let genre = {}
-                    genre.name = Vue.options.methods.getGenreFromId(id).name
+                    let genre = Vue.options.methods.getGenreFromId(id)
                     genre.type = 'genre'
                     genre.link = {
                         name: 'AppSearch',
