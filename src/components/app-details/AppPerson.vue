@@ -110,9 +110,13 @@
                             </p>
                             <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
                             <p class="captions">
-                                <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
-                                    {{getGenreFromId(id).name}}
-                                </a>
+                                <router-link
+                                    v-for="id in credit.genre_ids"
+                                    :key="id"
+                                    :to="{ name: 'AppSearch', params: { type: credit.media_type, subtype: id } }"
+                                    class="bullet">
+                                        {{getGenreFromId(id).name}}
+                                </router-link>
                             </p>
                             <p class="rating clearfix">
                                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>

@@ -25,9 +25,13 @@
                                 </router-link>
                             </p>
                             <p class="captions">
-                                <a href="#" class="bullet" v-for="id in movie.genre_ids" :key="id">
-                                    {{getGenreFromId(id).name}}
-                                </a>
+                                <router-link
+                                    v-for="id in movie.genre_ids"
+                                    :key="id"
+                                    :to="{ name: 'AppSearch', params: { type: 'movie', subtype: id } }"
+                                    class="bullet">
+                                        {{getGenreFromId(id).name}}
+                                </router-link>
                             </p>
                             <p class="rating">
                                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
@@ -51,9 +55,13 @@
                                 </router-link>
                             </p>
                             <p class="captions">
-                                <a href="#" class="bullet" v-for="id in show.genre_ids" :key="id">
-                                    {{getGenreFromId(id).name}}
-                                </a>
+                                <router-link
+                                    v-for="id in show.genre_ids"
+                                    :key="id"
+                                    :to="{ name: 'AppSearch', params: { type: 'tv', subtype: id } }"
+                                    class="bullet">
+                                        {{getGenreFromId(id).name}}
+                                </router-link>
                             </p>
                             <p class="rating">
                                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
@@ -202,7 +210,7 @@
             top: 65px;
             left: 0;
             width: 100%;
-            padding: 15px 0;
+            padding: 15px 0 9px;
             z-index: 1002;
 
             nav {
