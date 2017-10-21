@@ -120,6 +120,7 @@
 
         &:hover {
             background-color: #AE9204;
+            text-decoration: none;
         }
     }
     .color-yellow {
@@ -168,5 +169,37 @@
         left: 50%;
         margin: -25px 0 0 -25px;
         z-index: 1000;
+    }
+    .paginate {
+        margin: 0 0 30px;
+
+        .page {
+            border-width: 1px 1px 1px 0;
+            border-style: solid;
+            border-color: #CCC;
+
+            a {
+                padding: 8px 14px;
+                display: block;
+                outline: none;
+                text-decoration: none;
+            }
+            &.disabled {
+                background-color: #E6E6E6;
+                color: #919191;
+            }
+            &.active {
+                background-color: #C7A605;
+                border-color: #C7A605;
+                color: #FFF;
+            }
+            &:first-child {
+                border-width: 1px;
+                border-radius: 3px 0 0 3px;
+            }
+            &:last-child {
+                border-radius: 0 3px 3px 0;
+            }
+        }
     }
 </style>

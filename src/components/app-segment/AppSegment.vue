@@ -5,7 +5,7 @@
             {{subtitle}} <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
         <nav class="clearfix site-width cards">
-            <template v-for="(item, index) in data" v-if="index < 8">
+            <template v-for="(item, index) in data">
                 <app-card :item="item" :key="item.id"></app-card>
             </template>
         </nav>

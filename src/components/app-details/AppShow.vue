@@ -59,7 +59,7 @@
                     </section>
                     <p class="overview">{{omdb.description}}</p>
                 </section>
-                <section class="pull-left rating-container">
+                <section class="pull-right rating-container">
                     <section class="featured">
                         <p class="title">{{omdb.rating}}</p>
                         <p class="subtitle">{{omdb.rating_count}} USERS</p>
@@ -187,7 +187,9 @@
         },
         methods: {
             getData () {
+                window.scroll(0, 0)
                 this.spinnerStatus = true
+
                 SeriesService.getDetails(this.id, (data) => {
                     this.spinnerStatus = false
                     this.omdb = data.omdb
@@ -202,7 +204,7 @@
                             ]
                         }
                     })
-                    this.similarShows = SeriesService.contructCards(this.tmdb.similar.results)
+                    this.similarShows = SeriesService.contructCards(this.tmdb.similar.results.slice(0, Vue.config.CARDS_PER_PAGE))
                     this.modalCarousel = this.tmdb.videos.results.map((video) => video)
                 })
             }

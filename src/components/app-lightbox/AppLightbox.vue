@@ -6,9 +6,8 @@
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </h3>
         <nav class="site-width thumbnails">
-            <figure v-for="(image, index) in images"
+            <figure v-for="(image, index) in images.slice(0, items)"
                 :key="index"
-                v-if="index < items"
                 class="thumbnail"
                 @click="openGallery(index)">
                 <img :src="image.thumb" @error="getDefaultPerson" />

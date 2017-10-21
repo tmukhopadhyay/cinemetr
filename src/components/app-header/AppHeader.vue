@@ -14,16 +14,33 @@
                         <section class="site-width clearfix">
                             <nav class="pull-left one-third">
                                 <p class="title">Movies</p>
-                                <p class="item">Top Rated</p>
-                                <p class="item">Popular</p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'movie', subtype: 'popular'}}">Popular</router-link>
+                                </p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'movie', subtype: 'top_rated'}}">Top Rated</router-link>
+                                </p>
                             </nav>
                             <nav class="pull-left one-third">
                                 <p class="title">TV Shows</p>
-                                <p class="item">Popular</p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'tv', subtype: 'airing_today'}}">Airing Today</router-link>
+                                </p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'tv', subtype: 'on_the_air'}}">On The Air</router-link>
+                                </p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'tv', subtype: 'popular'}}">Popular</router-link>
+                                </p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'tv', subtype: 'top_rated'}}">Top Rated</router-link>
+                                </p>
                             </nav>
                             <nav class="pull-left one-third">
                                 <p class="title">People</p>
-                                <p class="item">Popular</p>
+                                <p class="item">
+                                    <router-link :to="{name: 'AppSearch', params: {type: 'person', subtype: 'popular'}}">Popular</router-link>
+                                </p>
                             </nav>
                         </section>
                     </section>
@@ -73,6 +90,9 @@
                 padding: 10px 15px;
                 cursor: default;
 
+                a {
+                    color: #616161;
+                }
                 &:hover {
                     .menu-panel {
                         display: block;
@@ -82,7 +102,7 @@
             .menu-panel {
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 22px;
+                line-height: 24px;
                 padding: 15px 0;
                 background-color: rgba(255, 255, 255, 0.9);
                 border-bottom: 1px solid #CCC;

@@ -11,8 +11,12 @@
                     v-tooltip.right="item.tooltipText"></i>
             </header>
             <p class="captions">
-                <a href="#" class="bullet" v-for="label in item.labels" :key="label.id">
-                    {{label.name}}
+                <a href="#"
+                    v-for="label in item.labels"
+                    :key="label.id"
+                    @click.prevent.stop="searchByGenre(label.link)"
+                    class="bullet">
+                        {{label.name}}
                 </a>
             </p>
             <p v-if="item.hasRatings" class="rating clearfix">
@@ -35,7 +39,13 @@
             type: String
         },
         methods: {
+            searchByGenre (link) {
+                window.scroll(0, 0)
+                this.$router.push(link)
+            },
             goToDetails (item) {
+                window.scroll(0, 0)
+
                 this.$router.push({
                     name: 'App' + item.type.charAt(0).toUpperCase() + item.type.slice(1),
                     params: {

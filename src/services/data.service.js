@@ -1,10 +1,19 @@
 import Vue from 'vue'
 
 export default {
-    getData (type, subType, callback) {
-        Vue.http.get(Vue.config.TMDB_BASE_URL + type + subType + '?api_key=' + Vue.config.TMDB_API_KEY + '&language=en-US&page=1')
+    discover (type, genre, page, callback) {
+        Vue.http.get(Vue.config.TMDB_BASE_URL + 'discover/' + type + '?api_key=' + Vue.config.TMDB_API_KEY + '&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=' + page + '&with_genres=' + genre)
             .then(data => {
-                callback(data.body.results)
+                callback(data.body)
+            }, error => {
+                console.error(error)
+                callback([])
+            })
+    },
+    getData (type, subType, page, callback) {
+        Vue.http.get(Vue.config.TMDB_BASE_URL + type + subType + '?api_key=' + Vue.config.TMDB_API_KEY + '&language=en-US&page=' + page)
+            .then(data => {
+                callback(data.body)
             }, error => {
                 console.error(error)
                 callback([])

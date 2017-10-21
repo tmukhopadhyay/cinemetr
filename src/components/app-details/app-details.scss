@@ -31,6 +31,7 @@
     z-index: 1000;
     padding-top: 293px;
     margin-bottom: 30px;
+    position: relative;
 
     .snapshot {
         width: 20%;
@@ -45,6 +46,9 @@
         color: #333;
         width: 60%;
         padding: 0 20px;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
 
         .title {
             font-size: 30px;
@@ -66,17 +70,19 @@
         }
         .credits {
             line-height: 18px;
-            margin: 15px 0;
+            margin: 15px 0 0;
         }
         .overview {
             font-size: 14px;
             line-height: 20px;
             color: #616161;
+            margin: 15px 0 0;
         }
     }
     .rating-container {
         width: 20%;
         text-align: center;
+        transform: translateY(20%);
 
         .featured {
             background-color: #C7A605;

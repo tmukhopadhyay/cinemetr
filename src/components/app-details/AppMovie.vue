@@ -45,25 +45,25 @@
                     <p class="certification text-small text-bold">
                         <span class="item">{{omdb.release_date | toDate}} ({{omdb.metadata.countries.join(', ')}})</span>
                         <span class="item">{{omdb.content_rating}}</span>
-                        <span class="item">{{omdb.length}} Min</span>
+                        <span class="item" v-if="omdb.length">{{omdb.length}} Min</span>
                     </p>
                     <section class="table credits text-small text-bold">
-                        <section class="table-row">
+                        <section class="table-row" v-if="omdb.director">
                             <span class="table-cell">DIRECTOR(S)</span>
                             <span class="table-cell color-yellow">{{omdb.director}}</span>
                         </section>
-                        <section class="table-row">
+                        <section class="table-row" v-if="omdb.writers.length">
                             <span class="table-cell">WRITER(S)</span>
                             <span class="table-cell color-yellow">{{omdb.writers.join(', ')}}</span>
                         </section>
-                        <section class="table-row">
+                        <section class="table-row" v-if="omdb.stars.length">
                             <span class="table-cell">STARS</span>
                             <span class="table-cell color-yellow">{{omdb.stars.join(', ')}}</span>
                         </section>
                     </section>
                     <p class="overview">{{omdb.description}}</p>
                 </section>
-                <section class="pull-left rating-container">
+                <section class="pull-right rating-container">
                     <section class="featured">
                         <p class="title">{{omdb.rating}}</p>
                         <p class="subtitle">{{omdb.rating_count}} USERS</p>
@@ -187,12 +187,14 @@
         },
         methods: {
             getData () {
+                window.scroll(0, 0)
                 this.spinnerStatus = true
+
                 MovieService.getDetails(this.id, (data) => {
                     this.spinnerStatus = false
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
-                    this.similarMovies = MovieService.contructCards(this.tmdb.similar.results)
+                    this.similarMovies = MovieService.contructCards(this.tmdb.similar.results.slice(0, Vue.config.CARDS_PER_PAGE))
                     this.modalCarousel = this.tmdb.videos.results.map((video) => video)
                 })
             }

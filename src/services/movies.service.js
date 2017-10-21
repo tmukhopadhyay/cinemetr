@@ -13,6 +13,13 @@ export default {
                 labels: movie.genre_ids.map((id) => {
                     let genre = Vue.options.methods.getGenreFromId(id)
                     genre.type = 'genre'
+                    genre.link = {
+                        name: 'AppSearch',
+                        params: {
+                            type: 'movie',
+                            subtype: id
+                        }
+                    }
                     return genre
                 }),
                 hasRatings: true,
@@ -24,14 +31,49 @@ export default {
             }
         })
     },
-    getNowPlayingMovies (callback) {
-        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_NOW_PLAYING, (movies) => {
-            callback(this.contructCards(movies))
+    discover (showAll, genre, page, callback) {
+        DataService.discover(Vue.config.SEARCH_MOVIE, genre, page, (response) => {
+            let movies = response.results
+            if (!showAll) {
+                movies = movies.slice(0, Vue.config.CARDS_PER_PAGE)
+            }
+            callback(this.contructCards(movies), response.page, response.total_pages)
         })
     },
-    getUpcomingMovies (callback) {
-        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_UPCOMING, (movies) => {
-            callback(this.contructCards(movies))
+    getNowPlayingMovies (showAll, page, callback) {
+        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_NOW_PLAYING, page, (response) => {
+            let movies = response.results
+            if (!showAll) {
+                movies = movies.slice(0, Vue.config.CARDS_PER_PAGE)
+            }
+            callback(this.contructCards(movies), response.page, response.total_pages)
+        })
+    },
+    getUpcomingMovies (showAll, page, callback) {
+        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_UPCOMING, page, (response) => {
+            let movies = response.results
+            if (!showAll) {
+                movies = response.results.slice(0, Vue.config.CARDS_PER_PAGE)
+            }
+            callback(this.contructCards(movies), response.page, response.total_pages)
+        })
+    },
+    getPopularMovies (showAll, page, callback) {
+        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_POPULAR, page, (response) => {
+            let movies = response.results
+            if (!showAll) {
+                movies = response.results.slice(0, Vue.config.CARDS_PER_PAGE)
+            }
+            callback(this.contructCards(movies), response.page, response.total_pages)
+        })
+    },
+    getTopRatedMovies (showAll, page, callback) {
+        DataService.getData(Vue.config.SEARCH_MOVIE, Vue.config.SELECT_TOP_RATED, page, (response) => {
+            let movies = response.results
+            if (!showAll) {
+                movies = response.results.slice(0, Vue.config.CARDS_PER_PAGE)
+            }
+            callback(this.contructCards(movies), response.page, response.total_pages)
         })
     },
     getDetails (id, callback) {
