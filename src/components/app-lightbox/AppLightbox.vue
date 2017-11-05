@@ -60,17 +60,24 @@
             subtitle: String
         },
         created () {
-            this.data.forEach((image) => {
-                this.images.push({
-                    thumb: this.imagePath + image.file_path,
-                    src: this.backdropPath + image.file_path
-                })
-            })
+            this.init()
         },
         methods: {
+            init () {
+                this.images = []
+                this.data.forEach((image) => {
+                    this.images.push({
+                        thumb: this.imagePath + image.file_path,
+                        src: this.backdropPath + image.file_path
+                    })
+                })
+            },
             openGallery (index) {
                 this.$refs.lightbox.showImage(index)
             }
+        },
+        watch: {
+            'data': 'init'
         }
     }
 </script>
