@@ -24,6 +24,7 @@
                             :width="slideWidth"
                             :height="slideHeight"
                             :src="'https://www.youtube.com/embed/' + item.key"
+                            allowFullScreen
                             frameborder="0">
                         </iframe>
                     </slide>
