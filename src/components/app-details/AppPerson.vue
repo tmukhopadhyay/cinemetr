@@ -95,7 +95,7 @@
                 </h3>
                 <section class=" content-wrapper">
                     <figure class="one-third rail"
-                        v-for="credit in person.combined_credits.cast"
+                        v-for="credit in cast"
                         :key="credit.credit_id">
                         <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
                             <img class="pull-left poster"
@@ -108,7 +108,8 @@
                                     {{credit.title || credit.name}}
                                 </router-link>
                             </p>
-                            <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
+                            <p class="subtitle" v-if="credit.character">As {{credit.character}}</p>
+                            <p class="subtitle" v-if="credit.job">{{credit.job}}</p>
                             <p class="captions">
                                 <router-link
                                     v-for="id in credit.genre_ids"
@@ -117,32 +118,6 @@
                                     class="bullet">
                                         {{getGenreFromId(id).name}}
                                 </router-link>
-                            </p>
-                            <p class="rating clearfix">
-                                <i class="fa fa-star color-yellow" aria-hidden="true"></i>
-                                {{credit.vote_average}} / 10 from {{credit.vote_count | format}} users
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="one-third rail"
-                        v-for="credit in person.combined_credits.crew"
-                        :key="credit.credit_id">
-                        <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.poster_path"
-                                @error.once="getDefaultPoster" />
-                        </router-link>
-                        <figcaption class="pull-left content">
-                            <p class="title">
-                                <router-link :to="{ name: 'App' + credit.media_type.charAt(0).toUpperCase() + credit.media_type.slice(1), params: { id: credit.id } }">
-                                    {{credit.title || credit.name}}
-                                </router-link>
-                            </p>
-                            <p class="subtitle">{{credit.job}}</p>
-                            <p class="captions">
-                                <a href="#" class="bullet" v-for="id in credit.genre_ids" :key="id">
-                                    {{getGenreFromId(id).name}}
-                                </a>
                             </p>
                             <p class="rating clearfix">
                                 <i class="fa fa-star color-yellow" aria-hidden="true"></i>
@@ -174,6 +149,7 @@
                 imagePath: Vue.config.IMAGE_PATH,
                 backdropPath: Vue.config.BACKDROP_PATH,
                 person: {},
+                cast: [],
                 personBackground: '',
                 lightboxData: [],
                 spinnerStatus: true
@@ -192,6 +168,27 @@
                 this.spinnerStatus = true
 
                 PeopleService.getDetails(this.id, (data) => {
+                    if (data.combined_credits.cast && data.combined_credits.crew) {
+                        const castObj = {}
+                        data.combined_credits.cast.forEach(item => {
+                            castObj[item.id] = item
+                        })
+                        data.combined_credits.crew.forEach(item => {
+                            if (castObj[item.id]) {
+                                let prefix = ''
+                                if (!castObj[item.id].job) {
+                                    castObj[item.id].job = ''
+                                } else {
+                                    prefix = ', '
+                                }
+                                castObj[item.id].job += prefix + item.job
+                            } else {
+                                castObj[item.id] = item
+                            }
+                        })
+                        this.cast = Object.values(castObj).sort((a, b) => b.popularity - a.popularity)
+                    }
+
                     this.spinnerStatus = false
                     this.person = data
                     this.lightboxData = this.person.images.profiles.concat(this.person.tagged_images.results)

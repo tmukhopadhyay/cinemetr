@@ -163,24 +163,24 @@
 
                 MovieService.getDetails(this.id, (data) => {
                     if (data.tmdb.credits.cast && data.tmdb.credits.crew) {
-                        const castObj = {}
+                        const castMap = new Map()
                         data.tmdb.credits.cast.forEach(person => {
-                            castObj[person.id] = person
+                            castMap.set(person.id, person)
                         })
                         data.tmdb.credits.crew.forEach(person => {
-                            if (castObj[person.id]) {
+                            if (castMap.has(person.id)) {
                                 let prefix = ''
-                                if (!castObj[person.id].job) {
-                                    castObj[person.id].job = ''
+                                if (!castMap.get(person.id).job) {
+                                    castMap.get(person.id).job = ''
                                 } else {
                                     prefix = ', '
                                 }
-                                castObj[person.id].job += prefix + person.job
+                                castMap.get(person.id).job += prefix + person.job
                             } else {
-                                castObj[person.id] = person
+                                castMap.set(person.id, person)
                             }
                         })
-                        this.cast = Object.values(castObj).sort((a, b) => a.cast_id - b.cast_id)
+                        this.cast = Array.from(castMap.values())
                     }
 
                     this.spinnerStatus = false
