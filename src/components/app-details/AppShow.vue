@@ -95,7 +95,7 @@
                 </h3>
                 <section class="content-wrapper">
                     <figure class="one-fourth rail"
-                        v-for="credit in tmdb.credits.cast"
+                        v-for="credit in cast"
                         :key="credit.credit_id">
                         <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
                             <img class="pull-left poster"
@@ -108,24 +108,8 @@
                                     {{credit.name}}
                                 </router-link>
                             </p>
-                            <p class="subtitle" v-if="credit.character">as {{credit.character}}</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="one-fourth rail"
-                        v-for="credit in tmdb.credits.crew"
-                        :key="credit.credit_id">
-                        <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                            <img class="pull-left poster"
-                                :src="imagePath + credit.profile_path"
-                                @error.once="getDefaultPerson" />
-                        </router-link>
-                        <figcaption class="pull-left content">
-                            <p class="title">
-                                <router-link :to="{ name: 'AppPerson', params: { id: credit.id } }">
-                                    {{credit.name}}
-                                </router-link>
-                            </p>
-                            <p class="subtitle">{{credit.job}}</p>
+                            <p class="subtitle" v-if="credit.character">As {{credit.character}}</p>
+                            <p class="subtitle" v-if="credit.job">{{credit.job}}</p>
                         </figcaption>
                     </figure>
                 </section>
@@ -157,6 +141,7 @@
                 backdropPath: Vue.config.BACKDROP_PATH,
                 omdb: {},
                 tmdb: {},
+                cast: [],
                 carouselData: [],
                 similarShows: [],
                 spinnerStatus: true,
@@ -176,6 +161,27 @@
                 this.spinnerStatus = true
 
                 SeriesService.getDetails(this.id, (data) => {
+                    if (data.tmdb.credits.cast && data.tmdb.credits.crew) {
+                        const castObj = {}
+                        data.tmdb.credits.cast.forEach(person => {
+                            castObj[person.id] = person
+                        })
+                        data.tmdb.credits.crew.forEach(person => {
+                            if (castObj[person.id]) {
+                                let prefix = ''
+                                if (!castObj[person.id].job) {
+                                    castObj[person.id].job = ''
+                                } else {
+                                    prefix = ', '
+                                }
+                                castObj[person.id].job += prefix + person.job
+                            } else {
+                                castObj[person.id] = person
+                            }
+                        })
+                        this.cast = Object.values(castObj).sort((a, b) => a.cast_id - b.cast_id)
+                    }
+
                     this.spinnerStatus = false
                     this.omdb = data.omdb
                     this.tmdb = data.tmdb
