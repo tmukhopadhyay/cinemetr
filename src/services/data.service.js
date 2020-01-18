@@ -48,7 +48,7 @@ export default {
             })
     },
     search (type, searchText, callback) {
-        Vue.http.get(Vue.config.TMDB_BASE_URL + Vue.config.SEARCH + type + '?api_key=' + Vue.config.TMDB_API_KEY + '&query=' + searchText + '&language=en-US&page=1&include_adult=false')
+        Vue.http.get(Vue.config.TMDB_BASE_URL + Vue.config.SEARCH + type + '?api_key=' + Vue.config.TMDB_API_KEY + '&query=' + searchText + '&language=en-US&page=1&include_adult=true')
             .then(data => {
                 callback(data.body.results)
             }, error => {
